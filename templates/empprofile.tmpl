@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Perform | Employee_Profile</title>
+	{{ template "head.tmpl" . }}
+</head>
+<body>
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+		<!-- begin #header -->
+		<div id="header" class="header navbar navbar-default navbar-fixed-top navbar-inverse">
+			<!-- begin container-fluid -->
+			<div class="container-fluid">
+				<!-- begin mobile sidebar expand / collapse button -->
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand"><span class="fa-stack fa-1x"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-bar-chart fa-stack-1x"></i></span><span style="font-family:Oribitron;"> PERFORM</span></a>
+					<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- end mobile sidebar expand / collapse button -->
+
+				<!-- begin header navigation right -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form full-width">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Enter keyword" />
+								<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+							</div>
+						</form>
+					</li>
+
+					<li class="dropdown navbar-user">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="../static/img/user-13.jpg" alt="" />
+							<span class="hidden-xs">Steve Johnson</span> <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu animated fadeInLeft">
+							<li class="arrow"></li>
+							<li><a href="javascript:;">Edit Profile</a></li>
+							<li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+							<li><a href="javascript:;">Calendar</a></li>
+							<li><a href="javascript:;">Setting</a></li>
+							<li class="divider"></li>
+							<li><a href="/logout">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- end header navigation right -->
+			</div>
+			<!-- end container-fluid -->
+		</div>
+		<!-- end #header -->
+
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="image">
+							<a href="javascript:;"><img src="../static/img/user-13.jpg" alt="" /></a>
+						</div>
+						<div class="info">
+                            Steve Johnson
+							<small>Cultivisor | Admin</small>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav">
+					<li class="nav-header">Navigation</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="fa fa-building-o"></i>
+						    <span>Company Information</span>
+					    </a>
+						<ul class="sub-menu">
+						    <li><a href="#">Buisiness Results</a></li>
+						    <li><a href="/jobinformation">Job Information</a></li>
+                            <li><a href="#">Organization Structure</a></li>
+						</ul>
+					</li>
+                    <br>
+					<li class="has-sub active">
+						<a href="javascript:;">
+                            <b class="caret pull-right"></b>
+							<i class="fa fa-inbox"></i>
+							<span>Employee Information</span>
+						</a>
+						<ul class="sub-menu">
+						    <li><a href="/employeeinformation">Employee Information</a></li>
+						    <li class="active"><a href="/employeeprofile">Employee Profile</a></li>
+						    <li><a href="#">Job Canidates</a></li>
+						</ul>
+					</li>
+                    <br>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="fa fa-road"></i>
+						    <span>Employee Development</span>
+						</a>
+						<ul class="sub-menu">
+    					    <li><a href="#">Learning Activities</a></li>
+                            <li><a href="#">Career Planning</a></li>
+                            <li><a href="#">Course Sessions</a></li>
+                            <li><a href="#">Course Registrations</a></li>
+						</ul>
+					</li>
+                    <br>
+					<li class="has-sub ">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="fa fa-tachometer"></i>
+						    <span>Employee Reviews</span>
+						</a>
+						<ul class="sub-menu">
+                            <li><a href="#">Performance Reviews</a></li>
+                            <li><a href="#">Accountavility Reviews</a></li>
+                            <li><a href="#">Good Practices</a></li>
+						</ul>
+					</li>
+                    <br>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="fa fa-bar-chart-o"></i>
+						    <span>Employee Performance</span>
+						</a>
+						<ul class="sub-menu">
+                            <li><a href="#">One-To-One Measurements</a></li>
+                            <li><a href="#">One-To-Many Measurements</a></li>
+                            <li><a href="#">Peer-To-Peer Measurements</a></li>
+						</ul>
+					</li>
+
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+
+		<!-- begin #content -->
+		<div id="content" class="content">
+
+			<!-- end row -->
+			<!-- begin breadcrumb -->
+			<!-- end breadcrumb -->
+			<!-- begin page-header -->
+            <div class="panel">
+
+
+                <div class="panel-body bg-">
+                    <div class="row">
+        				<!-- begin col-3 -->
+        				<div class="col-md-12 col-sm-6">
+        					<div class="widget widget-stats bg-custom">
+        						<div class="stats-icon"><i class="fa fa-inbox"></i></div>
+        						<div class="stats-info">
+        							<h4 class="f-w-400">Employee</h4>
+        							<p class="f-s-20 f-w-400">Profile</p>
+        						</div>
+								<div class="stats-link">
+                                    <a href="/employeeprofile" class=""><span class="f-s-18">View All Employees</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
+        						</div>
+        					</div>
+        				</div>
+
+        			</div>
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-6 -->
+                        <div class="col-md-12">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">Employee Information</h4>
+                                </div>
+                                <div class="panel-body bg-silver">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option>Robert Jones</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="text" class="form-control" placeholder="Search" />
+                                            </div>
+                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
+                                            <div class="pull-right">
+                                                <a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
+                                                <a class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Contact</a>
+                                            </div>
+                                            <a href="#modal-dialog" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Performance Review</a>
+                                            <div class="modal fade" id="modal-dialog">
+                								<div class="modal-dialog">
+                									<div class="modal-content">
+                										<div class="modal-header bg-custom">
+                											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                											<h3 class="modal-title text-center text-white f-w-400">Add/Edit Performance Review</h3>
+                										</div>
+                										<div class="modal-footer">
+                                                            <div class="row">
+                                                                <label class="col-md-2 control-label">Employee:</label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                <label class="col-md-2 control-label">Task:</label>
+                                                                <div class="col-md-9">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                										</div>
+                                                        <div class="modal-footer">
+                                                            <div class="row">
+                                                                <label class="col-md-2 control-label">Observed On:</label>
+                                                                <div class="col-md-4">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <label class="col-md-2 control-label">Rating:</label>
+                                                                <div class="col-md-4">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                <label class="col-md-2 control-label">Scheduled Date:</label>
+                                                                <div class="col-md-4">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <label class="col-md-2 control-label">Address:</label>
+                                                                <div class="col-md-1">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" value="" />
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" value="" />
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                <label class="col-md-2 control-label">Actual Date:</label>
+                                                                <div class="col-md-4">
+                                                                    <select class="form-control">
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                										</div>
+                                                        <div class="modal-footer">
+                                                            <div class="row">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label">Source:</label>
+                                                                    <div class="col-md-7">
+                                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label">Observations:</label>
+                                                                    <div class="col-md-7">
+                                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a class="btn btn-default btn-md m-r-5 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
+                                                            <a class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add</a>
+                										</div>
+                									</div>
+                								</div>
+                							</div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end panel -->
+                        </div>
+                        <!-- end col-6 -->
+                    </div>
+                    <!-- end row -->
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-6 -->
+                        <div class="col-md-12">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse bg-inverse" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">Employee Information</h4>
+                                </div>
+                                <div class="panel-body bg-silver">
+                                    <div class="panel-body">
+                                        <legend class="f-w-700">Robert Jones</legend>
+
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-archive fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Job History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>JOB</th>
+                                                                <th>EFF DATE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-th-list fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Department History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>DEPARTMENT</th>
+                                                                <th>EFF DATE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-user fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Manager History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>MANAGER</th>
+                                                                <th>EFF DATE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-comments fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Job Interview History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>JOB</th>
+                                                                <th>EFF</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-leaf fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Branch History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>BRANCH</th>
+                                                                <th>EFF DATE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="widget widget-stats bg-custom">
+                                                    <div class="stats-icon stats-icon-lg"><i class="fa fa-calendar fa-fw"></i></div>
+                                                    <div class="stats-title">Employee</div>
+                                                    <div class="stats-number">Work Schedule History</div>
+                                                    <div class="stats-progress progress">
+                                                        <div class="progress-bar" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="stats-desc"></div>
+                                                    <table class="table table-striped table-bordered nowrap text-inverse" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>SCHEDULE</th>
+                                                                <th>EFF DATE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end panel -->
+                        </div>
+                        <!-- end col-6 -->
+                    </div>
+                    <!-- end row -->
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-12 -->
+                        <div class="col-12">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse bg-silver" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">More Information</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+                                        <ul class="nav nav-tabs nav-justified">
+                                            <li class=""><a href="#default-tab-1" data-toggle="tab">Skills</a></li>
+                                            <li class="active"><a href="#default-tab-2" data-toggle="tab">Learning Activities</a></li>
+                                            <li class=""><a href="#default-tab-3" data-toggle="tab">Knowledge</a></li>
+                                            <li class=""><a href="#default-tab-4" data-toggle="tab">Behavior</a></li>
+                                            <li class=""><a href="#default-tab-5" data-toggle="tab">Source</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade" id="default-tab-1">
+                                                <blockquote>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                                </blockquote>
+                                                <h4>Lorem ipsum dolor sit amet</h4>
+                                                <p>
+                                                    Nullam ac sapien justo. Nam augue mauris, malesuada non magna sed, feugiat blandit ligula.
+                                                    In tristique tincidunt purus id iaculis. Pellentesque volutpat tortor a mauris convallis,
+                                                    sit amet scelerisque lectus adipiscing.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade active in" id="default-tab-2">
+                                                <div class="pull-right">
+                                                </div>
+                                                <table id="data-table" class="table table-striped table-bordered nowrap" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd gradeX">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                            <tr class="even gradeC">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                            <tr class="odd gradeA">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                            <tr class="even gradeA">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                            <tr class="odd gradeA">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                            <tr class="even gradeA">
+                                                                <td>Trident</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="tab-pane fade" id="default-tab-3">
+                                                    <blockquote>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                                    </blockquote>
+                                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                                    <p>
+                                                        Nullam ac sapien justo. Nam augue mauris, malesuada non magna sed, feugiat blandit ligula.
+                                                        In tristique tincidunt purus id iaculis. Pellentesque volutpat tortor a mauris convallis,
+                                                        sit amet scelerisque lectus adipiscing.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="default-tab-4">
+                                                    <blockquote>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                                    </blockquote>
+                                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                                    <p>
+                                                        Nullam ac sapien justo. Nam augue mauris, malesuada non magna sed, feugiat blandit ligula.
+                                                        In tristique tincidunt purus id iaculis. Pellentesque volutpat tortor a mauris convallis,
+                                                        sit amet scelerisque lectus adipiscing.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="default-tab-5">
+                                                    <blockquote>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                                    </blockquote>
+                                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                                    <p>
+                                                        Nullam ac sapien justo. Nam augue mauris, malesuada non magna sed, feugiat blandit ligula.
+                                                        In tristique tincidunt purus id iaculis. Pellentesque volutpat tortor a mauris convallis,
+                                                        sit amet scelerisque lectus adipiscing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end panel -->
+                            </div>
+                            <!-- end col-6 -->
+                        </div>
+                        <!-- end row -->
+
+                </div>
+            </div>
+			<!-- end page-header -->
+
+		</div>
+		<!-- end #content -->
+
+
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../static/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="../static/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="../static/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../static/crossbrowserjs/html5shiv.js"></script>
+		<script src="../static/crossbrowserjs/respond.min.js"></script>
+		<script src="../static/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../static/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../static/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="../static/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+
+    <!-- ================== BEGIN IMPORTED JS ================== -->
+    <script src="../static/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+    <script src="../static/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+    <script src="../static/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../static/js/table-manage-responsive.demo.min.js"></script>
+	<!-- ================== END IMPORTED JS ================== -->
+
+	<script>
+		$(document).ready(function() {
+			App.init();
+            TableManageResponsive.init();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Perform | Employee_Information</title>
+	{{ template "head.tmpl" . }}
+</head>
+<body>
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+
+		{{ template "nav.tmpl" . }}
+
+		<!-- begin #content -->
+		<div id="content" class="content">
+
+            <div class="panel">
+
+                <div class="panel-body bg-">
+                    <div class="row">
+        				<!-- begin col-3 -->
+        				<div class="col-md-12 col-sm-6">
+        					<div class="widget widget-stats bg-custom">
+        						<div class="stats-icon"><i class="fa fa-inbox"></i></div>
+        						<div class="stats-info">
+        							<h4 class="f-w-400">Employee</h4>
+        							<p class="f-s-20 f-w-400">Information</p>
+        						</div>
+								<div class="stats-link">
+                                    <a href="/employeeinformation" class=""><span class="f-s-18">View All Employees</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
+        						</div>
+        					</div>
+        				</div>
+
+        			</div>
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-6 -->
+                        <div class="col-md-12">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">Employee</h4>
+                                </div>
+                                <div class="panel-body bg-silver">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option>Robert Jones</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="text" class="form-control" placeholder="Search" />
+                                            </div>
+                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
+                                            <div class="pull-right">
+                                                <a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
+                                                <a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Contact</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end panel -->
+                        </div>
+                        <!-- end col-6 -->
+                    </div>
+                    <!-- end row -->
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-6 -->
+                        <div class="col-md-6">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse bg-inverse" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">Robert Jones</h4>
+                                </div>
+                                <div class="panel-body bg-silver">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" action="/" method="POST">
+                                            <fieldset>
+
+												<div class="form-group">
+                                                    <label class="col-md-2 control-label">Last Name</label>
+                                                    <div class="col-md-5">
+                                                        <input type="email" class="form-control" placeholder="Jones" />
+                                                    </div>
+                                                </div>
+
+												<div class="form-group">
+													<label class="col-md-2 control-label">First Name</label>
+													<div class="col-md-5">
+														<input type="email" class="form-control" placeholder="Robert" />
+													</div>
+												</div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Division</label>
+                                                    <div class="col-md-5">
+                                                        <input type="email" class="form-control" placeholder="" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Department</label>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>Sales</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Job</label>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>Global Sales Executive</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Manager</label>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>Billy Joe Smith</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Branch</label>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>Baltimore HQ</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Schedule</label>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>Monday-Friday 9:00am - 5:00pm</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Source</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" placeholder="Textarea" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end panel -->
+                        </div>
+                        <!-- end col-6 -->
+
+                        <!-- begin col-6 -->
+                        <div class="col-md-6">
+                            <div class="panel panel-inverse">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">Employee Information</h4>
+                                </div>
+                                <div class="panel-body bg-silver">
+
+                                    <ul class="nav nav-tabs nav-justified">
+                                        <li class="active"><a href="#nav-1" data-toggle="tab">History</a></li>
+                                        <li><a href="#nav-2" data-toggle="tab">Address</a></li>
+                                        <li><a href="#nav-3" data-toggle="tab">Phone/Web</a></li>
+                                    </ul>
+                                    <div class="tab-content" id="nav-1">
+
+                                        <div class="row">
+                                            <br>
+                                            <br>
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-tachometer"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Performance Reviews</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-comment"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Inverview History</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-book"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Learning Experiences</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-money"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Compensation History</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-calendar"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Paid Time Off/ Days Out</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                            <div class="col-md-6 col-sm-6">
+                            					<div class="widget widget-stats bg-custom">
+                            						<div class="stats-icon"><i class="fa fa-cogs"></i></div>
+                            						<div class="stats-info">
+                            							<h4>Employee</h4>
+                            							<p>Miscellaneous Factors</p>
+                            						</div>
+                            						<div class="stats-link">
+                            							<a href="#modal-dialog-misc" data-toggle="modal">view <i class="fa fa-arrow-circle-o-right"></i></a>
+                            						</div>
+                            					</div>
+                            				</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end col-6 -->
+                    </div>
+                    <!-- end row -->
+					<!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-12 -->
+                        <div class="col-12">
+                            <!-- begin panel -->
+                            <div class="panel panel-inverse bg-silver" >
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+
+                                    </div>
+                                    <h4 class="panel-title">More Information</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+
+										<ul class="nav nav-pills">
+											<li class="active"><a href="#nav-pills-1" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-text-o"></i>&nbsp; Job Tasks</a></li>
+											<li><a href="#nav-pills-2" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-o"></i>&nbsp; Job Properties</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane fade active in" id="nav-pills-1">
+
+												<ul class="nav nav-tabs nav-justified">
+		                                            <li class="active"><a href="#default-tab-1" data-toggle="tab">Skills</a></li>
+		                                            <li class=""><a href="#default-tab-2" data-toggle="tab">Knowledge</a></li>
+		                                            <li class=""><a href="#default-tab-3" data-toggle="tab">Behavior</a></li>
+		                                        </ul>
+												<!-- Start Skills Tab -->
+		                                        <div class="tab-content">
+		                                            <div class="tab-pane fade active in" id="default-tab-1">
+														<div class="pull-right">
+															<a href="#modal-dialog-skill" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Skill</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>DETAILS</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Skills</td>
+		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+													<div class="tab-pane fade" id="default-tab-2">
+														<div class="pull-right">
+															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Knowledge</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>DETAILS</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Knowledge</td>
+		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+													</div>
+													<div class="tab-pane fade" id="default-tab-3">
+														<div class="pull-right">
+															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Behavior</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>DETAILS</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Behavior</td>
+		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+													</div>
+		                                        </div>
+												<!-- End Skills Tab -->
+											</div>
+											<!-- Start Additional Info Tab -->
+											<div class="tab-pane fade" id="nav-pills-2">
+
+												<ul class="nav nav-tabs nav-justified">
+		                                            <li class="active"><a href="#tab-1" data-toggle="tab">Contacts</a></li>
+		                                            <li class=""><a href="#tab-2" data-toggle="tab">Achievements</a></li>
+		                                            <li class=""><a href="#tab-3" data-toggle="tab">Prior Jobs</a></li>
+		                                            <li class=""><a href="#tab-4" data-toggle="tab">Learning Activities</a></li>
+		                                            <li class=""><a href="#tab-5" data-toggle="tab">Watch Lists</a></li>
+		                                        </ul>
+		                                        <div class="tab-content">
+		                                            <div class="tab-pane fade active in" id="tab-1">
+														<div class="pull-right">
+															<a href="#modal-dialog-contact" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Contact</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>PHONE</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Contact</td>
+		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+													<div class="tab-pane fade" id="tab-2">
+														<div class="pull-right">
+															<a href="#modal-dialog-achievements" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Achievements</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>DATE</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Achievement</td>
+		                                                            <td>07-16-16</td>
+		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+													<div class="tab-pane fade" id="tab-3">
+														<div class="pull-right">
+															<a href="#modal-dialog-priorjobs" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Prior Jobs</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+																	<th>COMPANY</th>
+		                                                            <th>START DATE</th>
+																	<th>END DATE</th>
+																	<th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employee Prior Jobs</td>
+		                                                            <td>Random Company</td>
+																	<td>05-12-16</td>
+																	<td>05-14-16</td>
+		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+													<div class="tab-pane fade" id="tab-4">
+														<div class="pull-right">
+															<a href="#modal-dialog-learning" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Learning Activities</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th>REFERENCE</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Selling Fundementals</td>
+		                                                            <td>Sales 101</td>
+		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+													<div class="tab-pane fade" id="tab-5">
+														<div class="pull-right">
+															<a href="#modal-dialog-watchlists" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Watch Lists</a>
+														</div>
+														<br>
+
+														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
+		                                                    <thead>
+		                                                        <tr>
+		                                                            <th>NAME</th>
+		                                                            <th></th>
+		                                                        </tr>
+		                                                    </thead>
+		                                                    <tbody>
+		                                                        <tr>
+		                                                            <td>Employees who have top performing potential</td>
+		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+		                                                        </tr>
+		                                                    </tbody>
+		                                                </table>
+
+		                                            </div>
+
+		                                        </div>
+												<!-- End Additional Info Tab -->
+
+											</div>
+										</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end panel -->
+                        </div>
+                        <!-- end col-6 -->
+                    </div>
+                        <!-- end row -->
+                </div>
+            </div>
+			<!-- end page-header -->
+
+		</div>
+		<!-- end #content -->
+
+
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+
+	{{ template "scripts.tmpl" . }}
+
+	<script>
+		$(document).ready(function() {
+			App.init();
+			TableManageResponsive.init();
+			$('table.display').DataTable();
+			$("#table tr").css('cursor', 'pointer');
+		});
+	</script>
+
+	<!-- Add Miscellaneous Factors Modal -->
+	<div class="modal fade" id="modal-dialog-misc">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-custom">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="modal-title text-center text-white f-w-400">Miscellaneous Factors</h3>
+				</div>
+				<div class="modal-footer">
+					<div class="tab-pane fade active in">
+
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active"><a href="#tab1" data-toggle="tab">Factor Involing A Single Employee</a></li>
+							<li class=""><a href="#tab2" data-toggle="tab">Factor Involving All Employees</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="tab1">
+
+								<div class="row">
+									<label class="col-md-2 control-label">Employee:</label>
+									<div class="col-md-10">
+										<select class="form-control">
+											<option>Robert Jones</option>
+											<option></option>
+											<option></option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-2 control-label">Factor:</label>
+										<div class="col-md-10">
+											<textarea class="form-control" placeholder="" rows="4"></textarea>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-2 control-label">Date Began:</label>
+										<div class="col-md-4">
+											<input type="email" class="form-control" placeholder="" />
+										</div>
+										<label class="col-md-2 control-label">Date Ended:</label>
+										<div class="col-md-4">
+											<input type="email" class="form-control" placeholder="" />
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="tab-pane fade" id="tab2">
+
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-2 control-label">Factor:</label>
+										<div class="col-md-10">
+											<textarea class="form-control" placeholder="" rows="4"></textarea>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-2 control-label">Date Began:</label>
+										<div class="col-md-4">
+											<input type="email" class="form-control" placeholder="" />
+										</div>
+										<label class="col-md-2 control-label">Date Ended:</label>
+										<div class="col-md-4">
+											<input type="email" class="form-control" placeholder="" />
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="form-group">
+							<label class="col-md-2 control-label">Notes:</label>
+							<div class="col-md-10">
+								<textarea class="form-control" placeholder="" rows="4"></textarea>
+							</div>
+						</div>
+					</div>
+					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
+					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Miscellaneous Factors Modal -->
+
+</body>
+</html>
