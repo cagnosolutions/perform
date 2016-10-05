@@ -34,7 +34,7 @@
         							<p class="f-s-20 f-w-400">Information</p>
         						</div>
 								<div class="stats-link">
-                                    <a href="/jobinformation" class=""><span class="f-s-18">View All Jobs</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
+                                    <a href="/job_information_overview" class=""><span class="f-s-18">View All Jobs</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
         						</div>
         					</div>
         				</div>
@@ -290,7 +290,7 @@
 		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
 		                                                    <thead>
 		                                                        <tr>
-		                                                            <th>FACTOR</th>
+		                                                            <th>NAME</th>
 		                                                            <th>DETAILS</th>
 		                                                            <th>MEASUREMENT</th>
 		                                                            <th>ACTIVE</th>
@@ -299,10 +299,10 @@
 		                                                    </thead>
 		                                                    <tbody>
 		                                                        <tr class="odd gradeX">
-		                                                            <td></td>
-		                                                            <td></td>
-		                                                            <td></td>
-		                                                            <td></td>
+		                                                            <td>Success Enabler</td>
+		                                                            <td>Detailed Success Enabler</td>
+		                                                            <td>Measurement Success Enabler</td>
+																	<td class="text-center"><a class="btn btn-success btn-icon btn-circle btn-sm"><i class="fa fa-check"></i></a></td>
 		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
 		                                                        </tr>
 		                                                    </tbody>
@@ -311,7 +311,7 @@
 		                                            </div>
 													<div class="tab-pane fade" id="default-tab-5">
 														<div class="pull-right">
-															<a class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Accountability Factors</a>
+															<a href="#modal-dialog-factor" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Accountability Factors</a>
 														</div>
 														<br>
 		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
@@ -326,10 +326,10 @@
 		                                                    </thead>
 		                                                    <tbody>
 		                                                        <tr class="odd gradeX">
-		                                                            <td></td>
-		                                                            <td></td>
-		                                                            <td></td>
-		                                                            <td></td>
+		                                                            <td>Phone Call Monthly</td>
+		                                                            <td>Record at least one phone call per month</td>
+		                                                            <td>0</td>
+																	<td class="text-center"><a class="btn btn-success btn-icon btn-circle btn-sm"><i class="fa fa-check"></i></a></td>
 		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
 		                                                        </tr>
 		                                                    </tbody>
@@ -499,23 +499,18 @@
 								<option>1 year +</option>
 							</select>
 						</div>
-						<label class="col-md-2 control-label">Certification Requirted:</label>
-						<div class="col-md-1">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="" />
-									Yes
-								</label>
-							</div>
-						</div>
-						<div class="col-md-1">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="" />
-									No
-								</label>
-							</div>
-						</div>
+
+                        <label class="col-md-4 control-label">Certification Required:</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios" value="option1" checked />
+                                Yes
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios" value="option2" />
+                                No
+                            </label>
+                        </div>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -620,5 +615,63 @@
 		</div>
 	</div>
 	<!-- End Add Enablers Modal -->
+	<!-- Add Factor Modal -->
+	<div class="modal fade" id="modal-dialog-factor">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-custom">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="modal-title text-center text-white f-w-400">Add Acountability Factor</h3>
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="form-group">
+							<label class="col-md-2 control-label">Factor:</label>
+							<div class="col-md-10">
+								<input type="email" class="form-control" placeholder="" />
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="form-group">
+							<label class="col-md-2 control-label">Details:</label>
+							<div class="col-md-10">
+								<textarea class="form-control" placeholder="" rows="8"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<label class="col-md-2 control-label">Measurement:</label>
+						<div class="col-md-4">
+							<select class="form-control">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<label class="col-md-2 control-label">Active:</label>
+                        <div class="col-md-3">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios" value="option1" checked />
+                                Yes
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios" value="option2" />
+                                No
+                            </label>
+                        </div>
+					</div>
+					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
+					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Add Factor Modal -->
 </body>
 </html>

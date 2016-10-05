@@ -73,8 +73,8 @@
                     <span>Company Information</span>
                 </a>
                 <ul class="sub-menu">
-                    <li {{ if eq .subpage "businessresults"}}class="active"{{ end }}><a href="/businessresultsoverview">Buisiness Results</a></li>
-                    <li {{ if eq .subpage "jobinformation"}}class="active"{{ end }}><a href="/jobinformation">Job Information</a></li>
+                    <li {{ if eq .subpage "businessresults"}}class="active"{{ end }}><a href="/business_results_overview">Buisiness Results</a></li>
+                    <li {{ if eq .subpage "jobinformation"}}class="active"{{ end }}><a href="/job_information_overview">Job Information</a></li>
                     <li><a href="#">Organization Structure</a></li>
                 </ul>
             </li>
@@ -86,20 +86,20 @@
                     <span>Employee Information</span>
                 </a>
                 <ul class="sub-menu">
-                    <li {{ if eq .subpage "employeeinformation"}}class="active"{{ end }}><a href="/employeeinformation">Employee Information</a></li>
-                    <li {{ if eq .subpage "employeeprofile"}}class="active"{{ end }}><a href="/employeeprofile">Employee Profile</a></li>
+                    <li {{ if eq .subpage "employeeinformation"}}class="active"{{ end }}><a href="/employee_information_overview">Employee Information</a></li>
+                    <li {{ if eq .subpage "employeeprofile"}}class="active"{{ end }}><a href="/employee_profile_overview">Employee Profile</a></li>
                     <li><a href="#">Job Canidates</a></li>
                 </ul>
             </li>
             <br>
-            <li class="has-sub">
+            <li class="{{ if eq .page "employeedevelopement"}}active{{ end }} has-sub">
                 <a href="#">
                     <b class="caret pull-right"></b>
                     <i class="fa fa-road"></i>
                     <span>Employee Development</span>
                 </a>
                 <ul class="sub-menu">
-                    <li><a href="#">Learning Activities</a></li>
+                    <li {{ if eq .subpage "learningactivities"}}class="active"{{ end }}><a href="/learning_activities_overview">Learning Activities</a></li>
                     <li><a href="#">Career Planning</a></li>
                     <li><a href="#">Course Sessions</a></li>
                     <li><a href="#">Course Registrations</a></li>
@@ -129,7 +129,7 @@
                     <li><a href="#">One-To-One Measurements</a></li>
                     <li><a href="#">One-To-Many Measurements</a></li>
                     <li><a href="#">Peer-To-Peer Measurements</a></li>
-                    <li {{ if eq .subpage "observationgoals"}}class="active"{{ end }}><a href="/observationgoals">Observation Goals</a></li>
+                    <li {{ if eq .subpage "observationgoals"}}class="active"{{ end }}><a href="/observation_goals">Observation Goals</a></li>
                 </ul>
             </li>
 

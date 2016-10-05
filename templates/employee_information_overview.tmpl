@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Perform | Business_Results</title>
+	<title>Perform | Employee_Information</title>
 	{{ template "head.tmpl" . }}
 </head>
 <body>
@@ -28,13 +28,13 @@
         				<!-- begin col-3 -->
         				<div class="col-md-12 col-sm-6">
         					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-building"></i></div>
+        						<div class="stats-icon"><i class="fa fa-inbox"></i></div>
         						<div class="stats-info">
-        							<h4 class="f-w-400">Business</h4>
-        							<p class="f-s-20 f-w-400">Results</p>
+        							<h4 class="f-w-400">Employee</h4>
+        							<p class="f-s-20 f-w-400">Information</p>
         						</div>
 								<div class="stats-link">
-                                    <a href="/businessresultsoverview" class=""><span class="f-s-18">View All Business Results</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
+                                    <a href="/employee_information_overview" class=""><span class="f-s-18">View All Employees</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
         						</div>
         					</div>
         				</div>
@@ -50,34 +50,40 @@
                                     <div class="panel-heading-btn">
 
                                     </div>
-                                    <h4 class="panel-title">Business Results</h4>
+                                    <h4 class="panel-title">Employee Information</h4>
                                 </div>
                                 <div id="table" class="panel-body">
                                     <div class="col-md-12">
                                         <div class="panel-body bg-white">
 
     										<div class="pull-right">
-    											<a href="/businessresults" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Business Result</a>
+    											<a href="/employee_information" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Employee</a>
     										</div>
     										<br>
                                             <div class="panel-body">
-                                                <table class="display table table-striped table-bordered nowrap" width="100%">
+                                                <table class="display table table-hover table-bordered nowrap" width="100%">
                                                     <thead>
                                                         <tr>
                                                             <th>NAME</th>
-                                                            <th>DETAILS</th>
-                                                            <th></th>
+                                                            <th>DEPARTMENT NAME</th>
+                                                            <th>JOB INFO NAME</th>
+															<th>BRANCH NAME</th>
+															<th></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr id="click">
-                                                            <td>Establish Air Product</td>
-                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                            <td>Robert Jones</td>
+                                                            <td>Sales</td>
+															<td>Global Sales Executive</td>
+															<td>Baltimore HQ</td>
                                                             <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
                                                         </tr>
                                                         <tr id="click">
-                                                            <td>Establish Brokerage Product</td>
-                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                            <td>Billy Joe Smith</td>
+                                                            <td>Marketing</td>
+															<td>Marketing Director</td>
+															<td>Washington HQ</td>
                                                             <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
                                                         </tr>
                                                     </tbody>
@@ -113,7 +119,7 @@
 
 	<script>
         $('tr#click').click(function() {
-            window.location.href = '/businessresults'
+            window.location.href = '/employee_information'
         });
         // $('td#delete').click(function() {
         //     swal({

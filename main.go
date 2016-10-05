@@ -17,61 +17,99 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(loginpage, empinfo, empprof, jobinfo, registerpage, login, logout, observationgoals, businessresults, businessresultsoverview)
+	mux.AddRoutes(login_page, employee_information, employee_information_overview, employee_profile, employee_profile_overview, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":8088", mux))
 }
 
-var loginpage = web.Route{"GET", "/loginpage", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "loginpage.tmpl", web.Model{})
+var login_page = web.Route{"GET", "/login_page", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "login_page.tmpl", web.Model{})
 	return
 }}
 
-var empinfo = web.Route{"GET", "/employeeinformation", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "empinfo.tmpl", web.Model{
+var learning_activities_overview = web.Route{"GET", "/learning_activities_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "learning_activities_overview.tmpl", web.Model{
+		"page":    "employeedevelopement",
+		"subpage": "learningactivities",
+	})
+}}
+
+var learning_activities = web.Route{"GET", "/learning_activities", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "learning_activities.tmpl", web.Model{
+		"page":    "employeedevelopement",
+		"subpage": "learningactivities",
+	})
+}}
+
+var employee_information = web.Route{"GET", "/employee_information", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "employee_information.tmpl", web.Model{
 		"page":    "employeeinformation",
 		"subpage": "employeeinformation",
 	})
 	return
 }}
 
-var empprof = web.Route{"GET", "/employeeprofile", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "empprofile.tmpl", web.Model{
+var employee_information_overview = web.Route{"GET", "/employee_information_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "employee_information_overview.tmpl", web.Model{
+		"page":    "employeeinformation",
+		"subpage": "employeeinformation",
+	})
+	return
+}}
+
+var employee_profile = web.Route{"GET", "/employee_profile", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "employee_profile.tmpl", web.Model{
 		"page":    "employeeinformation",
 		"subpage": "employeeprofile",
 	})
 	return
 }}
 
-var jobinfo = web.Route{"GET", "/jobinformation", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "jobinfo.tmpl", web.Model{
+var employee_profile_overview = web.Route{"GET", "/employee_profile_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "employee_profile_overview.tmpl", web.Model{
+		"page":    "employeeinformation",
+		"subpage": "employeeprofile",
+	})
+	return
+}}
+
+var job_information = web.Route{"GET", "/job_information", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "job_information.tmpl", web.Model{
 		"page":    "companyinformation",
 		"subpage": "jobinformation",
 	})
 	return
 }}
 
-var businessresults = web.Route{"GET", "/businessresults", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "businessresults.tmpl", web.Model{
+var job_information_overview = web.Route{"GET", "/job_information_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "job_information_overview.tmpl", web.Model{
+		"page":    "companyinformation",
+		"subpage": "jobinformation",
+	})
+	return
+}}
+
+var business_results = web.Route{"GET", "/business_results", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "business_results.tmpl", web.Model{
 		"page":    "companyinformation",
 		"subpage": "businessresults",
 	})
 }}
-var businessresultsoverview = web.Route{"GET", "/businessresultsoverview", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "businessresultsoverview.tmpl", web.Model{
+var business_results_overview = web.Route{"GET", "/business_results_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "business_results_overview.tmpl", web.Model{
 		"page":    "companyinformation",
 		"subpage": "businessresults",
 	})
 }}
 
-var registerpage = web.Route{"GET", "/register", func(w http.ResponseWriter, r *http.Request) {
+var register_page = web.Route{"GET", "/register", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "registerpage.tmpl", web.Model{})
 	return
 }}
 
-var observationgoals = web.Route{"GET", "/observationgoals", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "observationgoals.tmpl", web.Model{
+var observation_goals = web.Route{"GET", "/observation_goals", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "observation_goals.tmpl", web.Model{
 		"page":    "employeeperformance",
 		"subpage": "observationgoals",
 	})
