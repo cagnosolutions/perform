@@ -1,677 +1,1191 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Job_Information</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Company Information</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-		{{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-building"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Job</h4>
-        							<p class="f-s-20 f-w-400">Information</p>
-        						</div>
-								<div class="stats-link">
-                                    <a href="/job_information_overview" class=""><span class="f-s-18">View All Jobs</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Job</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <div class="col-md-4">
-                                                <select class="form-control">
-                                                    <option>Salesperson</option>
-                                                    <option>Sales Manager</option>
-                                                    <option>Office Manager</option>
-                                                    <option>Accountant</option>
-                                                    <option>Customer Service Representative</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <input type="text" class="form-control" placeholder="Search" />
-                                            </div>
-                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
-                                            <div class="pull-right">
-												<a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add New Job</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- end panel -->
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/job_information" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Job</a>
                         </div>
-                        <!-- end col-6 -->
+                        <h2>Job Information</h2>
+                        <small>Job information personalized for your company.</small>
                     </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class="active"><a href="/employee_overview">Comapny Information</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h2>Job</h2>
+                                                <div class="clearfix"></div>
+                                            </div><!--/.c_title-->
+                                            <div class="c_content">
+                                                <div class="inner-addon right-addon margin-bottom-10">
+                                                  <i class="fa fa-search"></i>
+                                                  <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <select class="form-control margin-top-10">
+                                                    <option>Account Manager</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+
+                                            </div><!--/.c_content-->
+                                        </div><!--/.c_panel-->
                                     </div>
-                                    <h4 class="panel-title">Job Information</h4>
+
                                 </div>
-                                <div class="panel-body bg-silver">
-                                    <div class="panel-body">
-                                        <form class="form-horizontal" action="/" method="POST">
 
-											<div class="pull-right">
-												<a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
-											</div>
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
 
-											<h3 id="username" class="f-w-700">Salesperson</h3>
+                    </div>
+                </div><!--/.row-->
 
-											<fieldset>
-												<legend class="f-w-700"></legend>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Series:</label>
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control" placeholder="Job Test Series" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Grade:</label>
-                                                        <div class="col-md-6">
-                                                            <input type="" class="form-control" placeholder="Job Test Grade" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Code:</label>
-                                                        <div class="col-md-6">
-                                                            <input type="" class="form-control" placeholder="Job Test Code" />
-                                                        </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+
+                                <h3 class="fg-gray">ACCOUNT MANAGER</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <form class="form-horizontal">
+                                            <fieldset>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Series:</label>
+                                                    <div class="col-md-5">
+                                                        <input type="" class="form-control" placeholder="" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="col-md-1 control-label">Details:</label>
-                                                        <div class="col-md-11">
-                                                            <textarea class="form-control" placeholder="Job Test Description" rows="8"></textarea>
-                                                        </div>
-                                                    </div>
 
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Grade:</label>
+                                                    <div class="col-md-5">
+                                                        <input type="" class="form-control" placeholder="" />
+                                                    </div>
                                                 </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Code:</label>
+                                                    <div class="col-md-5">
+                                                        <input type="" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+
+
                                             </fieldset>
                                         </form>
 
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-12 -->
-                    </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+
+                                    <div class="col-md-6">
+
+                                        <form class="form-horizontal">
+                                            <fieldset>
+
+                                                <div class="form-group">
+                                                    <div class="col-md-11">
+                                                        <label for="textarea-expandable">Details</label>
+                                                        <textarea class="form-control textarea-expandable"></textarea>
+
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
 
                                     </div>
-                                    <h4 class="panel-title">More Information</h4>
-                                </div>
-                                <div class="panel-body">
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div>
+                </div><!--/.row-->
+
+
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+                                    <div class="col-md-4 pull-right">
+                                        <ul class="nav nav-pills nav-justified">
+                                            <li role="presentation" class="active"><a href="#nav-1" role="tab" data-toggle="tab">Job Tasks</a></li>
+                                            <li role="presentation"><a href="#nav-2" role="tab" data-toggle="tab">Job Properties</a></li>
+                                        </ul>
+                                    </div>
+                                <h3 class="fg-gray">JOB TASKS / PROPERITES</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
                                     <div class="col-md-12">
 
-										<ul class="nav nav-pills">
-											<li><a href="#nav-pills-tab-1" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-text-o"></i>&nbsp; Job Tasks</a></li>
-											<li class="active"><a href="#nav-pills-tab-2" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-o"></i>&nbsp; Job Properties</a></li>
-										</ul>
+                                        <div class="tab-content">
+
+                                            <div class="tab-pane fade active in" id="nav-1">
+
+                                                <table id="example" class="table table-striped table-hover table-bordered nowrap" style="border-spacing:0px; width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>TASKS</th>
+                                                            <th>DESCRIPTION</th>
+                                                            <th>NOTES</th>
+                                                            <th class="text-center">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Random Job Task Title</td>
+                                                            <td>Random job task description</td>
+                                                            <td>Random notes for this job task!</td>
+                                                            <td class="text-center"><a href="#myModal13" data-toggle="modal" class="btn btn-sm btn-primary btn-raised rippler rippler-inverse"><i class="fa fa-align-justify"></i> Properties</a> <a href="#tasks" data-toggle="tab" class="btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Additional Info Tab -->
+
 										<div class="tab-content">
-											<div class="tab-pane fade" id="nav-pills-tab-1">
 
-												<!-- Start Job Tasks Tab -->
-												<div class="pull-right">
-													<a href="#modal-dialog-tasks" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Job Task</a>
-												</div>
-												<br>
-												<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-													<thead>
-														<tr>
-															<th>TASKS</th>
-															<th>DESCRIPTION</th>
-															<th>NOTES</th>
-															<th></th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr class="odd gradeX">
-															<td>Random Job Task Title</td>
-															<td>Random job task description</td>
-															<td>Random notes for this job task!</td>
-															<td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-											<!-- End Job Tasks Tab -->
-
-											<!-- Start Job Properties Tab -->
-											<div class="tab-pane fade active in" id="nav-pills-tab-2">
+											<!-- Start Additional Info Tab -->
+											<div class="tab-pane fade" id="nav-2">
 
 												<ul class="nav nav-tabs nav-justified">
-		                                            <li class="active"><a href="#default-tab-1" data-toggle="tab">Departments</a></li>
-		                                            <li class=""><a href="#default-tab-2" data-toggle="tab">Required Learning</a></li>
-		                                            <li class=""><a href="#default-tab-3" data-toggle="tab">Interview Questions</a></li>
-		                                            <li class=""><a href="#default-tab-4" data-toggle="tab">Success Enablers</a></li>
-		                                            <li class=""><a href="#default-tab-5" data-toggle="tab">Accountability Factors</a></li>
+		                                            <li class="active"><a href="#tab-1" data-toggle="tab">Departments</a></li>
+		                                            <li class=""><a href="#tab-2" data-toggle="tab">Required Learning</a></li>
+		                                            <li class=""><a href="#tab-3" data-toggle="tab">Interview Questions</a></li>
+		                                            <li class=""><a href="#tab-4" data-toggle="tab">Success Enablers</a></li>
+		                                            <li class=""><a href="#tab-5" data-toggle="tab">Accountability Factors</a></li>
 		                                        </ul>
 		                                        <div class="tab-content">
-		                                            <div class="tab-pane fade active in" id="default-tab-1">
-														<div class="pull-right">
-															<a href="#modal-dialog-department" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Department</a>
-														</div>
-														<br>
-		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>DEPARTMENT</th>
-		                                                            <th>DESCRIPTION</th>
-		                                                            <th>OTHER</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr class="odd gradeX">
-		                                                            <td>Sales</td>
-		                                                            <td>Interact with future and potential clients and sell our awesome products</td>
-		                                                            <td>B Team Salesforce</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+		                                            <div class="tab-pane fade active in" id="tab-1">
+
+                                                        <div class="pull-right">
+                                                            <button href="#departments" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Department</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example2" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>DEPARTMENT</th>
+    		                                                            <th>DESCRIPTION</th>
+    		                                                            <th>OTHER</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Sales</td>
+    		                                                            <td>Interact with future and potential clients and sell our awesome products</td>
+    		                                                            <td>B Team Salesforce</td>
+                                                                        <td class="text-center"><a href="#departments" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
-													<div class="tab-pane fade" id="default-tab-2">
-														<div class="pull-right">
-															<a href="#modal-dialog-learning" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Required Learning</a>
-														</div>
-														<br>
-		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>COURSE</th>
-		                                                            <th>DESCRIPTION</th>
-		                                                            <th>MONTHS REQUIRED</th>
-																	<th>CERTIFICATION</th>
-		                                                            <th>OTHER</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr class="odd gradeX">
-		                                                            <td>Sales 101</td>
-		                                                            <td>Learn how to be the best salesman you can be!</td>
-		                                                            <td>1-3</td>
-		                                                            <td>Yes</td>
-																	<td>Certification appointed by a sales manager at the end of the course</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+													<div class="tab-pane fade" id="tab-2">
+
+                                                        <div class="pull-right">
+                                                            <button href="#learning" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Required Learning</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example3" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+        		                                                    <tr>
+        		                                                        <th>COURSE</th>
+        		                                                        <th>DESCRIPTION</th>
+        		                                                        <th>MONTHS REQUIRED</th>
+        																<th>CERTIFICATION</th>
+        		                                                        <th>OTHER</th>
+        		                                                        <th class="text-center">Action</th>
+        		                                                    </tr>
+        		                                                </thead>
+        		                                                <tbody>
+        		                                                    <tr>
+        		                                                        <td>Sales 101</td>
+        		                                                        <td>Learn how to be the best salesman you can be!</td>
+        		                                                        <td>1-3</td>
+        		                                                        <td>Yes</td>
+        																<td>Certification appointed by a sales manager at the end of the course</td>
+                                                                        <td class="text-center"><a href="#learning" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+        		                                                    </tr>
+        		                                                </tbody>
+                                                             </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
-													<div class="tab-pane fade" id="default-tab-3">
-														<div class="pull-right">
-															<a href="#modal-dialog-question" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Interview Questions</a>
-														</div>
-														<br>
-		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
+													<div class="tab-pane fade" id="tab-3">
+
+                                                        <div class="pull-right">
+                                                            <button href="#questions" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Interview Question</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example4" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
 		                                                        <tr>
 		                                                            <th>QUESTION</th>
 		                                                            <th>EXPECTED ANSWERS</th>
 		                                                            <th>NOTES</th>
-																	<th></th>
+																	<th class="text-center">Action</th>
 		                                                        </tr>
 		                                                    </thead>
 		                                                    <tbody>
-		                                                        <tr class="odd gradeX">
+		                                                        <tr>
 		                                                            <td>Why do you want to be a salesman</td>
 		                                                            <td>Because I love interacting with people!</td>
 		                                                            <td>Keep an eye on their physical behavior when they answer this question!</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+                                                                    <td class="text-center"><a href="#questions" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
 		                                                        </tr>
 		                                                    </tbody>
-		                                                </table>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
-													<div class="tab-pane fade" id="default-tab-4">
-														<div class="pull-right">
-															<a href="#modal-dialog-enablers" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Success Enablers</a>
-														</div>
-														<br>
-		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
+													<div class="tab-pane fade" id="tab-4">
+
+                                                        <div class="pull-right">
+                                                            <button href="#success" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Success Enabler</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example5" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
 		                                                        <tr>
 		                                                            <th>NAME</th>
 		                                                            <th>DETAILS</th>
 		                                                            <th>MEASUREMENT</th>
 		                                                            <th>ACTIVE</th>
-		                                                            <th></th>
+		                                                            <th class="text-center">Action</th>
 		                                                        </tr>
 		                                                    </thead>
 		                                                    <tbody>
-		                                                        <tr class="odd gradeX">
+		                                                        <tr>
 		                                                            <td>Success Enabler</td>
 		                                                            <td>Detailed Success Enabler</td>
 		                                                            <td>Measurement Success Enabler</td>
-																	<td class="text-center"><a class="btn btn-success btn-icon btn-circle btn-sm"><i class="fa fa-check"></i></a></td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+                                                                    <td>YES</td>
+                                                                    <td class="text-center"><a href="#success" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
 		                                                        </tr>
 		                                                    </tbody>
-		                                                </table>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
-													<div class="tab-pane fade" id="default-tab-5">
-														<div class="pull-right">
-															<a href="#modal-dialog-factor" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Accountability Factors</a>
-														</div>
-														<br>
-		                                                <table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>FACTOR</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th>MEASUREMENT</th>
-		                                                            <th>ACTIVE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr class="odd gradeX">
-		                                                            <td>Phone Call Monthly</td>
-		                                                            <td>Record at least one phone call per month</td>
-		                                                            <td>0</td>
-																	<td class="text-center"><a class="btn btn-success btn-icon btn-circle btn-sm"><i class="fa fa-check"></i></a></td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+													<div class="tab-pane fade" id="tab-5">
+
+                                                        <div class="pull-right">
+                                                            <button href="#factor" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Accountability Factor</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example6" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>FACTOR</th>
+    		                                                            <th>DETAILS</th>
+    		                                                            <th>MEASUREMENT</th>
+    		                                                            <th>ACTIVE</th>
+    		                                                            <th class="text-center">Action</th>
+    		                                                        </tr>
+		                                                              </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Phone Call Monthly</td>
+    		                                                            <td>Record at least one phone call per month</td>
+    		                                                            <td>0</td>
+    																	<td>YES</td>
+                                                                        <td class="text-center"><a href="#factor" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
+
 		                                            </div>
+
 		                                        </div>
-												<!-- End Job Properties Tab -->
+												<!-- End Additional Info Tab -->
 
 											</div>
 										</div>
 
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                        <!-- end row -->
+                </div><!--/.row-->
+                <!--======== Weekly Summary End ========-->
+
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+
+        <!--===== Right sidebar nofications start ========-->
+
+        <aside>
+            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
+                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+                    <div id="right-sidebar-tab-content" class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade in active" id="tasks">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Job Task</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Task</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Description</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Notes</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="departments">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Job Department</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Department</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Description</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Other</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="learning">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Job Required Learning</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Course</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Description</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div><!--/form-group-->
+                                            <div class="form-group">
+                                                <label for="exampleInput">Months Required</label>
+                                                <select class="form-control margin-top-10">
+                                                    <option>1-2</option>
+                                                    <option>2-4</option>
+                                                    <option>4-6</option>
+                                                    <option>6-10</option>
+                                                    <option>10-12</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="switch-input primary">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Certification Required
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Other</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div><!--/.c_content-->
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="questions">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Interview Question</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Question</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Expected Answer</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Notes</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div><!--/.c_content-->
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="success">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Success Enabler</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Success Enabler</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Measurement</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="switch-input primary">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Active
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div><!--/.c_content-->
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="factor">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Accountability Factor</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Accountability Factor</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Measurement</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="switch-input primary">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Active
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div><!--/.c_content-->
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div><!-- /example -->
+                <div class="btn-bottom-right-sidebar-close">
+                    <span class="fa fa-times"></span>
+                </div>
+
+            </div>
+        </aside>
+        <!--===== Right sidebar nofications end ========-->
+
+    </section><!--/.container-->
+
+    {{ template "scripts.tmpl" . }}
+
+</body>
+
+</html>
+
+<!--===== Footer End ========-->
+
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal1" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Division</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Division</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lead Sales Executive</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a></td>
+
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal2" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Department</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Technology</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal3" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Job</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Job</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lead Sales Executive</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal4" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Manager</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Manager</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sally Joe Smith</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal5" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Branch</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>New York City</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal6" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Schedule</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Schedule</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saturday-Sunday 2:00AM - 5:30pm</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal7" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Performance</strong> Reviews</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example11" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Performance Reivew</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal8" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Interview</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example12" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Interviewer</th>
+                            <th>Purpose</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sally Joe Smith</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal9" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Learning Experience</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example12" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Experience</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal10" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Compensation</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example13" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$18.45 per hour</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal11" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <div class="pull-right">
+              <h3>Number Of PTO Days - 14</h3>
+              <h6>Number of PTO Days Remaining - 3</h6>
+          </div>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Paid Time/ Days Off</strong> History</h4>
+        </div>
+        <div class="modal-body">
+                <table id="example14" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Date Off</th>
+                            <th>Reason</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05-14-16</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal12" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Miscellaneous</strong> Factors</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example15" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal13" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-lg">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <h3 class="text-center">Robert Jones</h3>
+            <h4 class="modal-title"><strong>Task</strong> Properties</h4>
+        </div>
+        <div class="modal-body">
+            <div class="widget">
+
+                <ul class="nav nav-tabs bg-silver nav-justified">
+                    <li class="active"><a href="#task-tab-1" data-toggle="tab">Skills</a></li>
+                    <li class=""><a href="#task-tab-2" data-toggle="tab">Knowledge</a></li>
+                    <li class=""><a href="#task-tab-3" data-toggle="tab">Behavior</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="task-tab-1">
+
+                        <div class="c_content">
+
+                            <div class="form-group">
+                                <label for="textarea-expandable">Details</label>
+                                <textarea class="form-control" rows="8">Task Skills</textarea>
+                            </div>
+
+                        </div><!--/.c_content-->
+
+                    </div>
+                    <div class="tab-pane fade" id="task-tab-2">
+
+                        <div class="c_content">
+
+                            <div class="form-group">
+                                <label for="textarea-expandable">Details</label>
+                                <textarea class="form-control" rows="8">Task Knowledge</textarea>
+                            </div>
+
+                        </div><!--/.c_content-->
+
+                    </div>
+                    <div class="tab-pane fade" id="task-tab-3">
+
+                        <div class="c_content">
+
+                            <div class="form-group">
+                                <label for="textarea-expandable">Details</label>
+                                <textarea class="form-control" rows="8">Task Behavior</textarea>
+                            </div>
+
+                        </div><!--/.c_content-->
+
+                    </div>
+
                 </div>
             </div>
-			<!-- end page-header -->
-
-		</div>
-		<!-- end #content -->
-
-
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
-
-	{{ template "scripts.tmpl" . }}
-
-	<script>
-		$(document).ready(function() {
-			App.init();
-            TableManageResponsive.init();
-			$('table.display').DataTable();
-			$("#table tr").css('cursor', 'pointer');
-		});
-		FormEditable.init();
-	</script>
-	<!-- Add Task Modal -->
-	<div class="modal fade" id="modal-dialog-tasks">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Job Task</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Task:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Description:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Notes:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Task Modal -->
-	<!-- Add Department Modal -->
-	<div class="modal fade" id="modal-dialog-department">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Department</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Department:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Description:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Other:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Department Modal -->
-	<!-- Add Learning Modal -->
-	<div class="modal fade" id="modal-dialog-learning">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Required Learning</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Course:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Description:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<label class="col-md-2 control-label">Months Required:</label>
-						<div class="col-md-4">
-							<select class="form-control">
-								<option>1-3 months</option>
-								<option>3-5 months</option>
-								<option>6-8 months</option>
-								<option>8-12 months</option>
-								<option>1 year +</option>
-							</select>
-						</div>
-
-                        <label class="col-md-4 control-label">Certification Required:</label>
-                        <div class="col-md-4">
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadios" value="option1" checked />
-                                Yes
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadios" value="option2" />
-                                No
-                            </label>
-                        </div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Other:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Learning Modal -->
-	<!-- Add Question Modal -->
-	<div class="modal fade" id="modal-dialog-question">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Interview Question</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Question:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Expected Answer:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Notes:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Question Modal -->
-	<!-- Add Enablers Modal -->
-	<div class="modal fade" id="modal-dialog-enablers">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Success Enablers</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Success Enabler:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Reasoning:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Notes:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Enablers Modal -->
-	<!-- Add Factor Modal -->
-	<div class="modal fade" id="modal-dialog-factor">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Acountability Factor</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Factor:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Details:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<label class="col-md-2 control-label">Measurement:</label>
-						<div class="col-md-4">
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-							</select>
-						</div>
-						<label class="col-md-2 control-label">Active:</label>
-                        <div class="col-md-3">
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadios" value="option1" checked />
-                                Yes
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadios" value="option2" />
-                                No
-                            </label>
-                        </div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Factor Modal -->
-</body>
-</html>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->

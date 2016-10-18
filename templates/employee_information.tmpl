@@ -1,124 +1,214 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Employee_Information</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Employee Information</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-		{{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-inbox"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Employee</h4>
-        							<p class="f-s-20 f-w-400">Information</p>
-        						</div>
-								<div class="stats-link">
-                                    <a href="/employeeinformation" class=""><span class="f-s-18">View All Employees</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Employee</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <div class="col-md-4">
-                                                <select class="form-control">
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/employee_profile" type="button" class="btn btn-primary btn-flat btn-raised">View Employee Profile</a>
+                            <a href="/employee_information" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Employee</a>
+                        </div>
+                        <h2>Employee Information</h2>
+                        <small>Personal information for employees</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class=""><a href="/employee_overview">Employee Overview</a></li>
+                                <li class="active"><a href="/employee_information">Robert Jones Information</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h2>Employee</h2>
+                                                <div class="clearfix"></div>
+                                            </div><!--/.c_title-->
+                                            <div class="c_content">
+                                                <div class="inner-addon right-addon margin-bottom-10">
+                                                  <i class="fa fa-search"></i>
+                                                  <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <select class="form-control margin-top-10">
                                                     <option>Robert Jones</option>
                                                     <option>2</option>
                                                     <option>3</option>
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <input type="text" class="form-control" placeholder="Search" />
-                                            </div>
-                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
-                                            <div class="pull-right">
-                                                <a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
-                                                <a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Contact</a>
+                                                <div class="col-md-6 margin-top-20">
+                                                    <div class="form-group form-horizontal">
+                                                        <label class="col-md-4 control-label" for="daterange-3">Birthdate</label>
+                                                        <div class="col-md-5">
+                                                            <div class="controls">
+                                                                <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 margin-top-20">
+                                                    <div class="form-group form-horizontal">
+                                                        <label class="col-md-4 control-label" for="daterange-3">Hire date</label>
+                                                        <div class="col-md-5">
+                                                            <div class="controls">
+                                                                <input type="text" class="form-control datepicker daterange text-center" value="09/22/1999">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/.c_content-->
+                                        </div><!--/.c_panel-->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h2>Employee Status</h2>
+                                                <div class="pull-right">
+                                                    <h5>Reference Number: 1827310</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
-                    </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-6">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+                                        <div class="c_content">
+                                            <div class="col-md-6">
+                                                <h4>Employee Roles</h4>
+                                                <label class="switch-input primary">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Manager
+                                                </label>
+                                                <label class="switch-input info">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Instructor
+                                                </label>
+                                                <label class="switch-input success">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Interviewer
+                                                </label>
+                                                <label class="switch-input warning">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> P.E.R.F.O.R.M Admin
+                                                </label>
+                                            </div>
+                                            <div class="col-md-offset-2 col-md-4">
+                                                    <h4>Active</h4>
 
+                                                    <div class="switch">
+                                                        <input id="form-toggle-3" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                        <label for="form-toggle-3" data-on="YES" data-off="NO"></label>
+                                                    </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="panel-title">Robert Jones</h4>
                                 </div>
-                                <div class="panel-body bg-silver">
-                                    <div class="panel-body">
-                                        <form class="form-horizontal" action="/" method="POST">
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div>
+
+                </div><!-- .row -->
+
+
+                <!--======== Transaction Summary Start ========-->
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="widget">
+                            <a href="/employee_profile">
+                                <div class="widget-header bg-asbestos">
+                                    <h3 class="fg-gray">ROBERT JONES</h3>
+
+                                    <div class="daterange daterange-text add-date-ranges pull-right" id="daterange-4" data-format="MMMM D, YYYY" data-start-date="February 19, 2015" data-end-date="March 19, 2015" style="margin-top: -24px;">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>February 19, 2015 - March 19, 2015</span>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Save</button>
+                                        </div>
+                                        <form class="form-horizontal">
                                             <fieldset>
 
 												<div class="form-group">
                                                     <label class="col-md-2 control-label">Last Name</label>
                                                     <div class="col-md-5">
-                                                        <input type="email" class="form-control" placeholder="Jones" />
+                                                        <input type="" class="form-control" placeholder="Jones" />
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label class="pull-right">AS OF DATE</label>
                                                     </div>
                                                 </div>
 
 												<div class="form-group">
 													<label class="col-md-2 control-label">First Name</label>
 													<div class="col-md-5">
-														<input type="email" class="form-control" placeholder="Robert" />
+														<input type="" class="form-control" placeholder="Robert" />
 													</div>
 												</div>
 
                                                 <div class="form-group">
                                                     <label class="col-md-2 control-label">Division</label>
                                                     <div class="col-md-5">
-                                                        <input type="email" class="form-control" placeholder="" />
+                                                        <input type="" class="form-control" placeholder="" />
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                    </div>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal1" data-toggle="modal" id="demo-theme" title="Click to View Division History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
@@ -133,11 +223,11 @@
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
                                                     </div>
-                                                    <div class="col-md-1">
-                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal2" data-toggle="modal" id="demo-theme" title="Click to View Department History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
@@ -152,11 +242,11 @@
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
                                                     </div>
-                                                    <div class="col-md-1">
-                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal3" data-toggle="modal" id="demo-theme" title="Click to View Job History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
@@ -171,11 +261,11 @@
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
                                                     </div>
-                                                    <div class="col-md-1">
-                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal4" data-toggle="modal" id="demo-theme" title="Click to View Manager History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
@@ -190,11 +280,11 @@
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
                                                     </div>
-                                                    <div class="col-md-1">
-                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal5" data-toggle="modal" id="demo-theme" title="Click to View Branch History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
@@ -209,156 +299,229 @@
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <input type="email" class="form-control" placeholder="06/15/15" />
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
                                                     </div>
-                                                    <div class="col-md-1">
-                                                        <a href="javascript:;" class="btn btn-lg btn-icon btn-square btn-default" data-click="panel-reload"><i class="fa fa-check-square-o"></i></a>
+                                                    <div class="col-md-1 page-tooltipster margin-top-7">
+                                                        <span href="#myModal6" data-toggle="modal" id="demo-theme" title="Click to View Schedule History"><i class="fa fa-chevron-right"></i></span>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label class="col-md-2 control-label">Source</label>
                                                     <div class="col-md-9">
-                                                        <textarea class="form-control" placeholder="Textarea" rows="5"></textarea>
+                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
                                                     </div>
                                                 </div>
 
                                             </fieldset>
                                         </form>
-                                    </div>
+
+                                    </div><!--/.col-md-8-->
+
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div><!--/.col-md-6-->
+
+                    <div class="col-md-6">
+
+                        <div class="widget">
+
+                            <a href="/employee_profile">
+                                <div class="widget-header bg-asbestos">
+                                    <h3 class="fg-gray">EMPLOYEE PROFILE</h3>
                                 </div>
+                            </a>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                        <!--TAB START-->
+                                        <div role="tabpanel">
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="tab1">
+                                                    <div class="row">
+
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal7" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-tachometer"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Performance Reviews</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-tachometer"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Performance Reviews</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                        <div class="col-md-4 col-sm-6 margin20">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal8" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Interview History</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Interview History</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal9" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-book"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Learning Experiences</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-book"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Learning Experiences</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <div class="col-md-4 col-sm-6 margin20">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal10" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-dollar"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Compensation History</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-dollar"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Compensation History</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                        <div class="col-md-4 col-sm-6 margin20">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal11" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-calendar"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Paid Time / Days Off</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-calendar"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Paid Time/ Days Off</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                        <div class="col-md-4 col-sm-6 margin20">
+                                                            <div class="hover-boxed-icon-content text-center" href="#myModal12" data-toggle="modal">
+                                                                <div class="content">
+                                                                    <div class="mask-top">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-cogs"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Miscellaneous Factors</h4>
+                                                                    </div>
+                                                                    <div class="mask-bottom">
+                                                                        <!-- Icon -->
+                                                                        <i class="fa fa-cogs"></i>
+                                                                        <!-- Title -->
+                                                                        <h4>Employee Miscellaneous Factors</h4>
+                                                                        <!-- Text -->
+                                                                        <p>Click to view more details</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--services col-->
+
+                                                    </div>
+
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="tab2">
+
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="tab3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--TAB END-->
+
+                                    </div><!--/.col-md-8-->
+
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div><!--/.col-md-6-->
+                </div><!--/.row-->
+                <!--======== Transaction Summary End ========-->
+
+
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+                                    <div class="col-md-4 pull-right">
+                                        <ul class="nav nav-pills nav-justified">
+                                            <li role="presentation" class="active"><a href="#nav-pills-1" role="tab" data-toggle="tab">Skills</a></li>
+                                            <li role="presentation"><a href="#nav-pills-2" role="tab" data-toggle="tab">Additional Info</a></li>
+                                        </ul>
+
+                                    </div>
+                                <h3 class="fg-gray">EMPLOYEE DETAILED INFORMATION</h3>
                             </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                            <div class="widget-content bg-white">
 
-                        <!-- begin col-6 -->
-                        <div class="col-md-6">
-                            <div class="panel panel-inverse">
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
-
-                                    </div>
-                                    <h4 class="panel-title">Employee Information</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-
-                                    <ul class="nav nav-tabs nav-justified">
-                                        <li class="active"><a href="#nav-1" data-toggle="tab">History</a></li>
-                                        <li><a href="#nav-2" data-toggle="tab">Address</a></li>
-                                        <li><a href="#nav-3" data-toggle="tab">Phone/Web</a></li>
-                                    </ul>
-                                    <div class="tab-content" id="nav-1">
-
-                                        <div class="row">
-                                            <br>
-                                            <br>
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-tachometer"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Performance Reviews</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-comment"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Inverview History</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-book"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Learning Experiences</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-money"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Compensation History</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-calendar"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Paid Time Off/ Days Out</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="javascript:;">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                            <div class="col-md-6 col-sm-6">
-                            					<div class="widget widget-stats bg-custom">
-                            						<div class="stats-icon"><i class="fa fa-cogs"></i></div>
-                            						<div class="stats-info">
-                            							<h4>Employee</h4>
-                            							<p>Miscellaneous Factors</p>
-                            						</div>
-                            						<div class="stats-link">
-                            							<a href="#modal-dialog-misc" data-toggle="modal">view <i class="fa fa-arrow-circle-o-right"></i></a>
-                            						</div>
-                            					</div>
-                            				</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end col-6 -->
-                    </div>
-                    <!-- end row -->
-					<!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
-
-                                    </div>
-                                    <h4 class="panel-title">More Information</h4>
-                                </div>
-                                <div class="panel-body">
+                                <div class="row">
                                     <div class="col-md-12">
 
-										<ul class="nav nav-pills">
-											<li class="active"><a href="#nav-pills-1" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-text-o"></i>&nbsp; Job Tasks</a></li>
-											<li><a href="#nav-pills-2" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-o"></i>&nbsp; Job Properties</a></li>
-										</ul>
 										<div class="tab-content">
 											<div class="tab-pane fade active in" id="nav-pills-1">
 
@@ -370,75 +533,90 @@
 												<!-- Start Skills Tab -->
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="default-tab-1">
-														<div class="pull-right">
-															<a href="#modal-dialog-skill" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Skill</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Skills</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#skill" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Skill</button>
+                                                        </div>
+                                                        <div class="c_content">
+
+                                                            <table id="example" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>NAME</th>
+                                                                        <th>DETAILS</th>
+                                                                        <th class="text-center">Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                    <tr>
+                                                                        <td>Employee Skills</td>
+                                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#skill" data-toggle="tab" class="btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+
+                                                              </table>
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="default-tab-2">
-														<div class="pull-right">
-															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Knowledge</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Knowledge</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#knowledge" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Knowledge</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example2" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DETAILS</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Knowledge</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#knowledge" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 													</div>
 													<div class="tab-pane fade" id="default-tab-3">
-														<div class="pull-right">
-															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Behavior</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Behavior</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#behavior" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Behavior</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example3" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DETAILS</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Behavior</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 													</div>
 		                                        </div>
@@ -456,125 +634,150 @@
 		                                        </ul>
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="tab-1">
-														<div class="pull-right">
-															<a href="#modal-dialog-contact" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Contact</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>PHONE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Contact</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#contact" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Contact</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example4" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>PHONE</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Contact</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#contact" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="tab-2">
-														<div class="pull-right">
-															<a href="#modal-dialog-achievements" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Achievements</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DATE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Achievement</td>
-		                                                            <td>07-16-16</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#achievements" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Achievements</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example5" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DATE</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Achievements</td>
+    		                                                            <td>07-16-16</td>
+                                                                        <td class="text-center"><a href="#achievements" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="tab-3">
-														<div class="pull-right">
-															<a href="#modal-dialog-priorjobs" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Prior Jobs</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-																	<th>COMPANY</th>
-		                                                            <th>START DATE</th>
-																	<th>END DATE</th>
-																	<th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Prior Jobs</td>
-		                                                            <td>Random Company</td>
-																	<td>05-12-16</td>
-																	<td>05-14-16</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#priorjobs" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Prior Jobs</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example6" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>COMPANY</th>
+    		                                                            <th>START DATE</th>
+                                                                        <th>END DATE</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Prior Jobs</td>
+    		                                                            <td>Random Company</td>
+                                                                        <td>05-12-16</td>
+                                                                        <td>05-14-16</td>
+                                                                        <td class="text-center"><a href="#priorjobs" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="tab-4">
-														<div class="pull-right">
-															<a href="#modal-dialog-learning" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Learning Activities</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>REFERENCE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Selling Fundementals</td>
-		                                                            <td>Sales 101</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#learning" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Learning Activities</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example7" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>REFERENCE</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Selling Fundementals</td>
+    		                                                            <td>Sales 101</td>
+                                                                        <td class="text-center"><a href="#learning" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="tab-5">
-														<div class="pull-right">
-															<a href="#modal-dialog-watchlists" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Watch Lists</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employees who have top performing potential</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#watchlists" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Watch Lists</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example8" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employees who have top performing potential</td>
+                                                                        <td class="text-center"><a href="#watchlists" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 
@@ -585,137 +788,752 @@
 										</div>
 
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                        <!-- end row -->
+                </div><!--/.row-->
+                <!--======== Weekly Summary End ========-->
+
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+
+        <!--===== Right sidebar nofications start ========-->
+
+        <aside>
+            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
+                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+                    <div id="right-sidebar-tab-content" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="skill">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Skill</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Skill</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="knowledge">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Knowledge</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Knowledge</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="behavior">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Behavior</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Behavior</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="contact">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Contact</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Contact</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Phone</label>
+                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                                <span class="help-inline">(999) 999-9999</span>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="achievements">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Achievement</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Achievement</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="priorjobs">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Prior Jobs</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Prior Job</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Company</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Start Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">End Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="learning">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Learning Activity</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Activity</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Reference</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="watchlists">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Employee Watch List</h2>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Employee Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                <div class="btn-bottom-right-sidebar-close">
+                    <span class="fa fa-times"></span>
                 </div>
+
             </div>
-			<!-- end page-header -->
+        </aside>
+        <!--===== Right sidebar nofications end ========-->
 
-		</div>
-		<!-- end #content -->
+    </section><!--/.container-->
 
-
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
-
-	{{ template "scripts.tmpl" . }}
-
-	<script>
-		$(document).ready(function() {
-			App.init();
-			TableManageResponsive.init();
-			$('table.display').DataTable();
-			$("#table tr").css('cursor', 'pointer');
-		});
-	</script>
-
-	<!-- Add Miscellaneous Factors Modal -->
-	<div class="modal fade" id="modal-dialog-misc">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Miscellaneous Factors</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="tab-pane fade active in">
-
-						<ul class="nav nav-tabs nav-justified">
-							<li class="active"><a href="#tab1" data-toggle="tab">Factor Involing A Single Employee</a></li>
-							<li class=""><a href="#tab2" data-toggle="tab">Factor Involving All Employees</a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade active in" id="tab1">
-
-								<div class="row">
-									<label class="col-md-2 control-label">Employee:</label>
-									<div class="col-md-10">
-										<select class="form-control">
-											<option>Robert Jones</option>
-											<option></option>
-											<option></option>
-										</select>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Factor:</label>
-										<div class="col-md-10">
-											<textarea class="form-control" placeholder="" rows="4"></textarea>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Date Began:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-										<label class="col-md-2 control-label">Date Ended:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-							<div class="tab-pane fade" id="tab2">
-
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Factor:</label>
-										<div class="col-md-10">
-											<textarea class="form-control" placeholder="" rows="4"></textarea>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Date Began:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-										<label class="col-md-2 control-label">Date Ended:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Notes:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Miscellaneous Factors Modal -->
+    {{ template "scripts.tmpl" . }}
 
 </body>
+
 </html>
+
+<!--===== Footer End ========-->
+
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal1" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Division</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Division</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lead Sales Executive</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a></td>
+
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal2" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Department</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Technology</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal3" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Job</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Job</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lead Sales Executive</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal4" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Manager</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Manager</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sally Joe Smith</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal5" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Branch</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>New York City</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal6" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Schedule</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Schedule</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saturday-Sunday 2:00AM - 5:30pm</td>
+                            <td>05-14-16</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal7" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Performance</strong> Reviews</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example11" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Performance Reivew</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal8" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Interview</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example12" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Interviewer</th>
+                            <th>Purpose</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sally Joe Smith</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal9" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Learning Experience</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example12" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Experience</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal10" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Compensation</strong> History</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example13" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$18.45 per hour</td>
+                            <td>07-12-16</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal11" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <div class="pull-right">
+              <h3>Number Of PTO Days - 14</h3>
+              <h6>Number of PTO Days Remaining - 3</h6>
+          </div>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Paid Time/ Days Off</strong> History</h4>
+        </div>
+        <div class="modal-body">
+                <table id="example14" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Date Off</th>
+                            <th>Reason</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05-14-16</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->
+<!--****** Modal1 Start ******-->
+  <div class="modal" id="myModal12" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h3 class="text-center">Robert Jones</h3>
+          <h4 class="modal-title"><strong>Miscellaneous</strong> Factors</h4>
+        </div>
+        <div class="modal-body">
+
+                <table id="example15" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Date</th>
+                            <th>Noes</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>07-12-16</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                        </tr>
+                    </tbody>
+
+                  </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--****** Modal1 End ******-->

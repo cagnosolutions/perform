@@ -1,0 +1,685 @@
+/*
+
+*Project Name: Thema Admin Bootstrap Template;
+*Author: Lancecoder;
+*Website: lancecoder.com;
+
+Content
+ - Header Section
+ - Left Sidebar Section
+ - Content Section
+ - Footer Section
+ - Progress Bar
+ - Small box
+ - Hover Plugin
+ - Daterange picker
+ - Panels
+ - Todo lists
+ - Mailbox
+ - Datepicker
+ - Jquery Multi Select
+ - Typeahead
+ - Select2
+ - Gallery Media
+ - Timeline
+ - Boxed Content
+ - Hover Boxed Icon Content
+ - Owl Carousel
+ - Profile
+ - Users
+ - Projects
+ - Ecommerce
+ - Contact Form
+ - Widgets
+ - People Directory
+ - Header top menus sub items
+*/
+
+#custom-scheme ::selection {
+    background:#5e8b9d;
+    color:#fff;
+}
+#custom-scheme ::-moz-selection {
+    background:#5e8b9d;
+    color:#fff;
+}
+
+/*** Header Section ***/
+
+    /** Start of tap nav menu **/
+
+        #custom-scheme .top-nav .dropdown-menu:after {
+            border-bottom: 10px solid #5e8b9d;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            content: "";
+            display: inline-block;
+            right: 6%;
+            position: absolute;
+            top: -10px;
+        }
+
+        #custom-scheme .top-nav .nav>li>a:hover,#custom-scheme .nav>li>a:focus {
+            background-color: white;
+            color: #5e8b9d;
+        }
+    /** End of tap nav menu **/
+
+
+    /** Start of sidebar toggle **/
+        #custom-scheme .sidebar-toggle-box {
+            float:left;
+            margin-top:13px;
+            margin-left:15px !important;
+            background:#5e8b9d !important;
+            border-radius:2%;
+            -webkit-border-radius:2%;
+            width:32px;
+            height:32px;
+            position:absolute;
+            right:-15px;
+            -webkit-transition: all 0.7s ease;
+            transition: all 0.7s ease;
+            -o-transition: all 0.7s ease;
+            border-radius: 100%;
+        }
+
+        #custom-scheme .sidebar-toggle-box .fa-bars {
+            cursor:pointer;
+            display:inline-block;
+            font-size:15px;
+            padding:8px 8px 8px 9px;
+            color:white;
+        }
+        #custom-scheme .sidebar-toggle-box:hover {
+            background:#2980B9 !important;
+            -webkit-transform:scale(1.3);
+            transform:scale(1.3);
+        }
+
+        /*** Right Sidebar Toggle ***/
+        #custom-scheme .right-sidebar-toggle-box {
+            float:left;
+            margin-top:13px;
+            margin-left:15px !important;
+            background:#5e8b9d !important;
+            border-radius:2%;
+            -webkit-border-radius:2%;
+            width:32px;
+            height:32px;
+            position:absolute;
+            right:-15px;
+            -webkit-transition: all 0.7s ease;
+            transition: all 0.7s ease;
+            -o-transition: all 0.7s ease;
+            border-radius: 100%;
+        }
+
+        #custom-scheme .right-sidebar-toggle-box .fa-bars {
+            cursor:pointer;
+            display:inline-block;
+            font-size:15px;
+            padding:8px 8px 8px 9px;
+            color:white;
+        }
+        #custom-scheme .right-sidebar-toggle-box:hover {
+            background:#2980B9 !important;
+            -webkit-transform:scale(1.3);
+            transform:scale(1.3);
+        }
+
+
+    /** Start of sidebar toggle **/
+
+/*** Left Sidebar Section ***/
+
+    /** Start of Profile Sidebar **/
+        #custom-scheme ul.sidebar-menu li.sidebar-profile {
+            background-color: #3A434D;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            border-bottom: 10px solid #5e8b9d !important;
+        }
+
+        #custom-scheme.theme-sidebar-2 ul.sidebar-menu li.sidebar-profile {
+            background-color: #3e313c;
+            border-bottom: 10px solid #83697F !important;
+        }
+
+        #custom-scheme ul.sidebar-menu li.sidebar-profile .name {
+            margin-top: 10px;
+        }
+
+        #custom-scheme ul.sidebar-menu li.sidebar-profile .image img {
+            border-radius: 60%;
+        }
+
+        #custom-scheme ul.sidebar-menu li.sidebar-profile .status {
+            margin-top: -10px;
+            font-size: 7;
+        }
+
+        #custom-scheme ul.sidebar-menu li.sidebar-profile .status small i {
+            color:  #76CF1C;
+        }
+    /** End of Profile Sidebar **/
+
+
+
+    #custom-scheme ul.sidebar-menu li a.active span.icon-sidebar:first-child,
+    #custom-scheme ul.sidebar-menu li a:hover span.icon-sidebar:first-child,
+    #custom-scheme ul.sidebar-menu li a:focus span.icon-sidebar:first-child {
+
+        background:#5e8b9d !important;
+        color:#ffffff;
+        padding: 5px;
+        -webkit-transition: all 0.4s ease-in-out 0.1s;
+        -moz-transition: all 0.4s ease-in-out 0.1s;
+        -o-transition: all 0.4s ease-in-out 0.1s;
+        -ms-transition:all 0.4s ease-in-out 0.1;
+        transition: all 0.4s ease-in-out 0.1s;
+        -webkit-transform:scale(.8);
+        transform:scale(.8);
+        border-radius: 100%;
+        box-shadow: 0 1px 4px rgba(0,0,0,-0.84),0 1px 4px rgba(0,0,0,.20);
+
+    }
+
+
+
+/*** Content Section ***/
+
+
+/*** Footer Section ***/
+
+/*** Small Box ***/
+    #custom-scheme .small-box {
+        color: #878d93;
+    }
+
+    #custom-scheme .small-box:hover {
+        text-decoration: none;
+        color: #b8babb;
+    }
+
+    #custom-scheme .small-box .small-box-footer {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        display: block;
+        z-index: 10;
+        background: #5e8b9d;
+        text-decoration: none;
+    }
+
+    #custom-scheme .small-box .small-box-footer:hover {
+        background: #5e8b9d;
+        text-decoration: none;
+    }
+
+
+/*** Hover Plugin ***/
+    /** Hover Plugin for small box **/
+    #custom-scheme .small-box .hvr-bounce-to-right:before {
+        background: #2980B9 !important;
+    }
+
+    #custom-scheme .hvr-underline-from-center-global:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: #5e8b9d !important;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+
+/***  Skin Bacground Color Level  ***/
+    #custom-scheme .bg-color-1 {
+        background: #86F7B6 !important;
+        color: #fff;
+    }
+
+    #custom-scheme .bg-color-2  {
+        background: #77F2AB !important;
+        color: #fff;
+    }
+
+    #custom-scheme .bg-color-3  {
+        background: #61E89B !important;
+        color: #fff;
+    }
+
+    #custom-scheme .bg-color-4  {
+        background: #4EDE8B !important;
+        color: #fff;
+    }
+
+    #custom-scheme .bg-color-5  {
+        background: #5e8b9d !important;
+        color: #fff;
+    }
+/***  Skin Bacground Color Level  ***/
+
+
+/*********** Daterange picker **********/
+
+#custom-scheme .daterangepicker .ranges li {
+    font-size: 13px;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    color: #536A7F;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-transition:all 0.8s ease;
+    -moz-transition:all 0.8s ease;
+    -o-transition:all 0.8s ease;
+    -ms-transition:all 0.8s ease;
+    transition:all 0.8s ease;
+}
+
+
+#custom-scheme .daterangepicker .ranges li.active,
+#custom-scheme .daterangepicker .ranges li:hover {
+    background: #2980B9;
+    border: 1px solid #2980B9;
+    color: #fff;
+}
+
+#custom-scheme .daterangepicker td.active,
+#custom-scheme .daterangepicker td.active:hover {
+    background-color: #2980B9;
+    color: #fff;
+}
+
+#custom-scheme .daterangepicker td.available:hover,
+#custom-scheme .daterangepicker th.available:hover {
+    background: #2980B9;
+    color: #ffffff;
+}
+
+#custom-scheme .range_inputs .applyBtn{
+    background-color: #5e8b9d;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 1px solid #5e8b9d;
+    -webkit-transition:all 0.8s ease;
+    -moz-transition:all 0.8s ease;
+    -o-transition:all 0.8s ease;
+    -ms-transition:all 0.8s ease;
+    transition:all 0.8s ease;
+}
+
+#custom-scheme .range_inputs .applyBtn:hover,
+#custom-scheme .range_inputs .applyBtn:focus{
+    background-color: #2980B9;
+}
+
+#custom-scheme .range_inputs .cancelBtn{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition:all 0.8s ease;
+    -moz-transition:all 0.8s ease;
+    -o-transition:all 0.8s ease;
+    -ms-transition:all 0.8s ease;
+    transition:all 0.8s ease;
+}
+
+
+
+/*********** Panels **********/
+#custom-scheme .c_panel .line-tabs.bottom .active a {
+    border-bottom: 1px solid #2980B9;
+    padding-top:10px;
+    padding-bottom:11px;
+}
+
+
+/*********** Todo Lists **********/
+
+
+
+/***************** Datepicker Section **************/
+    #custom-scheme .datepicker table tr td.active:hover,
+    #custom-scheme .datepicker table tr td.active:hover:hover,
+    #custom-scheme .datepicker table tr td.active.disabled:hover,
+    #custom-scheme .datepicker table tr td.active.disabled:hover:hover,
+    #custom-scheme .datepicker table tr td.active:focus,
+    #custom-scheme .datepicker table tr td.active:hover:focus,
+    #custom-scheme .datepicker table tr td.active.disabled:focus,
+    #custom-scheme .datepicker table tr td.active.disabled:hover:focus,
+    #custom-scheme .datepicker table tr td.active:active,
+    #custom-scheme .datepicker table tr td.active:hover:active,
+    #custom-scheme .datepicker table tr td.active.disabled:active,
+    #custom-scheme .datepicker table tr td.active.disabled:hover:active,
+    #custom-scheme .datepicker table tr td.active.active,
+    #custom-scheme .datepicker table tr td.active:hover.active,
+    #custom-scheme .datepicker table tr td.active.disabled.active,
+    #custom-scheme .datepicker table tr td.active.disabled:hover.active,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td.active,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td.active:hover,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td.active.disabled,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+        color: #ffffff;
+        background-color: #5e8b9d;
+        border: 0;
+    }
+
+    #custom-scheme .datepicker table tr td span.active:hover,
+    #custom-scheme .datepicker table tr td span.active:hover:hover,
+    #custom-scheme .datepicker table tr td span.active.disabled:hover,
+    #custom-scheme .datepicker table tr td span.active.disabled:hover:hover,
+    #custom-scheme .datepicker table tr td span.active:focus,
+    #custom-scheme .datepicker table tr td span.active:hover:focus,
+    #custom-scheme .datepicker table tr td span.active.disabled:focus,
+    #custom-scheme .datepicker table tr td span.active.disabled:hover:focus,
+    #custom-scheme .datepicker table tr td span.active:active,
+    #custom-scheme .datepicker table tr td span.active:hover:active,
+    #custom-scheme .datepicker table tr td span.active.disabled:active,
+    #custom-scheme .datepicker table tr td span.active.disabled:hover:active,
+    #custom-scheme .datepicker table tr td span.active.active,
+    #custom-scheme .datepicker table tr td span.active:hover.active,
+    #custom-scheme .datepicker table tr td span.active.disabled.active,
+    #custom-scheme .datepicker table tr td span.active.disabled:hover.active,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td span.active,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td span.active:hover,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+    #custom-scheme .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+        color: #ffffff;
+        background-color: #5e8b9d;
+        border: 0;
+    }
+
+
+/********* jQuery Multi Select ************/
+    #custom-scheme .ms-container .ms-selectable li.ms-hover,
+    #custom-scheme .ms-container .ms-selection li.ms-hover {
+        background-color: #5e8b9d;
+    }
+
+    #custom-scheme .ms-container .ms-list.ms-focus{
+        border-color: #5e8b9d;
+    }
+
+
+/********* Typeahead ************/
+    #custom-scheme .tt-suggestion.tt-cursor {
+      color: #fff;
+      background-color: #5e8b9d;
+      cursor: hand;
+      cursor: pointer;
+    }
+
+
+/******* Select2 ********/
+    #custom-scheme .select2-drop-active {
+        border: 1px solid #ddd;
+    }
+
+    #custom-scheme .select2-drop.select2-drop-above.select2-drop-active {
+        border: 1px solid #ddd;
+    }
+
+    #custom-scheme .select2-container-active .select2-choice,
+    #custom-scheme .select2-container-active .select2-choices {
+        border: 1px solid #ddd;
+    }
+
+    #custom-scheme .select2-dropdown-open.select2-drop-above .select2-choice,
+    #custom-scheme .select2-dropdown-open.select2-drop-above .select2-choices {
+        border: 1px solid #ddd;
+    }
+
+    #custom-scheme .select2-results .select2-highlighted {
+        background: #ddd;
+        -webkit-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -o-transition:all 0.83 ease;
+        -ms-transition:all 0.3s ease;
+        transition:all 0.3s ease;
+    }
+
+    #custom-scheme .select2-container-multi.select2-container-active .select2-choices {
+        border: 1px solid #ddd;
+    }
+
+/******* Media Gallery ********/
+    #custom-scheme .media-filter li a:hover, .media-filter li a:focus{
+        background: #5e8b9d;
+        color: #fff;
+    }
+
+/******* Timeline ********/
+    #custom-scheme .timeline-1 > li > .timeline-badge i:hover {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .timeline-1 .timeline-footer .likes:hover i {
+        color: #5e8b9d;
+    }
+
+
+/******* Boxed Content ********/
+    #custom-scheme .boxed-content>i {
+        font-size: 3em;
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .boxed-content.left-boxed-icon i {
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+        background: #5e8b9d;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+    }
+
+ /******* Hover Boxed Icon Content **********/
+    #custom-scheme .hover-boxed-icon-content i {
+        color: #5e8b9d;
+    }
+
+
+/*********** Owl Carousel **************/
+    #custom-scheme .owl-btn:hover {
+      color: #fff;
+      background: #5e8b9d;
+    }
+
+/********** Profile Sidebar *************/
+    #custom-scheme .profile-page .profile-sidebar > li.active,
+    #custom-scheme .profile-page .profile-sidebar > li.active:hover {
+      background: #5e8b9d;
+    }
+
+    #custom-scheme .profile-page .profile-sidebar > li.active:hover a {
+        color: #fff;
+    }
+
+    #custom-scheme .profile-page .profile-sidebar > li a:hover {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .profile-page .date-formats {
+        background: #5e8b9d;
+    }
+
+    #custom-scheme .profile-page .profile-post:hover span.profile-post-numb {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .profile-page .name-location span i {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .profile-page .profile-about .social i {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .projects .project-box .project-edited span a {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .projects .project-box .project-status {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .projects .project-box .project-status i{
+        color: #5e8b9d;
+    }
+
+/********************* Users ************************/
+    #custom-scheme .users  .caption .user-task-info i {
+        color: #5e8b9d;
+    }
+
+/******************** Projects *****************/
+    #custom-scheme .all-projects .sidebar > li.active,
+    #custom-scheme .all-projects .sidebar > li.active:hover {
+      background: #5e8b9d;
+    }
+
+    #custom-scheme .view-project .project-details .add-assignee:hover {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .view-project .project-tag-list li a:hover {
+        background: #5e8b9d;
+        border-color: #fff;
+        color:#fff;
+    }
+
+    #custom-scheme .view-project .sidebar li a:hover {
+        color: #5e8b9d;
+    }
+
+/******************** Full Calendar *****************/
+    #custom-scheme .fc .fc-button-group .fc-prev-button {
+        background: #5e8b9d !important;
+        color: #ffffff;
+    }
+
+    #custom-scheme .fc .fc-button-group .fc-prev-button:hover {
+        background: #2980B9 !important;
+        color: #ffffff !important;
+    }
+
+    #custom-scheme .fc .fc-button-group .fc-next-button {
+        background: #5e8b9d !important;
+        color: #ffffff !important;
+    }
+
+    #custom-scheme .fc .fc-button-group .fc-next-button:hover {
+        background: #2980B9 !important;
+        color: #ffffff !important;
+    }
+
+    #custom-scheme .fc-toolbar .fc-state-active {
+        background: #5e8b9d !important;
+        color: #ffffff !important;
+    }
+
+
+    /***Forum Section ***/
+    #custom-scheme .page-forum .attachement-list ul li .attachment-thumb a {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .page-forum .attachement-list ul li .attachment-thumb a:hover {
+        background-color: #5e8b9d;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        color: #fff;
+    }
+
+    #custom-scheme .page-forum .attachement-list a:hover,
+    #custom-scheme .page-forum .attachement-list a:focus {
+        text-decoration: none;
+        color: #5e8b9d;
+    }
+
+    /***Drop Section ***/
+    #custom-scheme .dropcap {
+        background: #5e8b9d !important;
+    }
+
+    /*** Teams ***/
+    #custom-scheme .team-1 small {
+        color: #5e8b9d;
+    }
+
+
+    /**** 404 Page ****/
+    #custom-scheme .error_page em {
+        color: #5e8b9d;
+    }
+
+    /***** eCommerce ******/
+    #custom-scheme .page-ecommerce .ecommerce-content .ecommerce-slider .prices .present-price {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .page-ecommerce #ecommerce-view .caption .item-price {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .page-ecommerce .sidebar .display-types #ecommerce-grid-view.active,
+    #custom-scheme .page-ecommerce .sidebar .display-types #ecommerce-list-view.active {
+        color: #5e8b9d;
+    }
+
+    #custom-scheme .page-ecommerce .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+        background: #5e8b9d;
+        opacity: 1;
+        text-decoration: none;
+    }
+
+    /** Remove Cart **/
+    #custom-scheme .page-ecommerce .btn-remove-cart:hover {
+        color: #5e8b9d
+    }
+
+    /** Product Envoice **/
+    #custom-scheme .page-ecommerce .top-header-envoice h2 {
+        color: #5e8b9d
+    }
+
+    /***** Contact Form ******/
+    #custom-scheme .page-contact-form .contact-info li:hover i.fa {
+        color: #5e8b9d
+    }
+
+
+    /***** Widgets Todo List ******/
+
+
+
+    /***** People Directory ******/
+    #custom-scheme .page-people-directory .contact-group .fa:before {
+        color: #5e8b9d;
+    }
+
+
+
+    /***** Header top menus sub items ******/
+    #custom-scheme .top-nav .navbar-nav .open .dropdown-menu {
+        border-top: 2px solid #5e8b9d;
+    }

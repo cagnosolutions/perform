@@ -17,13 +17,17 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_information_overview, employee_profile, employee_profile_overview, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview)
+	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
-	log.Fatal(http.ListenAndServe(":8088", mux))
+	log.Fatal(http.ListenAndServe(":9999", mux))
 }
 
-var login_page = web.Route{"GET", "/login_page", func(w http.ResponseWriter, r *http.Request) {
+var index = web.Route{"GET", "/", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "index.tmpl", web.Model{})
+}}
+
+var login_page = web.Route{"GET", "/login", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "login_page.tmpl", web.Model{})
 	return
 }}
@@ -50,8 +54,8 @@ var employee_information = web.Route{"GET", "/employee_information", func(w http
 	return
 }}
 
-var employee_information_overview = web.Route{"GET", "/employee_information_overview", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "employee_information_overview.tmpl", web.Model{
+var employee_overview = web.Route{"GET", "/employee_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "employee_overview.tmpl", web.Model{
 		"page":    "employeeinformation",
 		"subpage": "employeeinformation",
 	})
@@ -60,14 +64,6 @@ var employee_information_overview = web.Route{"GET", "/employee_information_over
 
 var employee_profile = web.Route{"GET", "/employee_profile", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "employee_profile.tmpl", web.Model{
-		"page":    "employeeinformation",
-		"subpage": "employeeprofile",
-	})
-	return
-}}
-
-var employee_profile_overview = web.Route{"GET", "/employee_profile_overview", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "employee_profile_overview.tmpl", web.Model{
 		"page":    "employeeinformation",
 		"subpage": "employeeprofile",
 	})
@@ -104,7 +100,7 @@ var business_results_overview = web.Route{"GET", "/business_results_overview", f
 }}
 
 var register_page = web.Route{"GET", "/register", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "registerpage.tmpl", web.Model{})
+	tmpl.Render(w, r, "register_page.tmpl", web.Model{})
 	return
 }}
 
