@@ -4274,7 +4274,7 @@ RIGHT SIDEBAR SECTION
         list-style: none;
         padding-left: 10px;
         padding-right: 10px;
-        height: 513px;
+        /*height: 513px;*/
     }
 
     #right-sidebar #right-sidebar-tab-content .right-sidebar-list li {

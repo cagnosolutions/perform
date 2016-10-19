@@ -17,14 +17,20 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index)
+	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":9999", mux))
 }
 
+var course_registrations = web.Route{"GET", "/course_registrations", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "course_registrations.tmpl", web.Model{})
+	return
+}}
+
 var index = web.Route{"GET", "/", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "index.tmpl", web.Model{})
+	return
 }}
 
 var login_page = web.Route{"GET", "/login", func(w http.ResponseWriter, r *http.Request) {
