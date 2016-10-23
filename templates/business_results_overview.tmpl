@@ -1,158 +1,121 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Business_Results</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Job Overview</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-		{{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-building"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Business</h4>
-        							<p class="f-s-20 f-w-400">Results</p>
-        						</div>
-								<div class="stats-link">
-                                    <a href="/businessresultsoverview" class=""><span class="f-s-18">View All Business Results</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Business Results</h4>
-                                </div>
-                                <div id="table" class="panel-body">
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/business_results" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Buisiness Result</a>
+                        </div>
+                        <h2>Buisiness Results</h2>
+                        <small>A list of buisiness results and company goals</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class="active"><a href="/employee_overview">Company Information</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+
+                                <h3 class="fg-gray">Buisiness Results</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
                                     <div class="col-md-12">
-                                        <div class="panel-body bg-white">
 
-    										<div class="pull-right">
-    											<a href="/businessresults" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Business Result</a>
-    										</div>
-    										<br>
-                                            <div class="panel-body">
-                                                <table class="display table table-hover table-bordered nowrap" width="100%">
+                                        <div class="tab-pane fade active in" id="default-tab-1">
+
+                                            <div class="c_content">
+
+                                                <table id="example" class="table table-bordered table-hover" style="border-spacing:0px; width:100%">
+
                                                     <thead>
                                                         <tr>
                                                             <th>NAME</th>
                                                             <th>DETAILS</th>
-                                                            <th></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr id="click">
                                                             <td>Establish Air Product</td>
                                                             <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
-                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
                                                         </tr>
                                                         <tr id="click">
                                                             <td>Establish Brokerage Product</td>
                                                             <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
-                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
                                                         </tr>
                                                     </tbody>
+
                                                 </table>
-                                            </div>
+                                            </div><!--/.c_content-->
 
                                         </div>
 
-                            		</div>
-                                </div>
+                                    </div>
+                                </div><!--/row-->
 
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                        <!-- end row -->
-                </div>
-            </div>
-			<!-- end page-header -->
-
-		</div>
-		<!-- end #content -->
+                </div><!--/.row-->
 
 
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
+            </section>
 
-	{{ template "scripts.tmpl" . }}
+        </section>
+        <!--======== Main Content End ========-->
 
-	<script>
-        $('tr#click').click(function() {
-            window.location.href = '/business_results'
-        });
-        // $('td#delete').click(function() {
-        //     swal({
-        //         title: 'Are you sure?',
-        //         text: "You won't be able to delete this!",
-        //         type: 'warning',
-        //         showCancelButton: true,
-        //         confirmButtonColor: '#3085d6',
-        //         cancelButtonColor: '#d33',
-        //         confirmButtonText: 'Delete',
-        //         cancelButtonText: 'Cancel!',
-        //         confirmButtonClass: 'btn btn-custom',
-        //         cancelButtonClass: 'btn btn-danger',
-        //         buttonsStyling: true
-        //     }).then(function() {
-        //         swal(
-        //             'Deleted!',
-        //             'Your file has been deleted.',
-        //             'success'
-        //         );
-        //     }, function(dismiss) {
-        //         // dismiss can be 'cancel', 'overlay',
-        //         // 'close', and 'timer'
-        //         if (dismiss === 'close') {
-        //             swal(
-        //                 'Cancelled',
-        //                 'Your imaginary file is safe :)',
-        //                 'error'
-        //             );
-        //         }
-        //     })
-        // });
-		$(document).ready(function() {
-			App.init();
-            TableManageResponsive.init();
-            $('table.display').DataTable();
-            $("#table tr").css('cursor', 'pointer');
-		});
-		FormEditable.init();
-	</script>
+    </section><!--/.container-->
+
+    {{ template "scripts.tmpl" . }}
+
+    <script type="text/javascript">
+    $('tr#click').click(function() {
+        window.location.href = '/business_results'
+    });
+    </script>
+
 </body>
+
 </html>

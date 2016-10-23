@@ -1,229 +1,227 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Business_Results</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Company Information</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-		{{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-building"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Business</h4>
-        							<p class="f-s-20 f-w-400">Results</p>
-        						</div>
-								<div class="stats-link">
-                                    <a href="/business_results_overview" class=""><span class="f-s-18">View All Business Results</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Results List</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <div class="col-md-4">
-                                                <select class="form-control">
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/business_results" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Buisiness Result</a>
+                        </div>
+                        <h2>Buisiness Results</h2>
+                        <small>A list of buisiness results and company goals</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class=""><a href="/employee_overview">Company Information</a></li>
+                                <li class="active"><a href="/employee_information">Buisiness Results</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h2>Company Business Results</h2>
+                                                <div class="clearfix"></div>
+                                            </div><!--/.c_title-->
+                                            <div class="c_content">
+                                                <div class="inner-addon right-addon margin-bottom-10">
+                                                  <i class="fa fa-search"></i>
+                                                  <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <select class="form-control margin-top-10">
                                                     <option>Establish Mid-Atlantic States Region</option>
                                                     <option>Establish Air Product</option>
                                                     <option>Establish Ocean Product</option>
                                                     <option>Establish European Region</option>
                                                     <option>Establish Asian Region</option>
                                                 </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <input type="text" class="form-control" placeholder="Search" />
-                                            </div>
-                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
-                                            <div class="pull-right">
-												<a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Business Result</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
-                    </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
+                                            </div><!--/.c_content-->
+                                        </div><!--/.c_panel-->
                                     </div>
-                                    <h4 class="panel-title">Business Results</h4>
+
                                 </div>
-                                <div class="panel-body bg-silver">
-                                    <div class="panel-body">
-                                        <form class="form-horizontal" action="/" method="POST">
-											<div class="pull-right">
-												<a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
-											</div>
 
-                                            <h3 id="username" class="f-w-700">Establish Mid-Atlantic States Region</h3>
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
 
+                    </div>
+
+                </div><!-- .row -->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+
+                                <h3 class="fg-gray">Establish Mid-Atlantic States Region</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <form class="form-horizontal margin-top-25">
                                             <fieldset>
-												<legend class="f-w-700"></legend>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="col-md-1 control-label">Name:</label>
-                                                        <div class="col-md-10">
-                                                            <input type="text" class="form-control" placeholder="Establish Mid-Atlantic States Region" />
-                                                        </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Name:</label>
+                                                    <div class="col-md-8">
+                                                        <input type="" class="form-control" placeholder="" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="col-md-1 control-label">Details:</label>
-                                                        <div class="col-md-10">
-                                                            <textarea class="form-control" placeholder="Establish a minimum of four branches in the mid-atlantic states, excluding Maryland" rows="8"></textarea>
-                                                        </div>
+
+                                            </fieldset>
+                                        </form>
+                                        <form class="form-horizontal">
+                                            <fieldset>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Details:</label>
+                                                    <div class="col-md-8">
+                                                        <textarea class="form-control textarea-expandable"></textarea>
+
                                                     </div>
                                                 </div>
+
                                             </fieldset>
                                         </form>
 
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-12 -->
+
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+                </div><!--/.row-->
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
 
-                                    </div>
-                                    <h4 class="panel-title">Performance Measurments</h4>
-                                </div>
-                                <div id="table" class="panel-body">
+                        <div class="widget">
+                            <div class="widget-header bg-asbestos">
+
+                                <h3 class="fg-gray">PERFORMANCE MEASUREMENTS</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div id="table" class="row">
                                     <div class="col-md-12">
-                                        <div class="panel-body bg-white">
 
-    										<div class="pull-right">
-    											<a href="#modal-dialog-tasks" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Performance Measurements</a>
-    										</div>
-    										<br>
-                                            <div class="panel-body">
-                                                <table class="display table table-hover table-bordered nowrap" width="100%">
-                                                    <thead>
+                                        <div class="pull-right">
+                                            <button href="#measurement" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Performance Measurement</button>
+                                        </div>
+                                        <div class="c_content">
+
+                                            <table id="example" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                <thead>
                                                         <tr>
                                                             <th>NAME</th>
                                                             <th>DETAILS</th>
-                                                            <th></th>
+                                                            <th class="text-center">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr id="click">
                                                             <td>Customer Product</td>
                                                             <td>A listing of the individual products purchased by a single company</td>
-                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+                                                            <td class="text-center"><a href="#measurement" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
                                                         </tr>
                                                     </tbody>
-                                                </table>
-                                            </div>
-
+                                            </table>
                                         </div>
 
-                            		</div>
-                                </div>
-                                <div id="measurements" class="panel-body hide">
+                                    </div>
+                                </div><!--/row-->
+                                <div id="info" class="row hide">
                                     <div class="col-md-12">
-                                        <div class="panel-body bg-white">
 
-                                            <div class="pull-right">
-                                                <a href="#modal-dialog-tasks" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Task</a>
-                                            </div>
-                                            <div class="text-center">
-                                                <h3>Job Tasks</h3>
-                                            </div>
+                                        <div class="pull-right">
+                                            <button href="#task" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Task</button>
+                                        </div>
+                                        <div class="c_content">
 
                                             <div class="col-md-4">
 
                                                 <div class="row">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Measurement</label>
-                                                        <div class="col-md-9">
-                                                            <select class="form-control">
-                                                                <option>Customer Product</option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                            </select>
-                                                        </div>
+                                                        <label for="measure">Measurement:</label>
+                                                        <select class="form-control measure">
+                                                            <option>Customer Product</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <br>
                                                 <div class="row">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Utilization:</label>
-                                                        <div class="col-md-9">
-                                                            <textarea class="form-control" placeholder="Establish a minimum of four branches in the mid-atlantic states, excluding Maryland" rows="8"></textarea>
-                                                        </div>
+                                                        <label for="textarea-expandable">Utilization:</label>
+                                                        <textarea class="form-control textarea-expandable">Establish a minimum of four branches in the mid-atlantic states, excluding Maryland</textarea>
                                                     </div>
                                                 </div>
                                                 <br>
                                                 <div class="row">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label">Notes:</label>
-                                                        <div class="col-md-9">
-                                                            <textarea class="form-control" placeholder="Establish a minimum of four branches in the mid-atlantic states, excluding Maryland" rows="4"></textarea>
-                                                        </div>
+                                                        <label for="textarea-expandable">Notes:</label>
+                                                        <textarea class="form-control textarea-expandable">Establish a minimum of four branches in the mid-atlantic states, excluding Maryland</textarea>
                                                     </div>
                                                 </div>
-
                                                 <br>
                                                 <div class="row">
                                                     <div class="text-center">
-                                                        <a id="close" class="btn btn-danger btn-md m-r-5 m-b-5"><i class="fa fa-times"></i> Cancel</a>
-                                                        <a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Save</a>
+                                                        <a id="close" class="btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse"><i class="fa fa-times"></i> Cancel</a>
+                                                        <a href="#" class="btn btn-sm btn-wet-asphalt btn-raised rippler rippler-inverse"><i class="fa fa-plus"></i> Save</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,135 +229,130 @@
                                             <div class="col-md-8">
                                                 <div class="panel-body">
 
-                                                    <table class="display table table-striped table-bordered nowrap" width="100%">
+                                                    <table id="example2" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
                                                         <thead>
                                                             <tr>
-                                                                <th>NAME</th>
+                                                                <th>JOB TASK</th>
                                                                 <th>JOB INFO NAME</th>
-                                                                <th></th>
+                                                                <th class="text-center">Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td>Coach Employees for Job tasks performance improvements</td>
                                                                 <td>Corporate Trainer</td>
-                                                                <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
+                                                                <td class="text-center"><a href="#task" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                        <!-- end row -->
+                </div><!--/.row-->
+                <!--======== Weekly Summary End ========-->
+
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+
+        <!--===== Right sidebar nofications start ========-->
+
+        <aside>
+            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
+                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+                    <div id="right-sidebar-tab-content" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="measurement">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Buisiness Results</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="task">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center">Add Result Task</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Job Information Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                <div class="btn-bottom-right-sidebar-close">
+                    <span class="fa fa-times"></span>
                 </div>
+
             </div>
-			<!-- end page-header -->
+        </aside>
+        <!--===== Right sidebar nofications end ========-->
 
-		</div>
-		<!-- end #content -->
+    </section><!--/.container-->
 
+    {{ template "scripts.tmpl" . }}
 
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
+    <script type="text/javascript">
+    $('tr#click').click(function() {
+        $('#info').removeClass('hide');
+        $('#table').addClass('hide');
+    });
+    $('a#close').click(function() {
+        $('#info').addClass('hide');
+        $('#table').removeClass('hide');
+    });
+    </script>
 
-	{{ template "scripts.tmpl" . }}
-
-	<script>
-        $('tr#click').click(function() {
-            $('#measurements').removeClass('hide');
-            $('#table').addClass('hide');
-        });
-        $('a#close').click(function() {
-            $('#measurements').addClass('hide');
-            $('#table').removeClass('hide');
-        });
-		$(document).ready(function() {
-			App.init();
-            TableManageResponsive.init();
-            $('table.display').DataTable();
-            $("#table tr").css('cursor', 'pointer');
-		});
-		TableManageResponsive.init();
-	</script>
-	<!-- Add Task Modal -->
-	<div class="modal fade" id="modal-dialog-measurement">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Performance Measurment</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Name:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Details:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Task Modal -->
-	<!-- Add Task Modal -->
-	<div class="modal fade" id="modal-dialog-tasks">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Add Company Task</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Name:</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" placeholder="" />
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Job Info Name:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="8"></textarea>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Add Task Modal -->
 </body>
+
 </html>
+
+<!--===== Footer End ========-->

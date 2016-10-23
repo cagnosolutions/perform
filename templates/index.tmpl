@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="shortcut icon" href="">
-    <title>PERFORM | Job Overview</title>
+    <title>PERFORM | Employee Development</title>
 
     {{ template "head.tmpl" . }}
 
@@ -36,16 +36,15 @@
 
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/course_sessions" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Course</a>
+                            <a href="/learning_activities" type="button" class="btn btn-wet-asphalt btn-flat btn-raised">Add Course</a>
                         </div>
-                        <h2>Course Session Registration</h2>
-                        <small>Courses and employees enrolled</small>
+                        <h2>Learning Activities</h2>
+                        <small>A list of courses employees can attend</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li><a href="/employee_development">Employee Development</a></li>
-                                <li class="active"><a href="/course_session_registration">Course Session Registration</a></li>
+                                <li class="active"><a href="#">Employee Development</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -55,152 +54,45 @@
                     <div class="col-md-12">
 
                         <div class="widget">
-
-                            <div class="widget-content bg-white">
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="c_panel">
-
-
-                                            <div class="c_title">
-                                                <h2>Courses</h2>
-                                                <div class="pull-right">
-                                                    <a href="#myModal1" data-toggle="modal" type="button" class="btn btn-primary btn-flat btn-raised"><i class="fa fa-list"></i> All Courses</a>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div><!--/.c_title-->
-                                            <div class="c_content">
-                                                <form class="form-horizontal">
-                                                    <fieldset>
-
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>Boardroom Basics</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>Atlanta Training Room</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>May 20, 2016 &nbsp;|&nbsp; 8:30pm - 10:30pm</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                    </fieldset>
-                                                </form>
-                                            </div><!--/.c_content-->
-                                        </div><!--/.c_panel-->
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="c_panel">
-                                            <div class="c_title">
-                                                <h2>Information</h2>
-                                                <div class="clearfix"></div>
-                                            </div><!--/.c_title-->
-                                            <div class="c_content">
-                                                <div class="col-md-6 margin-top-40">
-                                                    <h5>Location - Atlanta Training Room</h5><br>
-                                                    <h5>Time - 8:30pm - 10:30pm</h5>
-                                                </div>
-                                                <div class="col-md-6 margin-top-40">
-                                                    <h5>Date - May 20, 2016</h5><br>
-                                                    <h5>Cost - $345</h5>
-                                                </div>
-                                            </div><!--/.c_content-->
-                                        </div><!--/.c_panel-->
-                                    </div>
-
-                                </div>
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
-                        <div class="widget">
                             <div class="widget-header bg-asbestos">
 
-                                <h3 class="fg-gray">Boardroom Basics</h3>
+                                <h3 class="fg-gray">Courses</h3>
                             </div>
                             <div class="widget-content bg-white">
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="pull-right margin-top-20 margin-right-20">
-                                            <a href="#register" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">Add Registrant</a>
-                                        </div>
+
                                         <div class="tab-pane fade active in" id="default-tab-1">
 
                                             <div class="c_content">
 
-                                                <table id="example" class="table table-bordered" style="border-spacing:0px; width:100%">
+                                                <table id="example" class="table table-bordered table-hover" style="border-spacing:0px; width:100%">
+
                                                     <thead>
                                                         <tr>
+                                                            <th>REFERENCE</th>
                                                             <th>NAME</th>
-                                                            <th>PHONE</th>
-                                                            <th>BRANCH</th>
-                                                            <th>STATUS</th>
-                                                            <th>REGISTRANT NUMBER</th>
-                                                            <th>NOTES</th>
-                                                            <th class="text-center">Action</th>
+                                                            <th>CLASS LIMIT</th>
+															<th>ACTIVE</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-
-                                                        <tr>
-                                                            <td>Billy Joe Smith</td>
-                                                            <td>555-555-5555</td>
-                                                            <td>Baltimore</td>
-                                                            <td class="text-center"><span class="label label-success">Registered</span></td>
-                                                            <td>1234-1234</td>
-                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                        <tr id="click">
+                                                            <td>Sales 101</td>
+                                                            <td>Selling Fundementals</td>
+															<td>24</td>
+                                                            <td class="text-center"><span class="label label-success"><i class="fa fa-check"></i></span></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Billy Joe Smith</td>
-                                                            <td>555-555-5555</td>
-                                                            <td>Baltimore</td>
-                                                            <td class="text-center"><span class="label label-success">Registered</span></td>
-                                                            <td>1234-1234</td>
-                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                        <tr id="click">
+                                                            <td>MGT 101</td>
+                                                            <td>Leadership Vision Setting</td>
+															<td>12</td>
+															<td class="text-center"><span class="label label-warning"><i class="fa fa-exclamation"></i></span></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Billy Joe Smith</td>
-                                                            <td>555-555-5555</td>
-                                                            <td>Baltimore</td>
-                                                            <td class="text-center"><span class="label label-success">Registered</span></td>
-                                                            <td>1234-1234</td>
-                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                                                        </tr>
-
                                                     </tbody>
 
-                                                  </table>
+                                                </table>
                                             </div><!--/.c_content-->
 
                                         </div>
@@ -218,139 +110,18 @@
             </section>
 
         </section>
-        <aside>
-            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
-                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
-                    <div id="right-sidebar-tab-content" class="tab-content">
-
-                        <div role="tabpanel" class="tab-pane fade" id="register">
-                            <div class="right-sidebar-panel-content-heading">
-                                <h2 class="text-center">Add Registrant</h2>
-                            </div>
-                            <div class="right-sidebar-panel-content animated fadeInRight">
-
-                                <ul class="right-sidebar-list margin-top-80">
-                                    <div class="c_content">
-
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleInput">Employee Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInput">Phone</label>
-                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
-                                                <span class="help-inline">(999) 999-9999</span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInput">Branch</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInput">Status</label>
-                                                <select class="form-control margin-top-10">
-                                                    <option>Registered</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInput">Registrant Number</label>
-                                                <input type="text" placeholder="" data-mask="9999-9999" class="form-control">
-                                                <span class="help-inline">9999-9999</span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="textarea-expandable">Notes</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
-                                        </form>
-
-                                    </div>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                    </div>
-                <div class="btn-bottom-right-sidebar-close">
-                    <span class="fa fa-times"></span>
-                </div>
-
-            </div>
-        </aside>
         <!--======== Main Content End ========-->
 
     </section><!--/.container-->
 
     {{ template "scripts.tmpl" . }}
 
+    <script type="text/javascript">
+    $('tr#click').click(function() {
+        window.location.href = '/learning_activities'
+    });
+    </script>
+
 </body>
 
 </html>
-
-<!--****** Modal1 Start ******-->
-  <div class="modal" id="myModal1" data-easein="fadeInLeft" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-          <h3 class="text-center">Courses</h3>
-        </div>
-        <div class="modal-body">
-
-                <table id="example10" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
-                    <thead>
-                        <tr>
-                            <th>Courses</th>
-                            <th>Locations</th>
-                            <th>Times</th>
-                            <th class="text-center">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Boardroom Basics</td>
-                            <td>Atlanta Training Room</td>
-                            <td>May 20th, 2016 &nbsp;|&nbsp; 6:30pm - 8:30pm</td>
-                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                        </tr>
-                        <tr>
-                            <td>Boardroom Basics</td>
-                            <td>Atlanta Training Room</td>
-                            <td>May 20th, 2016 &nbsp;|&nbsp; 8:30pm - 10:30pm</td>
-                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                        </tr>
-                        <tr>
-                            <td>Boardroom Basics</td>
-                            <td>Atlanta Training Room</td>
-                            <td>May 22nd, 2016 &nbsp;|&nbsp; 8:30pm - 10:30pm</td>
-                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                        </tr>
-                        <tr>
-                            <td>Sales 101</td>
-                            <td>Baltimore Conference Center</td>
-                            <td>June 12th, 2016 &nbsp;|&nbsp; 2:30pm - 3:00pm</td>
-                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                        </tr>
-                        <tr>
-                            <td>Sales 101</td>
-                            <td>Baltimore Conference Center</td>
-                            <td>June 12th, 2016 &nbsp;|&nbsp; 4:30pm - 5:00pm</td>
-                            <td class="text-center"><a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
-                        </tr>
-                    </tbody>
-
-                  </table>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default btn-raised rippler rippler-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-wet-asphalt btn-raised rippler rippler-default" data-dismiss="modal">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--****** Modal1 End ******-->

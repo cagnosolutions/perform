@@ -119,11 +119,12 @@ var observation_goals = web.Route{"GET", "/observation_goals", func(w http.Respo
 }}
 
 var login = web.Route{"POST", "/login", func(w http.ResponseWriter, r *http.Request) {
-	email := r.FormValue("username")
+	company := r.FormValue("company")
+	username := r.FormValue("username")
 	password := r.FormValue("password")
-	if email == "admin" && password == "admin" {
+	if company == "admin" && username == "admin" && password == "admin" {
 		web.Login(w, r, "ADMIN")
-		web.SetSuccessRedirect(w, r, "/employeeinformation", "Welcome Admin!")
+		web.SetSuccessRedirect(w, r, "/", "Welcome Admin!")
 		return
 	}
 	web.SetErrorRedirect(w, r, "/login", "Incorrect Email or Password")
