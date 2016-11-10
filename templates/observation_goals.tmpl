@@ -1,280 +1,295 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Observation_Goals</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Employee Performance</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-        {{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-bar-chart-o"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Observation</h4>
-        							<p class="f-s-20 f-w-400">Goals</p>
-        						</div>
-        						<div class="stats-link">
-                                    <a href="/observationgoals" class=""><span class="f-s-18">View All Observation Goals</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
-                                    </div>
-                                    <h4 class="panel-title">Employee</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <div class="col-md-4">
-                                                <select class="form-control">
+
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/observation_goals" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Observation Goal</a>
+                        </div>
+                        <h2>Observation Goals</h2>
+                        <small>Employee Observation Goals</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class="active"><a href="/employee_overview">Employee Performance</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h2>Employee</h2>
+                                                <div class="clearfix"></div>
+                                            </div><!--/.c_title-->
+                                            <div class="c_content">
+                                                <div class="inner-addon right-addon margin-bottom-10">
+                                                  <i class="fa fa-search"></i>
+                                                  <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <select class="form-control margin-top-10">
                                                     <option>Robert Jones</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+
+                                            </div><!--/.c_content-->
+                                        </div><!--/.c_panel-->
+                                    </div>
+
+                                </div>
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div>
+                </div><!--/.row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+
+                                <h3 class="text-uppercase">OBSERVATION GOAL</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <form class="form-horizontal">
+                                            <fieldset>
+												<div class="form-group">
+													<div class="col-md-offset-1 col-md-2">
+														<h5><strong>Description</strong></h5>
+													</div>
+		                                            <div class="col-md-8">
+		                                                <textarea class="form-control" rows="6"></textarea>
+		                                            </div>
+		                                        </div>
+                                            </fieldset>
+                                        </form>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+										<form class="form-horizontal">
+                                            <fieldset>
+												<div class="form-group">
+													<div class="col-md-2">
+														<h5><strong>Notes</strong></h5>
+													</div>
+		                                            <div class="col-md-9">
+		                                                <textarea class="form-control" rows="6"></textarea>
+		                                            </div>
+		                                        </div>
+                                            </fieldset>
+                                        </form>
+
+                                    </div>
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div>
+                </div><!--/.row-->
+
+
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <h3 class="text-uppercase">JOB TASKS / PROPERITES</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="tab-content">
+
+											<div class="pull-right margin-bottom-20">
+												<button href="#observation" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Observation Goal</button>
+											</div>
+                                            <table id="example" class="table table-striped table-hover table-bordered nowrap" style="border-spacing:0px; width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>NAME</th>
+                                                        <th>START DATE</th>
+                                                        <th>END DATE</th>
+														<th>NOTES</th>
+														<th>DETAILS</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Ride with Robert Jones to improve sales practices</td>
+                                                        <td>04-16-2016</td>
+                                                        <td>06-16-2016</td>
+														<td>At least twice a week</td>
+														<td>Provide weekly calls to Robert's manager</td>
+                                                        <td class="text-center"><a href="#observation" data-toggle="tab" class="btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+
+                                    </div>
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div>
+                </div><!--/.row-->
+                <!--======== Weekly Summary End ========-->
+
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+
+        <!--===== Right sidebar nofications start ========-->
+
+        <aside>
+            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
+                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+                    <div id="right-sidebar-tab-content" class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade in active" id="observation">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Observation Goal</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+										<form class="" action="index.html" method="post">
+
+											<div class="form-group">
+                                                <label for="exampleInput">Branch</label>
+                                                <select class="form-control">
+                                                    <option></option>
                                                     <option></option>
                                                     <option></option>
                                                     <option></option>
                                                     <option></option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-2">
-                                                <input type="text" class="form-control" placeholder="Search" />
+											<div class="form-group">
+                                                <label class="form-label" for="daterange-3">Start Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
                                             </div>
-                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
-                                            <div class="pull-right">
-                                                <a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
-                                                <a class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Observation Goal</a>
+											<div class="form-group">
+                                                <label class="form-label" for="daterange-3">End Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
                                             </div>
-                                            <div class="modal fade" id="modal-dialog">
-                								<div class="modal-dialog">
-                									<div class="modal-content">
-                										<div class="modal-header bg-custom">
-                											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                											<h3 class="modal-title text-center text-white f-w-400">Add/Edit Observation Goal Action</h3>
-                										</div>
-                										<div class="modal-footer">
-                                                            <div class="row">
-                                                                <label class="col-md-2 control-label">Action:</label>
-                                                                <div class="col-md-9">
-                                                                    <select class="form-control">
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                										</div>
-                                                        <div class="modal-footer">
-                                                            <div class="col-md-6">
-                                                                <div class="row">
-                                                                    <div class="form-group">
-                                                                        <label class="col-md-offset-2 col-md-2 control-label">Start Date:</label>
-                                                                        <div class="col-md-6">
-                                                                            <input type="" class="form-control" placeholder="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="form-group">
-                                                                        <label class="col-md-offset-2 col-md-2 control-label">End Date:</label>
-                                                                        <div class="col-md-6">
-                                                                            <input type="" class="form-control" placeholder="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="row">
-                                                                    <div class="form-group">
-                                                                        <label class="col-md-offset-2 col-md-2 control-label">Actual Start:</label>
-                                                                        <div class="col-md-6">
-                                                                            <input type="" class="form-control" placeholder="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="form-group">
-                                                                        <label class="col-md-offset-2 col-md-2 control-label">Actual End:</label>
-                                                                        <div class="col-md-6">
-                                                                            <input type="" class="form-control" placeholder="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                										</div>
-                                                        <div class="modal-footer">
-                                                            <div class="row">
-                                                                <div class="form-group">
-                                                                    <label class="col-md-3 control-label">Notes:</label>
-                                                                    <div class="col-md-7">
-                                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="form-group">
-                                                                    <label class="col-md-3 control-label">Details:</label>
-                                                                    <div class="col-md-7">
-                                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <a class="btn btn-default btn-md m-r-5 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</a>
-                                                            <a class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add</a>
-                										</div>
-                									</div>
-                								</div>
-                							</div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
-                    </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+											<div class="form-group">
+                                                <label class="form-label" for="daterange-3">Actual Start Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+											<div class="form-group">
+                                                <label class="form-label" for="daterange-3">Actual End Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+											<div class="form-group">
+                                                <label for="textarea-expandable">Notes</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+											<div class="form-group">
+                                                <label for="textarea-expandable">Details</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
 
-                                    </div>
-                                    <h4 class="panel-title">Observation Goal</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <div class="panel-body">
-                                        <form class="form-horizontal" action="/" method="POST">
-                                            <fieldset>
-                                                <legend class="f-w-700">Robert Jones</legend>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Description:</label>
-                                                        <div class="col-md-10">
-                                                            <textarea class="form-control" placeholder="Improve Roberts Sales Performance" rows="8"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Notes:</label>
-                                                        <div class="col-md-10">
-                                                            <textarea class="form-control" placeholder="Robert has recently sucked at sales. He can't even sell candy to a baby" rows="8"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
                                         </form>
+
                                     </div>
-                                </div>
+                                </ul>
+
                             </div>
-                            <!-- end panel -->
                         </div>
-                        <!-- end col-12 -->
-                    </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Actions</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="col-md-12">
-
-										<div class="pull-right">
-                                            <a href="#modal-dialog" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Action</a>
-										</div>
-										<br>
-                                        <table id="data-table" class="table table-striped table-bordered nowrap" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>NAME</th>
-                                                    <th>START DATE</th>
-                                                    <th>END DATE</th>
-                                                    <th>NOTES</th>
-                                                    <th>DETAILS</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="">
-                                                    <td>Ride with Robert Jones To Inprove Sales Practices</td>
-                                                    <td>05-15-2016</td>
-                                                    <td>06-15-2016</td>
-                                                    <td>At least two days per week</td>
-                                                    <td>Provide weekly calls to Roberts Manager</td>
-                                                    <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <!-- end panel -->
-                            </div>
-                            <!-- end col-6 -->
-                        </div>
-                        <!-- end row -->
-
+                    </div><!-- /example -->
+                <div class="btn-bottom-right-sidebar-close">
+                    <span class="fa fa-times"></span>
                 </div>
+
             </div>
-			<!-- end page-header -->
+        </aside>
+        <!--===== Right sidebar nofications end ========-->
 
-		</div>
-		<!-- end #content -->
-
-
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
+    </section><!--/.container-->
 
     {{ template "scripts.tmpl" . }}
 
-	<script>
-		$(document).ready(function() {
-			App.init();
-            TableManageResponsive.init();
-		});
-	</script>
 </body>
+
 </html>
+
+<!--===== Footer End ========-->

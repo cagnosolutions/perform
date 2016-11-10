@@ -16,7 +16,7 @@ Content
  - Colors for default, primary, success, info, warning and danger
  - Display None
  - Text positioning
- - Circles 
+ - Circles
  - Rounded
  - Margins
  - Heading sizes
@@ -73,7 +73,7 @@ Content
 .overflow-hidden {
     overflow: hidden;
 }
-.overflow-auto { 
+.overflow-auto {
     overflow: auto;
 }
 
@@ -239,12 +239,12 @@ Content
   background: #3498db !important;
 }
 
-.bg-primary, 
-.bg-primary h1, 
-.bg-primary h2, 
-.bg-primary h3, 
-.bg-primary h4, 
-.bg-primary h5, 
+.bg-primary,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
 .bg-primary h6,
 .bg-primary .modal-header {
   background-color: #337ab7 !important;
@@ -265,14 +265,14 @@ Content
 }
 
 .bg-primary:hover,
-.bg-primary button:hover, 
-.bg-primary button:focus, 
-.bg-primary button:active, 
+.bg-primary button:hover,
+.bg-primary button:focus,
+.bg-primary button:active,
 .bg-primary button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-}    
+}
 
 
 .bg-info, .bg-info h1, .bg-info h2, .bg-info h3, .bg-info h4, .bg-info h5, .bg-info h6, .bg-info .modal-header {
@@ -290,14 +290,14 @@ Content
 }
 
 .bg-info:hover,
-.bg-info button:hover, 
-.bg-info button:focus, 
-.bg-info button:active, 
+.bg-info button:hover,
+.bg-info button:focus,
+.bg-info button:active,
 .bg-info button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-}   
+}
 
 
 .bg-success, .bg-success h1, .bg-success h2, .bg-success h3, .bg-success h4, .bg-success h5, .bg-success h6, .bg-success .modal-header {
@@ -315,14 +315,14 @@ Content
 }
 
 .bg-success:hover,
-.bg-success button:hover, 
-.bg-success button:focus, 
-.bg-success button:active, 
+.bg-success button:hover,
+.bg-success button:focus,
+.bg-success button:active,
 .bg-success button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-} 
+}
 
 
 .bg-warning, .bg-warning h1, .bg-warning h2, .bg-warning h3, .bg-warning h4, .bg-warning h5, .bg-warning h6, .bg-warning .modal-header {
@@ -340,14 +340,14 @@ Content
 }
 
 .bg-warning:hover,
-.bg-warning button:hover, 
-.bg-warning button:focus, 
-.bg-warning button:active, 
+.bg-warning button:hover,
+.bg-warning button:focus,
+.bg-warning button:active,
 .bg-warning button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-} 
+}
 
 
 .bg-danger, .bg-danger h1, .bg-danger h2, .bg-danger h3, .bg-danger h4, .bg-danger h5, .bg-danger h6, .bg-danger .modal-header {
@@ -365,14 +365,14 @@ Content
 }
 
 .bg-danger:hover,
-.bg-danger button:hover, 
-.bg-danger button:focus, 
-.bg-danger button:active, 
+.bg-danger button:hover,
+.bg-danger button:focus,
+.bg-danger button:active,
 .bg-danger button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-} 
+}
 
 
 .bg-green, .bg-green h1, .bg-green h2, .bg-green h3, .bg-green h4, .bg-green h5, .bg-green h6, .bg-green .modal-header {
@@ -390,14 +390,14 @@ Content
 }
 
 .bg-green:hover,
-.bg-green button:hover, 
-.bg-green button:focus, 
-.bg-green button:active, 
+.bg-green button:hover,
+.bg-green button:focus,
+.bg-green button:active,
 .bg-green button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-} 
+}
 
 
 .bg-green-sea, .bg-green-sea h1, .bg-green-sea h2, .bg-green-sea h3, .bg-green-sea h4, .bg-green-sea h5, .bg-green-sea h6, .bg-green-sea .modal-header {
@@ -415,14 +415,14 @@ Content
 }
 
 .bg-green-sea:hover,
-.bg-green-sea button:hover, 
-.bg-green-sea button:focus, 
-.bg-green-sea button:active, 
+.bg-green-sea button:hover,
+.bg-green-sea button:focus,
+.bg-green-sea button:active,
 .bg-green-sea button.active {
     opacity: .9;
     border-color: #FFFFFF;
     color: #FFFFFF;
-} 
+}
 
 
 .bg-green-sea, .bg-green-sea h1, .bg-green-sea h2, .bg-green-sea h3, .bg-green-sea h4, .bg-green-sea h5, .bg-green-sea h6, .bg-green-sea .modal-header {
@@ -440,9 +440,9 @@ Content
 }
 
 .bg-green-sea:hover,
-.bg-green-sea button:hover, 
-.bg-green-sea button:focus, 
-.bg-green-sea button:active, 
+.bg-green-sea button:hover,
+.bg-green-sea button:focus,
+.bg-green-sea button:active,
 .bg-green-sea button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -464,9 +464,9 @@ Content
 }
 
 .bg-peter-river:hover,
-.bg-peter-river button:hover, 
-.bg-peter-river button:focus, 
-.bg-peter-river button:active, 
+.bg-peter-river button:hover,
+.bg-peter-river button:focus,
+.bg-peter-river button:active,
 .bg-peter-river button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -488,9 +488,9 @@ Content
 }
 
 .bg-belize-hole:hover,
-.bg-belize-hole button:hover, 
-.bg-belize-hole button:focus, 
-.bg-belize-hole button:active, 
+.bg-belize-hole button:hover,
+.bg-belize-hole button:focus,
+.bg-belize-hole button:active,
 .bg-belize-hole button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -513,9 +513,9 @@ Content
 }
 
 .bg-amethyst:hover,
-.bg-amethyst button:hover, 
-.bg-amethyst button:focus, 
-.bg-amethyst button:active, 
+.bg-amethyst button:hover,
+.bg-amethyst button:focus,
+.bg-amethyst button:active,
 .bg-amethyst button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -538,9 +538,9 @@ Content
 }
 
 .bg-wisteria:hover,
-.bg-wisteria button:hover, 
-.bg-wisteria button:focus, 
-.bg-wisteria button:active, 
+.bg-wisteria button:hover,
+.bg-wisteria button:focus,
+.bg-wisteria button:active,
 .bg-wisteria button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -562,11 +562,11 @@ Content
 }
 
 .bg-wet-asphalt:hover,
-.bg-wet-asphalt button:hover, 
-.bg-wet-asphalt button:focus, 
-.bg-wet-asphalt button:active, 
+.bg-wet-asphalt button:hover,
+.bg-wet-asphalt button:focus,
+.bg-wet-asphalt button:active,
 .bg-wet-asphalt button.active {
-    opacity: .9;
+    /*opacity: .9;*/
     border-color: #FFFFFF;
     color: #FFFFFF;
 }
@@ -587,9 +587,9 @@ Content
 }
 
 .bg-midnight-blue:hover,
-.bg-midnight-blue button:hover, 
-.bg-midnight-blue button:focus, 
-.bg-midnight-blue button:active, 
+.bg-midnight-blue button:hover,
+.bg-midnight-blue button:focus,
+.bg-midnight-blue button:active,
 .bg-midnight-blue button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -612,9 +612,9 @@ Content
 }
 
 .bg-sun-flower:hover,
-.bg-sun-flower button:hover, 
-.bg-sun-flower button:focus, 
-.bg-sun-flower button:active, 
+.bg-sun-flower button:hover,
+.bg-sun-flower button:focus,
+.bg-sun-flower button:active,
 .bg-sun-flower button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -622,13 +622,13 @@ Content
 }
 
 
-.bg-orange, 
-.bg-orange h1, 
-.bg-orange h2, 
-.bg-orange h3, 
-.bg-orange h4, 
-.bg-orange h5, 
-.bg-orange h6, 
+.bg-orange,
+.bg-orange h1,
+.bg-orange h2,
+.bg-orange h3,
+.bg-orange h4,
+.bg-orange h5,
+.bg-orange h6,
 .bg-orange .modal-header {
     background-color: #fa6800;
     color: #ffffff !important;
@@ -644,9 +644,9 @@ Content
 }
 
 .bg-orange:hover,
-.bg-orange button:hover, 
-.bg-orange button:focus, 
-.bg-orange button:active, 
+.bg-orange button:hover,
+.bg-orange button:focus,
+.bg-orange button:active,
 .bg-orange button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -669,9 +669,9 @@ Content
 }
 
 .bg-carrot:hover,
-.bg-carrot button:hover, 
-.bg-carrot button:focus, 
-.bg-carrot button:active, 
+.bg-carrot button:hover,
+.bg-carrot button:focus,
+.bg-carrot button:active,
 .bg-carrot button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -693,9 +693,9 @@ Content
 }
 
 .bg-pumpkin:hover,
-.bg-pumpkin button:hover, 
-.bg-pumpkin button:focus, 
-.bg-pumpkin button:active, 
+.bg-pumpkin button:hover,
+.bg-pumpkin button:focus,
+.bg-pumpkin button:active,
 .bg-pumpkin button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -718,9 +718,9 @@ Content
 }
 
 .bg-alizarin:hover,
-.bg-alizarin button:hover, 
-.bg-alizarin button:focus, 
-.bg-alizarin button:active, 
+.bg-alizarin button:hover,
+.bg-alizarin button:focus,
+.bg-alizarin button:active,
 .bg-alizarin button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -743,9 +743,9 @@ Content
 }
 
 .bg-pomegranate:hover,
-.bg-pomegranate button:hover, 
-.bg-pomegranate button:focus, 
-.bg-pomegranate button:active, 
+.bg-pomegranate button:hover,
+.bg-pomegranate button:focus,
+.bg-pomegranate button:active,
 .bg-pomegranate button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -773,9 +773,9 @@ Content
 }
 
 .bg-clouds:hover,
-.bg-clouds button:hover, 
-.bg-clouds button:focus, 
-.bg-clouds button:active, 
+.bg-clouds button:hover,
+.bg-clouds button:focus,
+.bg-clouds button:active,
 .bg-clouds button.active {
     opacity: .9;
     border-color: gray;
@@ -797,9 +797,9 @@ Content
 }
 
 .bg-silver:hover,
-.bg-silver button:hover, 
-.bg-silver button:focus, 
-.bg-silver button:active, 
+.bg-silver button:hover,
+.bg-silver button:focus,
+.bg-silver button:active,
 .bg-silver button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -822,9 +822,9 @@ Content
 }
 
 .bg-concrete:hover,
-.bg-concrete button:hover, 
-.bg-concrete button:focus, 
-.bg-concrete button:active, 
+.bg-concrete button:hover,
+.bg-concrete button:focus,
+.bg-concrete button:active,
 .bg-concrete button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -834,7 +834,7 @@ Content
 .bg-asbestos, .bg-asbestos h1, .bg-asbestos h2, .bg-asbestos h3, .bg-asbestos h4, .bg-asbestos h5, .bg-asbestos h6, .bg-asbestos .modal-header {
     background-color: #7F8C8D;
     color: #ffffff !important;
-}   
+}
 
 .bg-asbestos button {
     background-color: #7F8C8D;
@@ -846,9 +846,9 @@ Content
 }
 
 .bg-asbestos:hover,
-.bg-asbestos button:hover, 
-.bg-asbestos button:focus, 
-.bg-asbestos button:active, 
+.bg-asbestos button:hover,
+.bg-asbestos button:focus,
+.bg-asbestos button:active,
 .bg-asbestos button.active {
     opacity: .9;
     border-color: #FFFFFF;
@@ -1401,8 +1401,8 @@ Content
       font-size:100px !important;
 }
 
-/*************  
-- Colors for normal, default, primary, success, info, warning and danger 
+/*************
+- Colors for normal, default, primary, success, info, warning and danger
 
 normal - aab2bd
 default - fff; aab2bd
@@ -1462,7 +1462,7 @@ danger - da4453; da4453
   border-right: 3px solid #da4453 !important;
 }
 
-/*************  
+/*************
 Display None
 *************/
 
@@ -5661,7 +5661,7 @@ h3.heading-xs {
 
 
 
-/* SOCIAL BACKGROUND COLORS 
+/* SOCIAL BACKGROUND COLORS
 ------------------------------------*/
 .fg-facebook {
   color:#627AAC !important;

@@ -5505,15 +5505,15 @@ CUSTOM TABS SECTIONS
         border-radius: 0!important;
         margin-right: 10px;
         margin-left: 10px;
-        color: #fff !important;
-        background-color: #34495e!important;
+        color: #000 !important;
+        background-color: #fff!important;
     }
 
     .nav.nav-pills > li.active > a,
     .nav.nav-pills > li.active > a:hover,
     .nav.nav-pills > li.active > a:focus {
-        color: #000 !important;
-        background-color: #fff !important;
+        color: #fff !important;
+        background-color: #337ab7 !important;
     }
 
     .tabs-below > .nav-tabs,
@@ -9763,8 +9763,8 @@ FORM TOGGLE SWITCH SECTIOn
         backface-visibility: hidden;
     }
     input.lg.form-flip-toggle + label:after {
-        border: 2px solid #8ce196;
-        color: #8ce196;
+        border: 2px solid #000;
+        color: #337ab7;
         content: attr(data-on);
         -webkit-transition: -webkit-transform 0.5s;
         -moz-transition: -moz-transform 0.5s;

@@ -17,14 +17,29 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations)
+	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions, multi_measurement_performance, peer_to_peer)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":9999", mux))
 }
 
+var peer_to_peer = web.Route{"GET", "/peer_to_peer", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "peer_to_peer.tmpl", web.Model{})
+	return
+}}
+
+var multi_measurement_performance = web.Route{"GET", "/multi_measurement_performance", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "multi_measurement_performance.tmpl", web.Model{})
+	return
+}}
+
 var course_registrations = web.Route{"GET", "/course_registrations", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "course_registrations.tmpl", web.Model{})
+	return
+}}
+
+var course_sessions = web.Route{"GET", "/course_sessions", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "course_sessions.tmpl", web.Model{})
 	return
 }}
 
@@ -43,6 +58,7 @@ var learning_activities_overview = web.Route{"GET", "/learning_activities_overvi
 		"page":    "employeedevelopement",
 		"subpage": "learningactivities",
 	})
+	return
 }}
 
 var learning_activities = web.Route{"GET", "/learning_activities", func(w http.ResponseWriter, r *http.Request) {
@@ -50,6 +66,7 @@ var learning_activities = web.Route{"GET", "/learning_activities", func(w http.R
 		"page":    "employeedevelopement",
 		"subpage": "learningactivities",
 	})
+	return
 }}
 
 var employee_information = web.Route{"GET", "/employee_information", func(w http.ResponseWriter, r *http.Request) {

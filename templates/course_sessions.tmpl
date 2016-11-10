@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="shortcut icon" href="">
-    <title>PERFORM | Job Overview</title>
+    <title>PERFORM | Employee Development</title>
 
     {{ template "head.tmpl" . }}
 
@@ -36,15 +36,15 @@
 
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/business_results" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Buisiness Result</a>
+                            <a href="/course_registrations" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
                         </div>
-                        <h2>Buisiness Results</h2>
-                        <small>A list of buisiness results and company goals</small>
+                        <h2>Course Sessions</h2>
+                        <small>A list of scheduled course sessions</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li class="active"><a href="/employee_overview">Company Information</a></li>
+                                <li class="active"><a href="/employee_overview">Employee Development</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
 
-                                <h3 class="text-uppercase">Buisiness Results</h3>
+                                <h3 class="text-uppercase">Course Sessions</h3>
                             </div>
                             <div class="widget-content bg-white">
 
@@ -71,18 +71,33 @@
 
                                                     <thead>
                                                         <tr>
-                                                            <th>NAME</th>
-                                                            <th>DETAILS</th>
+                                                            <th>CATEGORY</th>
+                                                            <th>COURSE TITLE</th>
+                                                            <th>REFERENCE NUMBER</th>
+                                                            <th>DATE</th>
+                                                            <th>TIME</th>
+                                                            <th>INSTRUCTOR</th>
+                                                            <th>LOCATION</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr id="click">
-                                                            <td>Establish Air Product</td>
-                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                            <td>Sales</td>
+                                                            <td>Selling Technique</td>
+                                                            <td>Sales 101</td>
+                                                            <td>10/5/2016</td>
+                                                            <td>8:30pm - 10:15pm</td>
+                                                            <td>Ken Johnson</td>
+                                                            <td>Atlanta Training Room</td>
                                                         </tr>
                                                         <tr id="click">
-                                                            <td>Establish Brokerage Product</td>
-                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                            <td>Sales</td>
+                                                            <td>Selling Technique</td>
+                                                            <td>Sales 101</td>
+                                                            <td>10/5/2016</td>
+                                                            <td>8:30pm - 10:15pm</td>
+                                                            <td>Ken Johnson</td>
+                                                            <td>Atlanta Training Room</td>
                                                         </tr>
                                                     </tbody>
 
@@ -112,7 +127,10 @@
 
     <script type="text/javascript">
     $('tr#click').click(function() {
-        window.location.href = '/business_results'
+        window.open(
+            '/learning_activities',
+            '_blank'
+        )
     });
     </script>
 

@@ -1,323 +1,420 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Perform | Learning_Activities</title>
-	{{ template "head.tmpl" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Employee Development</title>
+
+    {{ template "head.tmpl" . }}
+
 </head>
-<body>
-	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
-	<!-- end #page-loader -->
 
-	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+<body id="carrot-scheme">
 
-		{{ template "nav.tmpl" . }}
+    <section id="container">
 
-		<!-- begin #content -->
-		<div id="content" class="content">
+        {{ template "topnav.tmpl" . }}
 
-            <div class="panel">
+        {{ template "sidenav.tmpl" . }}
 
-                <div class="panel-body bg-">
-                    <div class="row">
-        				<!-- begin col-3 -->
-        				<div class="col-md-12 col-sm-6">
-        					<div class="widget widget-stats bg-custom">
-        						<div class="stats-icon"><i class="fa fa-road"></i></div>
-        						<div class="stats-info">
-        							<h4 class="f-w-400">Learning</h4>
-        							<p class="f-s-20 f-w-400">Activities</p>
-        						</div>
-								<div class="stats-link">
-                                    <a href="/learning_activities_overview" class=""><span class="f-s-18">View All Activites</span> &nbsp;&nbsp;&nbsp;<i class="fa fa-list fa-2x"></i></a>
-        						</div>
-        					</div>
-        				</div>
+        <section id="main-content">
 
-        			</div>
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-6 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
 
-                                    </div>
-                                    <h4 class="panel-title">Learning Activity Courses</h4>
-                                </div>
-                                <div class="panel-body bg-silver">
-                                    <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <div class="col-md-4">
-                                                <select class="form-control">
-                                                    <option>Leadership Vision Setting</option>
-                                                    <option>Selling Fundementals</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <input type="text" class="form-control" placeholder="Search" />
-                                            </div>
-                                            <a class="btn btn-md btn-default m-r-5 m-b-5"><i class="fa fa-1x fa-th"></i> Clear</a>
-                                            <div class="pull-right">
-                                                <a class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-floppy-o"></i> Save</a>
-                                                <a href="#" class="btn btn-custom btn-md m-r-5 m-b-5"><i class="fa fa-plus"></i> Add Course</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- end panel -->
+            <section class="wrapper">
+
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+                    <div class="page-title">
+                        <div class="pull-right margin-top-20 margin-right-20">
+                            <a href="/learning_activities" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
                         </div>
-                        <!-- end col-6 -->
+                        <h2>Learning Activities</h2>
+                        <small>Courses to help cultivate employee talent.</small>
                     </div>
-                    <!-- end row -->
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-md-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-inverse" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class=""><a href="/employee_overview">Employee Development</a></li>
+                                <li class="active"><a href="/learning_activities_overview">Learning Activities</a></li>
 
-                                    </div>
-                                    <h4 class="panel-title">Leadership Vision Setting</h4>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+
+
+
+
+                <!--======== Transaction Summary Start ========-->
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a href="/employee_profile" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
                                 </div>
-                                <div class="panel-body bg-silver">
-                                    <div class="panel-body">
-                                        <div class="col-md-6">
-                                            <form class="form-horizontal" action="/" method="POST">
-                                                <fieldset>
-
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Name:</label>
-                                                        <div class="col-md-9">
-                                                            <input type="email" class="form-control" placeholder="Leadership Vision Setting" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Reference:</label>
-                                                        <div class="col-md-9">
-                                                            <input type="email" class="form-control" placeholder="MGT 101" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Category:</label>
-                                                        <div class="col-md-9">
-                                                            <select class="form-control">
-                                                                <option>Buisiness Leadership</option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Description:</label>
-                                                        <div class="col-md-9">
-                                                            <textarea class="form-control" placeholder="Textarea" rows="8">Elements that constitute a solid vision plan and statement.
-
-
-How to implement and manage the change process.
-                                                            </textarea>
-                                                        </div>
-                                                    </div>
-
-                                                </fieldset>
-                                            </form>
-
-                                        </div>
-                                        <div class="col-md-6">
-
-                                            <ul class="nav nav-tabs nav-justified">
-                                                <li class="active"><a href="#nav-1" data-toggle="tab">Details</a></li>
-                                                <li><a href="#nav-2" data-toggle="tab">Notes</a></li>
-                                                <li><a href="#nav-3" data-toggle="tab">Options</a></li>
-                                            </ul>
-                                            <div class="tab-content" id="nav-1">
-                                                <div class="row">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Type:</label>
-                                                        <div class="col-md-9">
-                                                            <select class="form-control">
-                                                                <option>Instruct Led - In Person</option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <br>
-                                                <div class="row">
-
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Provider:</label>
-                                                        <div class="col-md-5">
-                                                            <ul class="nav nav-pills">
-                                                                <li><a href="#nav-pills-1" data-toggle="tab" class="btn btn-default btn-sm m-b-5">Internal</a></li>
-                                                                <li class="active"><a href="#nav-pills-2" data-toggle="tab" class="btn btn-default btn-sm m-b-5">External</a></li>
-                                                            </ul>
-                                                            <select class="form-control">
-                                                                <option>Cultivisor</option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <br>
-                                                <div class="row">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Class Size:</label>
-                                                        <div class="col-md-5">
-                                                            <input type="email" class="form-control" placeholder="12" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row">
-                                                    <div class="form-group">
-                                                        <label class="col-md-2 control-label">Catalog:</label>
-                                                        <div class="col-md-5">
-                                                            <ul class="nav nav-pills">
-                                                                <li class="active"><a href="#nav-pills-1" data-toggle="tab" class="btn btn-default btn-sm m-b-5">On</a></li>
-                                                                <li><a href="#nav-pills-2" data-toggle="tab" class="btn btn-default btn-sm m-b-5">Off</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                <h3 class="text-uppercase">Leadership Vision Setting</h3>
                             </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-12 -->
-                    </div>
-                    <!-- end row -->
-					<!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-12 -->
-                        <div class="col-12">
-                            <!-- begin panel -->
-                            <div class="panel panel-inverse bg-silver" >
-                                <div class="panel-heading">
-                                    <div class="panel-heading-btn">
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+
+												<div class="form-group">
+                                                    <label class="col-md-3 control-label">Name:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="" class="form-control" placeholder="Leadership Vision Setting" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Reference:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="" class="form-control" placeholder="MGT 101" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Category:</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
+                                                            <option>Buisiness Leadership</option>
+                                                            <option>Alaska</option>
+                                                            <option>Arizona</option>
+                                                            <option>Arkansas</option>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Description:</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div><!--/.col-md-8-->
+                                    <div class="col-md-8">
+
+                                        <div class="tab-content">
+			                                    <ul class="nav nav-tabs nav-justified">
+		                                            <li class="active"><a href="#tab1" data-toggle="tab">Details</a></li>
+		                                            <li class=""><a href="#tab2" data-toggle="tab">Notes</a></li>
+		                                            <li class=""><a href="#tab3" data-toggle="tab">Options</a></li>
+		                                        </ul>
+		                                        <div class="tab-content">
+		                                            <div class="tab-pane fade active in" id="tab1">
+
+                                                        <div class="c_content">
+                                                            <form class="" action="index.html" method="post">
+
+                                                                <div class="form-group">
+                                                                    <div class="col-md-12">
+                                                                        <label class="col-md-offset-1 col-md-3 control-label">Type:</label>
+                                                                        <div class="col-md-5">
+                                                                            <select class="form-control">
+                                                                                <option>Instructor Led - In Person</option>
+                                                                                <option>Alaska</option>
+                                                                                <option>Arizona</option>
+                                                                                <option>Arkansas</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-12 margin-top-20">
+                                                                        <label class="col-md-offset-1 col-md-3 control-label">Provider:</label>
+                                                                        <div class="col-md-2">
+                                                                            <div class="switch">
+                                                                                <input id="form-toggle-2" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                                                <label for="form-toggle-2" data-on="Internal" data-off="External"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <select class="form-control">
+                                                                                <option>Cultivisor</option>
+                                                                                <option>10</option>
+                                                                                <option>20</option>
+                                                                                <option>25</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-12 margin-top-10">
+                                                                        <label class="col-md-offset-1 col-md-3 control-label">Class Size:</label>
+                                                                        <div class="col-md-2">
+                                                                            <select class="form-control">
+                                                                                <option>5</option>
+                                                                                <option>10</option>
+                                                                                <option>20</option>
+                                                                                <option>25</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-12 margin-top-20">
+                                                                        <label class="col-md-offset-1 col-md-3 control-label">Catalog:</label>
+                                                                        <div class="col-md-4">
+                                                                            <div class="switch">
+                                                                                <input id="form-toggle-3" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                                                <label for="form-toggle-3" data-on="On" data-off="Off"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </form>
+
+                                                        </div><!--/.c_content-->
+
+		                                            </div>
+													<div class="tab-pane fade" id="tab2">
+
+                                                        <div class="c_content">
+
+                                                            <form class="" action="index.html" method="post">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2 control-label">Notes</label>
+                                                                    <div class="col-md-10">
+                                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+                                                        </div><!--/.c_content-->
+
+		                                            </div>
+                                                    <div class="tab-pane fade" id="tab3">
+
+                                                        <div class="c_content">
+
+                                                                <h4>OPTIONS HERE</h4>
+
+                                                        </div><!--/.c_content-->
+
+		                                            </div>
+
+		                                        </div>
+
+										</div>
 
                                     </div>
-                                    <h4 class="panel-title">More Information</h4>
-                                </div>
-                                <div class="panel-body">
+
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
+                    </div><!--/.col-md-6-->
+                </div>
+                <!--======== Employee Information Start ========-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                    <div class="col-md-4 pull-right">
+                                        <ul class="nav nav-pills nav-justified">
+                                            <li role="presentation" class="active"><a href="#nav-pills-1" role="tab" data-toggle="tab">Detailed Information</a></li>
+                                            <li role="presentation"><a href="#nav-pills-2" role="tab" data-toggle="tab">Related Skills</a></li>
+                                        </ul>
+
+                                    </div>
+                                <h3 class="text-uppercase">EMPLOYEE DETAILED INFORMATION</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+
+                                <div class="row">
                                     <div class="col-md-12">
 
-										<ul class="nav nav-pills">
-											<li class="active"><a href="#nav-pills-1" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-text-o"></i>&nbsp; Job Tasks</a></li>
-											<li><a href="#nav-pills-2" data-toggle="tab" class="btn btn-default btn-md m-r-5 m-b-5"><i class="fa fa-file-o"></i>&nbsp; Job Properties</a></li>
-										</ul>
 										<div class="tab-content">
 											<div class="tab-pane fade active in" id="nav-pills-1">
 
 												<ul class="nav nav-tabs nav-justified">
-		                                            <li class="active"><a href="#default-tab-1" data-toggle="tab">Skills</a></li>
-		                                            <li class=""><a href="#default-tab-2" data-toggle="tab">Knowledge</a></li>
-		                                            <li class=""><a href="#default-tab-3" data-toggle="tab">Behavior</a></li>
+		                                            <li class="active"><a href="#default-tab-1" data-toggle="tab">Sessions</a></li>
+		                                            <li class=""><a href="#default-tab-2" data-toggle="tab">Learning Outcomes</a></li>
+		                                            <li class=""><a href="#default-tab-3" data-toggle="tab">Prework Assignments</a></li>
+                                                    <li class=""><a href="#default-tab-4" data-toggle="tab">Course Exercises</a></li>
+                                                    <li class=""><a href="#default-tab-5" data-toggle="tab">Activity Materials</a></li>
 		                                        </ul>
 												<!-- Start Skills Tab -->
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="default-tab-1">
-														<div class="pull-right">
-															<a href="#modal-dialog-skill" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Skill</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Skills</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#session" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Session</button>
+                                                        </div>
+                                                        <div class="c_content">
+
+                                                            <table id="example" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>INSTRUCTOR</th>
+                                                                        <th>LOCATION</th>
+                                                                        <th>START DATE</th>
+                                                                        <th>END DATE</th>
+                                                                        <th>START TIME</th>
+                                                                        <th>END TIME</th>
+                                                                        <th>CLASS SIZE</th>
+                                                                        <th>ACTIVE</th>
+                                                                        <th class="text-center">ACTION</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                    <tr>
+                                                                        <td>Ken Johnson</td>
+                                                                        <td>CHQ Boardroom</td>
+                                                                        <td>September 5th, 2016</td>
+                                                                        <td>September 8th, 2016</td>
+                                                                        <td>7:00am</td>
+                                                                        <td>12:45pm</td>
+                                                                        <td>24</td>
+                                                                        <td class="text-center"><span class="label label-success"><i class="fa fa-check"></i></span></td>
+                                                                        <td class="text-center"><a href="#session" data-toggle="tab" class="btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a></td>
+                                                                    </tr>
+                                                                </tbody>
+
+                                                              </table>
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 													<div class="tab-pane fade" id="default-tab-2">
-														<div class="pull-right">
-															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Knowledge</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Knowledge</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#outcome" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Learning Outcome</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example2" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>TASK</th>
+    		                                                            <th>OUTCOME</th>
+                                                                        <th>CATEGORY</th>
+                                                                        <th class="text-center">ACTION</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Learning Outcome Task</td>
+                                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td>Learning Outcome Category</td>
+                                                                        <td class="text-center"><a href="#knowledge" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 													</div>
 													<div class="tab-pane fade" id="default-tab-3">
-														<div class="pull-right">
-															<a href="#modal-dialog-knowledge" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Behavior</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DETAILS</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Behavior</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td id="delete" class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#assignment" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Prework Assignment</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example3" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DETAILS</th>
+                                                                        <th class="text-center">ACTION</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Behavior</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
 
 													</div>
+                                                    <div class="tab-pane fade" id="default-tab-4">
+
+                                                        <div class="pull-right">
+                                                            <button href="#exercises" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Course Exercises</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example4" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DETAILS</th>
+                                                                        <th class="text-center">ACTION</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Behavior</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
+
+													</div>
+                                                    <div class="tab-pane fade" id="default-tab-5">
+
+                                                        <div class="pull-right">
+                                                            <button href="#materials" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Activity Materials</button>
+                                                        </div>
+
+                                                        <div class="c_content">
+
+                                                            <table id="example5" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>NAME</th>
+    		                                                            <th>DETAILS</th>
+                                                                        <th class="text-center">ACTION</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Behavior</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
+
+                                                              </table>
+
+                                                        </div><!--/.c_content-->
+
+													</div>
+
 		                                        </div>
 												<!-- End Skills Tab -->
 											</div>
@@ -325,133 +422,36 @@ How to implement and manage the change process.
 											<div class="tab-pane fade" id="nav-pills-2">
 
 												<ul class="nav nav-tabs nav-justified">
-		                                            <li class="active"><a href="#tab-1" data-toggle="tab">Contacts</a></li>
-		                                            <li class=""><a href="#tab-2" data-toggle="tab">Achievements</a></li>
-		                                            <li class=""><a href="#tab-3" data-toggle="tab">Prior Jobs</a></li>
-		                                            <li class=""><a href="#tab-4" data-toggle="tab">Learning Activities</a></li>
-		                                            <li class=""><a href="#tab-5" data-toggle="tab">Watch Lists</a></li>
+		                                            <li class="active"><a href="#tab-1" data-toggle="tab">Skills</a></li>
 		                                        </ul>
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="tab-1">
-														<div class="pull-right">
-															<a href="#modal-dialog-contact" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Contact</a>
-														</div>
-														<br>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>PHONE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Contact</td>
-		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        <div class="pull-right">
+                                                            <button href="#skill" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Skill</button>
+                                                        </div>
 
-		                                            </div>
-													<div class="tab-pane fade" id="tab-2">
-														<div class="pull-right">
-															<a href="#modal-dialog-achievements" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Achievements</a>
-														</div>
-														<br>
+                                                        <div class="c_content">
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>DATE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Achievement</td>
-		                                                            <td>07-16-16</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                            <table id="example5" class="table table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                                <thead>
+    		                                                        <tr>
+    		                                                            <th>SKILL</th>
+    		                                                            <th>DESCRIPTION</th>
+                                                                        <th class="text-center">Action</th>
+    		                                                        </tr>
+    		                                                    </thead>
+    		                                                    <tbody>
+    		                                                        <tr>
+    		                                                            <td>Employee Contact</td>
+    		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                        <td class="text-center"><a href="#contact" data-toggle="tab" class="edit btn btn-sm btn-green-sea btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-pomegranate btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+    		                                                        </tr>
+    		                                                    </tbody>
 
-		                                            </div>
-													<div class="tab-pane fade" id="tab-3">
-														<div class="pull-right">
-															<a href="#modal-dialog-priorjobs" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Prior Jobs</a>
-														</div>
-														<br>
+                                                              </table>
 
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-																	<th>COMPANY</th>
-		                                                            <th>START DATE</th>
-																	<th>END DATE</th>
-																	<th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employee Prior Jobs</td>
-		                                                            <td>Random Company</td>
-																	<td>05-12-16</td>
-																	<td>05-14-16</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
-
-		                                            </div>
-													<div class="tab-pane fade" id="tab-4">
-														<div class="pull-right">
-															<a href="#modal-dialog-learning" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Learning Activities</a>
-														</div>
-														<br>
-
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th>REFERENCE</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Selling Fundementals</td>
-		                                                            <td>Sales 101</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
-
-		                                            </div>
-													<div class="tab-pane fade" id="tab-5">
-														<div class="pull-right">
-															<a href="#modal-dialog-watchlists" class="btn btn-custom btn-md m-r-5 m-b-5" data-toggle="modal"><i class="fa fa-plus"></i> Add Watch Lists</a>
-														</div>
-														<br>
-
-														<table id="" class="display table table-striped table-bordered nowrap" width="100%">
-		                                                    <thead>
-		                                                        <tr>
-		                                                            <th>NAME</th>
-		                                                            <th></th>
-		                                                        </tr>
-		                                                    </thead>
-		                                                    <tbody>
-		                                                        <tr>
-		                                                            <td>Employees who have top performing potential</td>
-		                                                            <td class="text-center"><a class="btn btn-danger btn-icon btn-circle btn-sm"><i class="fa fa-times"></i></a></td>
-		                                                        </tr>
-		                                                    </tbody>
-		                                                </table>
+                                                        </div><!--/.c_content-->
 
 		                                            </div>
 
@@ -462,137 +462,388 @@ How to implement and manage the change process.
 										</div>
 
                                     </div>
-                                </div>
-                            </div>
-                            <!-- end panel -->
-                        </div>
-                        <!-- end col-6 -->
+                                </div><!--/row-->
+
+                            </div><!--/widget-content-->
+                        </div><!--/widget-->
+
                     </div>
-                        <!-- end row -->
+                </div><!--/.row-->
+                <!--======== Weekly Summary End ========-->
+
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+
+        <!--===== Right sidebar nofications start ========-->
+
+        <aside>
+            <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
+                <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+                    <div id="right-sidebar-tab-content" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="session">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Session</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Instructor's Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Locaton</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Start Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">End Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+
+                                                <label>Start Time</label>
+                                                <div class="form-group">
+
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-1">
+
+                                                        <h4>:</h4>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>00</option>
+                                                            <option>15</option>
+                                                            <option>30</option>
+                                                            <option>45</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 margin-top-10">
+
+                                                <label>End Time</label>
+                                                <div class="form-group">
+
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <h4>:</h4>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <select class="form-control">
+                                                            <option>00</option>
+                                                            <option>15</option>
+                                                            <option>30</option>
+                                                            <option>45</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 margin-top-20">
+                                                <div class="form-group">
+                                                    <label>Active</label>
+
+                                                    <div class="switch">
+                                                        <input id="form-toggle-1" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                        <label for="form-toggle-1" data-on="YES" data-off="NO"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="outcome">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Learning Outcome</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Task</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Outcome</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Category</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="assignment">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Prework Assignment</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Field Phone</label>
+                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                                <span class="help-inline">(999) 999-9999</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Option</label>
+                                                <select class="form-control">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Field Expand</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Field Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="exercises">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Course Exercise</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Field Phone</label>
+                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                                <span class="help-inline">(999) 999-9999</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Option</label>
+                                                <select class="form-control">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Field Expand</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Field Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="materials">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Activity Material</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Field Phone</label>
+                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                                <span class="help-inline">(999) 999-9999</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Option</label>
+                                                <select class="form-control">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Field Expand</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Field Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="skill">
+                            <div class="right-sidebar-panel-content-heading">
+                                <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Skill</h2>
+                                <small></small>
+                            </div>
+                            <div class="right-sidebar-panel-content animated fadeInRight">
+
+                                <ul class="right-sidebar-list margin-top-80">
+                                    <div class="c_content">
+
+                                        <form class="" action="index.html" method="post">
+
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Field Phone</label>
+                                                <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                                <span class="help-inline">(999) 999-9999</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInput">Field Option</label>
+                                                <select class="form-control">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea-expandable">Field Expand</label>
+                                                <textarea class="form-control textarea-expandable"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="daterange-3">Field Date</label>
+                                                <div class="controls">
+                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                <div class="btn-bottom-right-sidebar-close">
+                    <span class="fa fa-times"></span>
                 </div>
+
             </div>
-			<!-- end page-header -->
+        </aside>
+        <!--===== Right sidebar nofications end ========-->
 
-		</div>
-		<!-- end #content -->
+    </section><!--/.container-->
 
-
-		<!-- begin scroll to top btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-custom btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		<!-- end scroll to top btn -->
-	</div>
-	<!-- end page container -->
-
-	{{ template "scripts.tmpl" . }}
-
-	<script>
-		$(document).ready(function() {
-			App.init();
-			TableManageResponsive.init();
-			$('table.display').DataTable();
-			$("#table tr").css('cursor', 'pointer');
-		});
-	</script>
-
-	<!-- Add Miscellaneous Factors Modal -->
-	<div class="modal fade" id="modal-dialog-misc">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-custom">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 class="modal-title text-center text-white f-w-400">Miscellaneous Factors</h3>
-				</div>
-				<div class="modal-footer">
-					<div class="tab-pane fade active in">
-
-						<ul class="nav nav-tabs nav-justified">
-							<li class="active"><a href="#tab1" data-toggle="tab">Factor Involing A Single Employee</a></li>
-							<li class=""><a href="#tab2" data-toggle="tab">Factor Involving All Employees</a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade active in" id="tab1">
-
-								<div class="row">
-									<label class="col-md-2 control-label">Employee:</label>
-									<div class="col-md-10">
-										<select class="form-control">
-											<option>Robert Jones</option>
-											<option></option>
-											<option></option>
-										</select>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Factor:</label>
-										<div class="col-md-10">
-											<textarea class="form-control" placeholder="" rows="4"></textarea>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Date Began:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-										<label class="col-md-2 control-label">Date Ended:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-							<div class="tab-pane fade" id="tab2">
-
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Factor:</label>
-										<div class="col-md-10">
-											<textarea class="form-control" placeholder="" rows="4"></textarea>
-										</div>
-									</div>
-								</div>
-								<br>
-								<div class="row">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Date Began:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-										<label class="col-md-2 control-label">Date Ended:</label>
-										<div class="col-md-4">
-											<input type="email" class="form-control" placeholder="" />
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="form-group">
-							<label class="col-md-2 control-label">Notes:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" placeholder="" rows="4"></textarea>
-							</div>
-						</div>
-					</div>
-					<a class="btn btn-default btn-md m-r-5 m-t-10 m-b-5" data-dismiss="modal"><i class="fa fa-times"></i> Close</a>
-					<a class="btn btn-custom btn-md m-r-5 m-t-10 m-b-5"><i class="fa fa-plus"></i> Add</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Miscellaneous Factors Modal -->
+    <!--****** Modal End ******-->
+    {{ template "scripts.tmpl" . }}
 
 </body>
+
 </html>
+
+<!--===== Footer End ========-->
