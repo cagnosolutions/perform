@@ -19,13 +19,17 @@
 <body id="carrot-scheme">
 
     <section id="container">
+
+        {{ template "sidenav.tmpl" . }}
         {{ template "topnav.tmpl" . }}
 
 
         <!--main content start-->
-        <section id="main-content" class="merge-left">
+        <section id="main-content" class="">
 
             <section class="wrapper">
+
+                {{ template "gridmenue.tmpl" . }}
 
                 <!--======== Page Title and Breadcrumbs Start ========-->
                 <div class="top-page-header">
