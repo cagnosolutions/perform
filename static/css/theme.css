@@ -11161,6 +11161,15 @@ ANIMATED HOVER BOXED ICON CONTENT
       color: #777;
     }
 
+    .hover-boxed-icon-content h2 {
+      font-size: 15px;
+      margin-top: 25px;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #777;
+    }
+
     .hover-boxed-icon-content .mask-top {
       width: 100%;
       background-color: #ffffff;
@@ -11197,8 +11206,28 @@ ANIMATED HOVER BOXED ICON CONTENT
       overflow: hidden;
       position: relative;
       height: 197px;
-      border: 1px solid #f2f2f2;
+      border: 3px solid #f2f2f2;
       margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .hover-boxed-icon-content .contentlg {
+      overflow: hidden;
+      position: relative;
+      height: 197px;
+      border: 3px solid #f2f2f2;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background-color: #34495e;
+    }
+
+    .hover-boxed-icon-content .contentsm {
+      overflow: hidden;
+      position: relative;
+      height: 90px;
+      border: 3px solid #f2f2f2;
+      margin-bottom: 20px;
+      cursor: pointer;
     }
 
     .hover-boxed-icon-content .mask-bottom {
@@ -11221,6 +11250,10 @@ ANIMATED HOVER BOXED ICON CONTENT
 
     .hover-boxed-icon-content .mask-bottom h4 {
       margin: 15px 0px 17px;
+    }
+
+    .hover-boxed-icon-content .mask-sm h2 {
+      margin: 28px 0px 17px;
     }
 
     .hover-boxed-icon-content .content:hover .mask-bottom {

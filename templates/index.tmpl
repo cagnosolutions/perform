@@ -17,12 +17,26 @@
 </head>
 
 <body id="carrot-scheme">
+    <!-- <header class="header fixed-top clearfix">
+
+        <div class="brand">
+            <a href="/" class="logo">
+                Perform
+            </a>
+        </div>
+        <div class="brand">
+            <a href="/" class="logo">
+                Resource Management System
+            </a>
+        </div>
+
+    </header> -->
 
     <section id="container">
 
-        {{ template "sidenav.tmpl" . }}
         {{ template "topnav.tmpl" . }}
 
+        {{ template "sidenav.tmpl" . }}
 
         <!--main content start-->
         <section id="main-content" class="">
@@ -33,126 +47,286 @@
 
                 <!--======== Page Title and Breadcrumbs Start ========-->
 
+                <div class="col-md-12 margin-top-45">
+                    <div class="c_panel" style="height:120px;">
+                        <div class="c_content" style="background-color: #5e8b9d;">
+                            <h1 class="font-size-50 text-center margin-top-15 fg-white" style="font-weight:700;"> WELCOME TO P.E.R.F.O.R.M.</h1>
+                            <p class="font-szie-10 text-center margin-top-15 fg-white">Putting the pieces together so you can achieve more</p>
+                        </div>
+                    </div>
+                    <div class="c_panel nopadding nomargin">
 
-                <div class="col-md-12">
-                    <div class="page-ecommerce bg-white margin-top-50 padding-25">
-                        <div class="row">
-                            <div class="c_panel ecommerce-content bg-white">
+                        <div class="c_content nopadding nomargin">
 
-                                <div class="top-header-envoice margin-bottom-10 padding-left-10">
-                                    <div class="row">
-                                        <div class="col-md-12 margin-top-10 text-center">
-                                            <h2>Welcome To P.E.R.F.O.R.M.</h2>
-                                            <div>
-                                                <p class="margin-top-10">
-                                                    
-                                                </p>
+                            <div class="row wow fadeInDown">
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentlg" >
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
+                                                <!-- Icon -->
+                                                <i class="fa fa-building fg-white"></i>
+                                                <!-- Title -->
+                                                <h4 class="margin-top-10 fg-white">Company Information</h4>
                                             </div>
                                         </div>
                                     </div>
-
-                                </div><!--/top-header-->
-
-                            </div><!--/ecommerce-content-->
-
-                        </div><!--/row-->
-
-                    </div><!--/page-ecommerce-->
-                </div>
-
-
-                <div class="col-md-12">
-
-                    <div class="c_panel">
-
-                        <div class="c_content">
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 margin20">
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
                                     <div class="hover-boxed-icon-content text-center">
-                                        <div class="content">
-                                            <div class="mask-top">
+                                        <div class="contentlg">
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
                                                 <!-- Icon -->
-                                                <i class="fa fa-building"></i>
+                                                <i class="fa fa-users fg-white"></i>
                                                 <!-- Title -->
-                                                <h4>Company Information</h4>
+                                                <h4 class="margin-top-10 fg-white">Employee Information</h4>
                                             </div>
-                                            <div class="mask-bottom">
-                                                <i class="fa fa-building"></i>
-                                                <a href="/business_results_overview"><h4>Buisiness Results</h4></a>
-                                                <h4>Job Information</h4>
-                                                <h4>Organizaion Structure</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentlg">
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
+                                                <!-- Icon -->
+                                                <i class="fa fa-road fg-white"></i>
+                                                <!-- Title -->
+                                                <h4 class="margin-top-10 fg-white">Employee Development</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentlg">
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
+                                                <!-- Icon -->
+                                                <i class="fa fa-tachometer fg-white"></i>
+                                                <!-- Title -->
+                                                <h4 class="fg-white">Employee Reviews</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentlg">
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
+                                                <!-- Icon -->
+                                                <i class="fa fa-bar-chart fg-white"></i>
+                                                <!-- Title -->
+                                                <h4 class="margin-top-10 fg-white">Employee Performance</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentlg">
+                                            <div class="mask-top"  style="background-color: #5e8b9d;">
+                                                <!-- Icon -->
+                                                <i class="fa fa-cogs fg-white"></i>
+                                                <!-- Title -->
+                                                <h4 class="fg-white">Settings</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                                </div><!--services col-->
+                            <div class="row wow fadeInUp" data-wow-delay=".3s">
                                 <div class="col-md-2 col-sm-6 margin20">
                                     <div class="hover-boxed-icon-content text-center">
-                                        <div class="content">
-                                            <div class="mask-top">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
                                                 <!-- Icon -->
-                                                <i class="fa fa-laptop"></i>
-                                                <!-- Title -->
-                                                <h4>Ultra Responsive</h4>
-                                            </div>
-                                            <div class="mask-bottom">
-                                                <!-- Icon -->
-                                                <i class="fa fa-laptop"></i>
-                                                <!-- Title -->
-                                                <h4>Ultra Responsive</h4>
-                                                <!-- Text -->
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, assumenda, odio. Aspernatur minus ullam, voluptatum maxime delectus, magnam laborum excepturi fugiat. Ad saepe vero doloribus veniam consectetur quod soluta accusamus.</p>
+                                                <a href="/business_results_overview"><h2>Business Results</h2></a>
                                             </div>
                                         </div>
                                     </div>
-                                </div><!--services col-->
+                                </div>
                                 <div class="col-md-2 col-sm-6 margin20">
                                     <div class="hover-boxed-icon-content text-center">
-                                        <div class="content">
-                                            <div class="mask-top">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
                                                 <!-- Icon -->
-                                                <i class="fa fa-code"></i>
-                                                <!-- Title -->
-                                                <h4>Clean &amp; valid design</h4>
-                                            </div>
-                                            <div class="mask-bottom">
-                                                <!-- Icon -->
-                                                <i class="fa fa-code"></i>
-                                                <!-- Title -->
-                                                <h4>Clean &amp; valid design</h4>
-                                                <!-- Text -->
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolor natus facere, autem totam dolorum reprehenderit, repudiandae laborum harum laudantium nostrum beatae optio veniam veritatis porro modi voluptas doloribus pariatur.</p>
+                                                <h2 class="margin-top-13">Employee Information</h2>
                                             </div>
                                         </div>
                                     </div>
-                                </div><!--services col-->
+                                </div>
                                 <div class="col-md-2 col-sm-6 margin20">
                                     <div class="hover-boxed-icon-content text-center">
-                                        <div class="content">
-                                            <div class="mask-top">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
                                                 <!-- Icon -->
-                                                <i class="fa fa-cogs"></i>
-                                                <!-- Title -->
-                                                <h4>Free Support &amp; Updates</h4>
-                                            </div>
-                                            <div class="mask-bottom">
-                                                <!-- Icon -->
-                                                <i class="fa fa-cogs"></i>
-                                                <!-- Title -->
-                                                <h4>Free Support &amp; Updates</h4>
-                                                <!-- Text -->
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vitae, quo a ullam explicabo sunt perferendis odio, minima voluptate, dolorem nesciunt animi eveniet tenetur. Similique quod fugiat impedit nobis ullam!</p>
+                                                <h2>Learning Activities</h2>
                                             </div>
                                         </div>
                                     </div>
-                                </div><!--services col-->
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Performance Reviews</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>One-To-One Measure</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Settings Info</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row wow fadeInUp" data-wow-delay=".4s">
 
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Job Information</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Employee Profile</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Career Planning</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2 class="margin-top-13">Accountability Reviews</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2 class="margin-top-13">One-To-Many Measure</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Detailed Settings</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="row wow fadeInUp" data-wow-delay=".5s">
+
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2 class="margin-top-13">Organization Structure</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Job Canidates</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Course Sessions</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Best Practices</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Peer-To-Peer Measure</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row wow fadeInUp" data-wow-delay=".6s">
+                                <div class="col-md-offset-4 col-md-2 col-sm-6 margin20">
+                                    <div class="hover-boxed-icon-content text-center">
+                                        <div class="contentsm">
+                                            <div class="mask-sm">
+                                                <!-- Icon -->
+                                                <h2>Course Registrations</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--/.c_content-->
                     </div><!--/.c_panel-->
+
 
                 </div><!--/.col-md-12-->
 
