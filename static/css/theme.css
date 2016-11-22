@@ -397,7 +397,7 @@ ul.sidebar-menu li a span {
 
 
 ul.sidebar-menu li a {
-    color:#84888D;
+    color: #5e8b9d;
     text-decoration:none;
     display:block;
     padding:8px 0 8px 25px;
@@ -11167,7 +11167,7 @@ ANIMATED HOVER BOXED ICON CONTENT
       position: relative;
       text-transform: uppercase;
       font-weight: 700;
-      color: #777;
+      color: #fff;
     }
 
     .hover-boxed-icon-content .mask-top {
@@ -11215,19 +11215,38 @@ ANIMATED HOVER BOXED ICON CONTENT
       overflow: hidden;
       position: relative;
       height: 197px;
-      border: 3px solid #f2f2f2;
+      border: 1px solid #f2f2f2;
       margin-bottom: 20px;
       cursor: pointer;
       background-color: #34495e;
+      box-shadow:2px 2px 10px #333;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .hover-boxed-icon-content .contentsm {
       overflow: hidden;
       position: relative;
       height: 90px;
-      border: 3px solid #f2f2f2;
+      border: 1px solid #f2f2f2;
       margin-bottom: 20px;
       cursor: pointer;
+      background-color: #777;
+      box-shadow:2px 2px 10px #333;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    .hover-boxed-icon-content .contentsm:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hover-boxed-icon-content .contentlg:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     .hover-boxed-icon-content .mask-bottom {
