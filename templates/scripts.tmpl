@@ -69,7 +69,6 @@
     <script src="../static/js/tooltipster.js" type="text/javascript" ></script>
 
     <!-- For this page only -->
-    <script src="../static/js/tables.js"></script>
     <script src="../static/js/table_editable.js"></script>
     <script src="../static/js/forms.js"></script>
     <script src="../static/js/sweetalert.js"></script>
@@ -79,6 +78,7 @@
 
 
         $(document).ready(function(){
+            $('.dataTable').dataTable();
             $('a.delete').click(function() {
                 swal({   title: "Are you sure?",   text: "You will not be able to recover this imaginary file!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, delete it!",   closeOnConfirm: false }, function(){   swal("Deleted!", "Your imaginary file has been deleted.", "success"); });
             });
