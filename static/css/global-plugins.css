@@ -7525,8 +7525,8 @@ ul {
 }
 
 .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus, .pagination>li.active>a, .pagination>li.active>a:hover {
-    background-color: #5e8b9d;
-    border-color: #5e8b9d;
+    background-color: #337ab7;
+    border-color: #337ab7;
     color: #fff
 }
 

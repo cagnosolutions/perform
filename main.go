@@ -17,11 +17,20 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions, multi_measurement_performance, peer_to_peer)
+	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions, multi_measurement_performance, peer_to_peer, career_planning, job_canidates)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":9999", mux))
 }
+
+var job_canidates = web.Route{"GET", "/job_canidates", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "job_canidates.tmpl", web.Model{})
+	return
+}}
+var career_planning = web.Route{"GET", "/career_planning", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "career_planning.tmpl", web.Model{})
+	return
+}}
 
 var peer_to_peer = web.Route{"GET", "/peer_to_peer", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "peer_to_peer.tmpl", web.Model{})
