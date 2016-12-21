@@ -318,8 +318,7 @@ var App = function () {
 
             });
             // was '.top-page-header .toggle-right-sidebar span'
-            $('.toggle-right-sidebar').on('click', function() {
-
+            $('.toggle-right-sidebar').on('click', function(e) {
 
                 if($("#right-sidebar").hasClass("hide-right-bar-notifications")) {
 

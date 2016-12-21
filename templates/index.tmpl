@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../static/css/custom.css" media="screen" title="no title">
     <link rel="shortcut icon" href="">
     <title>PERFORM | HOME</title>
-
     {{ template "head.tmpl" . }}
-
 </head>
-
 <body id="carrot-scheme">
     <!-- <header class="header fixed-top clearfix">
-
         <div class="brand">
             <a href="/" class="logo">
                 Perform
@@ -29,27 +22,15 @@
                 Resource Management System
             </a>
         </div>
-
     </header> -->
-
     <section id="container">
-
         {{ template "topnav.tmpl" . }}
-
         {{ template "sidenav.tmpl" . }}
-
-        <!--main content start-->
         <section id="main-content" class="">
-
             <section class="wrapper">
-
                 {{ template "gridmenue.tmpl" . }}
-
-                <!--======== Page Title and Breadcrumbs Start ========-->
-
                 <div class="col-md-12 margin-top-45">
                     <div class="c_panel" style="height:120px;">
-
                         <div class="c_content" style="background-color: #337ab7;">
                             <div class="pull-right">
                                 <button id="collapse" class="btn btn-wet-asphalt btn-flat btn-raised">Show All</button>
@@ -59,17 +40,13 @@
                         </div>
                     </div>
                     <div class="c_panel nopadding nomargin">
-
                         <div class="c_content nopadding nomargin">
-
                             <div class="row wow fadeInUp">
                                 <div class="col-md-2 col-sm-6 margin20">
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg CI">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-building"></i>
-                                                <!-- Title -->
                                                 <h4 class="margin-top-10 fg-black">Company Information</h4>
                                             </div>
                                         </div>
@@ -79,9 +56,7 @@
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg EI">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-users"></i>
-                                                <!-- Title -->
                                                 <h4 class="margin-top-10 fg-black">Employee Information</h4>
                                             </div>
                                         </div>
@@ -91,9 +66,7 @@
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg ED">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-road"></i>
-                                                <!-- Title -->
                                                 <h4 class="margin-top-10 fg-black">Employee Development</h4>
                                             </div>
                                         </div>
@@ -103,9 +76,7 @@
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg ER">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-tachometer"></i>
-                                                <!-- Title -->
                                                 <h4 class="fg-black">Employee Reviews</h4>
                                             </div>
                                         </div>
@@ -115,9 +86,7 @@
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg EP">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-bar-chart"></i>
-                                                <!-- Title -->
                                                 <h4 class="margin-top-10 fg-black">Employee Performance</h4>
                                             </div>
                                         </div>
@@ -127,16 +96,13 @@
                                     <div class="hover-boxed-icon-content text-center">
                                         <div class="contentlg SE">
                                             <div class="mask-top">
-                                                <!-- Icon -->
                                                 <i class="fa fa-cogs"></i>
-                                                <!-- Title -->
                                                 <h4 class="fg-black">Settings</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row wow fadeInUp" data-wow-delay=".3s">
                                 <div class="col-md-2 col-sm-6 text-center">
                                     <a href="/business_results_overview" class="btn  btn-custom">Buisiness <br>Results</a>
@@ -157,9 +123,7 @@
                                     <a href="/employee_information" class="btn  btn-custom">General <br> Settings</a>
                                 </div>
                             </div>
-
                             <div class="row wow fadeInUp margin-top-20" data-wow-delay=".4s">
-
                                 <div class="col-md-2 col-sm-6 text-center">
                                     <a href="/business_results_overview" class="btn  btn-custom">Job <br>Information</a>
                                 </div>
@@ -179,9 +143,7 @@
                                     <a href="/employee_information" class="btn  btn-custom">User <br>Settings</a>
                                 </div>
                             </div>
-
                             <div class="row wow fadeInUp margin-top-20" data-wow-delay=".5s">
-
                                 <div class="col-md-2 col-sm-6 text-center">
                                     <a href="/business_results_overview" class="btn  btn-custom">Organization <br>Structure</a>
                                 </div>
@@ -200,7 +162,6 @@
                                 <div class="col-md-2 col-sm-6 text-center">
                                     <a href="/employee_information" class="btn  btn-custom">Company <br>Settings</a>
                                 </div>
-
                             </div>
                             <div class="row wow fadeInUp margin-top-20" data-wow-delay=".6s">
                                 <div class="col-md-offset-4 col-md-2 col-sm-6 text-center">
@@ -210,19 +171,12 @@
                                     <a href="/employee_information" class="btn  btn-custom">Observation <br>Goals</a>
                                 </div>
                             </div>
-                        </div><!--/.c_content-->
-                    </div><!--/.c_panel-->
-
-
-                </div><!--/.col-md-12-->
-
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
-        <!--======== Main Content End ========-->
-
-    </section><!--/.container-->
-
-    <!--****** Modal End ******-->
+    </section>
     {{ template "scripts.tmpl" . }}
     <script type="text/javascript">
     $('#collapse').click(function() {
@@ -252,9 +206,5 @@
         $(".SEH").toggleClass('hide')
     });
     </script>
-
 </body>
-
 </html>
-
-<!--===== Footer End ========-->

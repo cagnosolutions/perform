@@ -17,12 +17,33 @@ func init() {
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions, multi_measurement_performance, peer_to_peer, career_planning, job_canidates)
+	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results)
+	mux.AddRoutes(one_to_one_measurement, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions)
+	mux.AddRoutes(multi_measurement_performance, peer_to_peer, career_planning, job_canidates, organization_structure, accountability_reviews, job_canidates_overview)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":9999", mux))
 }
 
+var job_canidates_overview = web.Route{"GET", "/job_canidates_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "job_canidates_overview.tmpl", web.Model{})
+	return
+}}
+
+var accountability_reviews = web.Route{"GET", "/accountability_reviews", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "accountability_reviews.tmpl", web.Model{})
+	return
+}}
+
+var organization_structure = web.Route{"GET", "/organization_structure", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "organization_structure.tmpl", web.Model{})
+	return
+}}
+
+var one_to_one_measurement = web.Route{"GET", "/one_to_one_measurement", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "one_to_one_measurement.tmpl", web.Model{})
+	return
+}}
 var job_canidates = web.Route{"GET", "/job_canidates", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "job_canidates.tmpl", web.Model{})
 	return

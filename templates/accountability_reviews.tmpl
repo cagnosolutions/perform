@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Employee Reviews</title>
+    {{ template "head.tmpl" . }}
+</head>
+<body id="carrot-scheme">
+    <section id="container">
+        {{ template "topnav.tmpl" . }}
+        {{ template "sidenav.tmpl" . }}
+        <section id="main-content">
+            <section class="wrapper">
+                {{ template "gridmenue.tmpl" . }}
+                <div class="top-page-header">
+                    <div class="page-title">
+                        <h2>Accountability Reviews</h2>
+                        <small></small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li><a href="#">Employee Reviews</a></li>
+                                <li class="active"><a href="/one_to_one_measurement">Accountability Reviews</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-content bg-white">
+                                <div class="c_panel">
+                                    <div class="c_title">
+                                        <div class="col-md-6">
+                                            <h2>Accountability Review For Robert Jones</h2>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="c_content">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Reviewed By:</label>
+                                                    <div class="col-md-2">
+                                                        <select class="form-control">
+                                                            <option>Joe Gibbs</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Discussed Review Date:</label>
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Scheduled Review Date:</label>
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Actual Review Date:</label>
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Review Notes:</label>
+                                                    <div class="col-md-10">
+                                                        <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <h3 class="text-uppercase">Accountability Factors</h3>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+												<div class="form-group">
+													<div class="col-md-offset-1 col-md-2">
+														<h5><strong>Description</strong></h5>
+													</div>
+		                                            <div class="col-md-8">
+		                                                <textarea class="form-control" rows="6"></textarea>
+		                                            </div>
+		                                        </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+										<form class="form-horizontal">
+                                            <fieldset>
+												<div class="form-group">
+													<div class="col-md-2">
+														<h5><strong>Notes</strong></h5>
+													</div>
+		                                            <div class="col-md-9">
+		                                                <textarea class="form-control" rows="6"></textarea>
+		                                            </div>
+		                                        </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    {{ template "scripts.tmpl" . }}
+    <script type="text/javascript">
+    $('tr#click').click(function() {
+        window.open(
+            '/learning_activities',
+            '_blank'
+        )
+    });
+    </script>
+</body>
+</html>

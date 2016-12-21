@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="shortcut icon" href="">
     <title>PERFORM | Job Overview</title>
 
     {{ template "head.tmpl" . }}
 
 </head>
-
 <body id="carrot-scheme">
-
     <section id="container">
 
         {{ template "topnav.tmpl" . }}
-
         {{ template "sidenav.tmpl" . }}
 
         <section id="main-content">
-
-
             <section class="wrapper">
-
 
                 {{ template "gridmenue.tmpl" . }}
 
-                <!--======== Page Title and Breadcrumbs Start ========-->
                 <div class="top-page-header">
-
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/business_results" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Buisiness Result</a>
+                            <a href="/business_results" type="button" class="btn btn-wet-asphalt btn-raised"><i class="fa fa-plus"></i>&nbsp;Buisiness Result</a>
                         </div>
-                        <h2>Buisiness Results</h2>
+                        <h3>Buisiness Results</h3>
                         <small>A list of buisiness results and company goals</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li class="active"><a href="/employee_overview">Company Information</a></li>
+                                <li class="active"><a href="/business_results">Business Results</a></li>
                             </ul>
                         </nav>
                     </div>
-
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
-
-                                <h3 class="text-uppercase">Buisiness Results</h3>
+                                <h4>Buisiness Results</h4>
                             </div>
                             <div class="widget-content bg-white">
-
                                 <div class="row">
                                     <div class="col-md-12">
-
                                         <div class="tab-pane fade active in" id="default-tab-1">
-
                                             <div class="c_content">
-
-                                                <table class="table dataTable table-bordered table-hover" style="border-spacing:0px; width:100%">
-
+                                                <table class="table dataTable table-hover">
                                                     <thead>
                                                         <tr>
                                                             <th>NAME</th>
@@ -84,29 +66,60 @@
                                                             <td>Establish Brokerage Product</td>
                                                             <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
                                                         </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Air Product</td>
+                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Brokerage Product</td>
+                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Air Product</td>
+                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Brokerage Product</td>
+                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Air Product</td>
+                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Brokerage Product</td>
+                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Air Product</td>
+                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Brokerage Product</td>
+                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Air Product</td>
+                                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                                        </tr>
+                                                        <tr id="click">
+                                                            <td>Establish Brokerage Product</td>
+                                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                                        </tr>
                                                     </tbody>
-
                                                 </table>
-                                            </div><!--/.c_content-->
-
+                                            </div>
                                         </div>
-
                                     </div>
-                                </div><!--/row-->
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!--/.row-->
-
+                </div>
 
             </section>
-
         </section>
-        <!--======== Main Content End ========-->
-
-    </section><!--/.container-->
+    </section>
 
     {{ template "scripts.tmpl" . }}
 
@@ -115,7 +128,5 @@
         window.location.href = '/business_results'
     });
     </script>
-
 </body>
-
 </html>

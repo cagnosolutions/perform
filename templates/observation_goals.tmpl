@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="shortcut icon" href="">
     <title>PERFORM | Employee Performance</title>
-
     {{ template "head.tmpl" . }}
-
 </head>
-
 <body id="carrot-scheme">
-
     <section id="container">
-
         {{ template "topnav.tmpl" . }}
-
         {{ template "sidenav.tmpl" . }}
-
         <section id="main-content">
-
-
             <section class="wrapper">
-
-
                 {{ template "gridmenue.tmpl" . }}
-
-                <!--======== Page Title and Breadcrumbs Start ========-->
                 <div class="top-page-header">
-
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
                             <a href="/observation_goals" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Observation Goal</a>
@@ -49,25 +32,18 @@
                             </ul>
                         </nav>
                     </div>
-
                 </div>
-                <!--======== Page Title and Breadcrumbs End ========-->
-
-                <!--======== Employee Information Start ========-->
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="widget">
-
                             <div class="widget-content bg-white">
-
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="c_panel">
                                             <div class="c_title">
                                                 <h2>Employee</h2>
                                                 <div class="clearfix"></div>
-                                            </div><!--/.c_title-->
+                                            </div>
                                             <div class="c_content">
                                                 <div class="inner-addon right-addon margin-bottom-10">
                                                   <i class="fa fa-search"></i>
@@ -80,32 +56,23 @@
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-
-                                            </div><!--/.c_content-->
-                                        </div><!--/.c_panel-->
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                            </div>
+                        </div>
                     </div>
-                </div><!--/.row-->
-
+                </div>
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
-
                                 <h3 class="text-uppercase">OBSERVATION GOAL</h3>
                             </div>
                             <div class="widget-content bg-white">
-
                                 <div class="row">
                                     <div class="col-md-6">
-
                                         <form class="form-horizontal">
                                             <fieldset>
 												<div class="form-group">
@@ -118,11 +85,8 @@
 		                                        </div>
                                             </fieldset>
                                         </form>
-
                                     </div>
-
                                     <div class="col-md-6">
-
 										<form class="form-horizontal">
                                             <fieldset>
 												<div class="form-group">
@@ -135,32 +99,22 @@
 		                                        </div>
                                             </fieldset>
                                         </form>
-
                                     </div>
-                                </div><!--/row-->
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!--/.row-->
-
-
-                <!--======== Employee Information Start ========-->
+                </div>
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
                                 <h3 class="text-uppercase">JOB TASKS / PROPERITES</h3>
                             </div>
                             <div class="widget-content bg-white">
-
                                 <div class="row">
                                     <div class="col-md-12">
-
                                         <div class="tab-content">
-
 											<div class="pull-right margin-bottom-20">
 												<button href="#observation" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Observation Goal</button>
 											</div>
@@ -186,44 +140,28 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-
 										</div>
-
                                     </div>
-                                </div><!--/row-->
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!--/.row-->
-                <!--======== Weekly Summary End ========-->
-
+                </div>
             </section>
-
         </section>
-        <!--======== Main Content End ========-->
-
-
-        <!--===== Right sidebar nofications start ========-->
-
         <aside>
             <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse hide-right-bar-notifications">
                 <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
                     <div id="right-sidebar-tab-content" class="tab-content">
-
                         <div role="tabpanel" class="tab-pane fade in active" id="observation">
                             <div class="right-sidebar-panel-content-heading">
                                 <h2 class="text-center"><i class="fa fa-plus"></i>&nbsp;Observation Goal</h2>
                                 <small></small>
                             </div>
                             <div class="right-sidebar-panel-content animated fadeInRight">
-
                                 <ul class="right-sidebar-list ">
                                     <div class="c_content">
-
 										<form class="" action="index.html" method="post">
-
 											<div class="form-group">
                                                 <label for="exampleInput">Branch</label>
                                                 <select class="form-control">
@@ -266,31 +204,19 @@
                                                 <label for="textarea-expandable">Details</label>
                                                 <textarea class="form-control textarea-expandable"></textarea>
                                             </div>
-
                                             <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
                                         </form>
-
                                     </div>
                                 </ul>
-
                             </div>
                         </div>
-
-                    </div><!-- /example -->
+                    </div>
                 <div class="btn-bottom-right-sidebar-close">
                     <span class="fa fa-times"></span>
                 </div>
-
             </div>
         </aside>
-        <!--===== Right sidebar nofications end ========-->
-
-    </section><!--/.container-->
-
+    </section>
     {{ template "scripts.tmpl" . }}
-
 </body>
-
 </html>
-
-<!--===== Footer End ========-->

@@ -1,169 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="">
+        <title>PERFORM | Company Information</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {{ template "head.tmpl" . }}
 
-    <link rel="shortcut icon" href="">
-    <title>PERFORM | Job Overview</title>
+    </head>
 
-    {{ template "head.tmpl" . }}
+    <body id="carrot-scheme">
+        <section id="container">
 
-</head>
+            {{ template "topnav.tmpl" . }}
+            {{ template "sidenav.tmpl" . }}
 
-<body id="carrot-scheme">
+            <section id="main-content">
+                <section class="wrapper">
 
-    <section id="container">
+                    {{ template "gridmenue.tmpl" . }}
 
-        {{ template "topnav.tmpl" . }}
-
-        {{ template "sidenav.tmpl" . }}
-
-        <section id="main-content">
-
-
-            <section class="wrapper">
-
-
-                {{ template "gridmenue.tmpl" . }}
-
-                <!--======== Page Title and Breadcrumbs Start ========-->
-                <div class="top-page-header">
-
-                    <div class="page-title">
-                        <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/job_information" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Job</a>
-                        </div>
-                        <h2>Job Overview</h2>
-                        <small>A List of Company Jobs</small>
-                    </div>
-                    <div class="page-breadcrumb">
-                        <nav class="c_breadcrumbs">
-                            <ul>
-                                <li class="active"><a href="/employee_overview">Company Information</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <div class="widget">
-                            <div class="widget-header bg-wet-asphalt">
-
-                                <h3 class="fg-gray">Cultivisor Jobs</h3>
+                    <div class="top-page-header">
+                        <div class="page-title">
+                            <div class="pull-right margin-top-20 margin-right-20">
+                                <a href="/job_information" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Job</a>
                             </div>
-                            <div class="widget-content bg-white">
-
-                                <div class="row">
-                                    <div class="col-md-12">
-
-                                        <div class="tab-pane fade active in" id="default-tab-1">
-
-                                            <div class="c_content">
-
-                                                <table class="table dataTable table-bordered table-hover" style="border-spacing:0px; width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>NAME</th>
-                                                            <th>DEPARTMENT</th>
-                                                            <th>Description</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Sales</td>
-                                                            <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-
-                                                  </table>
-                                            </div><!--/.c_content-->
-
-                                        </div>
-
-                                    </div>
-                                </div><!--/row-->
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                            <h3>Job Overview</h3>
+                            <small>A List of Company Jobs</small>
+                        </div>
+                        <div class="page-breadcrumb">
+                            <nav class="c_breadcrumbs">
+                                <ul>
+                                    <li class="active"><a href="/job_information_overview">Job Information</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div><!--/.row-->
 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-header bg-wet-asphalt">
+                                    <h4>Cultivisor Jobs</h4>
+                                </div>
+                                <div class="widget-content bg-white">
 
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="tab-pane fade active in" id="default-tab-1">
+                                                <div class="c_content">
+                                                    <table class="table dataTable table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>NAME</th>
+                                                                <th>DEPARTMENT</th>
+                                                                <th>Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="click">
+                                                                <td>Global Sales Executive</td>
+                                                                <td>Sales</td>
+                                                                <td>A Job Descripition for a global sales executive. This is where you would put a description for a global sales executive. Put a description for job here.</td>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
             </section>
-
         </section>
-        <!--======== Main Content End ========-->
 
-    </section><!--/.container-->
+        {{ template "scripts.tmpl" . }}
 
-    {{ template "scripts.tmpl" . }}
-
-    <script type="text/javascript">
-    $('tr#click').click(function() {
-        window.location.href = '/job_information'
-    });
-    </script>
-
-</body>
-
+        <script type="text/javascript">
+        $('tr#click').click(function() {
+            window.location.href = '/job_information'
+        });
+        </script>
+    </body>
 </html>

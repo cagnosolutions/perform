@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="shortcut icon" href="">
     <title>PERFORM | Employee Development</title>
-
     {{ template "head.tmpl" . }}
-
 </head>
-
 <body id="carrot-scheme">
-
     <section id="container">
-
         {{ template "topnav.tmpl" . }}
-
         {{ template "sidenav.tmpl" . }}
-
         <section id="main-content">
-
-
             <section class="wrapper">
-
-
                 {{ template "gridmenue.tmpl" . }}
-
-                <!--======== Page Title and Breadcrumbs Start ========-->
                 <div class="top-page-header">
-
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
                             <a href="/learning_activities" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
@@ -48,27 +31,19 @@
                             </ul>
                         </nav>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
-
                                 <h3 class="text-uppercase">Courses</h3>
                             </div>
                             <div class="widget-content bg-white">
-
                                 <div class="row">
                                     <div class="col-md-12">
-
                                         <div class="tab-pane fade active in" id="default-tab-1">
-
                                             <div class="c_content">
-
                                                 <table class="table dataTables table-bordered table-hover" style="border-spacing:0px; width:100%">
-
                                                     <thead>
                                                         <tr>
                                                             <th>REFERENCE</th>
@@ -91,37 +66,23 @@
 															<td class="text-center"><span class="label label-warning"><i class="fa fa-exclamation"></i></span></td>
                                                         </tr>
                                                     </tbody>
-
                                                 </table>
-                                            </div><!--/.c_content-->
-
+                                            </div>
                                         </div>
-
                                     </div>
-                                </div><!--/row-->
-
-                            </div><!--/widget-content-->
-                        </div><!--/widget-->
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!--/.row-->
-
-
+                </div>
             </section>
-
         </section>
-        <!--======== Main Content End ========-->
-
-    </section><!--/.container-->
-
+    </section>
     {{ template "scripts.tmpl" . }}
-
     <script type="text/javascript">
     $('tr#click').click(function() {
         window.location.href = '/learning_activities'
     });
     </script>
-
 </body>
-
 </html>
