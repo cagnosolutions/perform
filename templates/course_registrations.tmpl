@@ -7,121 +7,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="">
     <title>PERFORM | Employee Development</title>
+
     {{ template "head.tmpl" . }}
+
 </head>
 <body id="carrot-scheme">
     <section id="container">
+
         {{ template "topnav.tmpl" . }}
         {{ template "sidenav.tmpl" . }}
+
         <section id="main-content">
             <section class="wrapper">
+
                 {{ template "gridmenue.tmpl" . }}
+
                 <div class="top-page-header">
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/course_sessions" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
+                            <a href="/course_sessions" type="button" class="btn btn-wet-asphalt btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
                         </div>
-                        <h2>Course Session Registration</h2>
+                        <h3>Course Session Registration</h3>
                         <small>Courses and employees enrolled</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li><a href="/employee_development">Employee Development</a></li>
                                 <li class="active"><a href="/course_registrations">Course Session Registration</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a href="/course_sessions" type="button" class="btn btn-primary btn-raised">Course Sessions</a>
+                                </div>
+                                <h4>Course Information</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-6 margin-top-20">
+                                        <h5 class="head-style-1">
+                                            <span class="head-text-blue">
+                                                <strong>LOCATION</strong>
+                                            </span>
+                                            <span class="pull-right">Atlanta Training Room</span>
+                                        </h5>
+                                        <h5 class="head-style-1 margin-top-20">
+                                            <span class="head-text-blue">
+                                                <strong>TIME</strong>
+                                            </span>
+                                            <span class="pull-right">8:30pm - 10:30pm</span>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-6 margin-top-20">
+                                        <h5 class="head-style-1">
+                                            <span class="head-text-blue">
+                                                <strong>DATE</strong>
+                                            </span>
+                                            <span class="pull-right">May 20th, 2016</span>
+                                        </h5>
+                                        <h5 class="head-style-1 margin-top-20">
+                                            <span class="head-text-blue">
+                                                <strong>COST</strong>
+                                            </span>
+                                            <span class="pull-right">$345</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
                         <div class="widget">
                             <div class="widget-content bg-white">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-12">
                                         <div class="c_panel">
                                             <div class="c_title">
-                                                <h1>Courses</h1>
+                                                <h4>Courses</h4>
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="c_content">
-                                                <form class="form-horizontal">
-                                                    <fieldset>
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>Boardroom Basics</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>Atlanta Training Room</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="col-md-12">
-                                                                <select class="form-control margin-top-10">
-                                                                    <option>May 20, 2016 &nbsp;|&nbsp; 8:30pm - 10:30pm</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="c_panel">
-                                            <div class="c_title">
-                                                <h1>Course Information</h1>
-                                                <div class="pull-right">
-                                                    <a href="/course_sessions" type="button" class="btn btn-primary btn-flat btn-raised"><i class="fa fa-list"></i> Course Sessions</a>
+                                                <div class="form-group">
+                                                    <label class="form-label">Course</label>
+                                                    <select class="select2">
+                                                        <option>Boardroom Basics</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
                                                 </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="c_content">
-                                                <div class="col-md-6 margin-top-40">
-                                                    <h4 class="head-style-1">
-                                                        <span class="head-text-blue">
-                                                            <strong>LOCATION</strong>
-                                                        </span>
-                                                        <span class="pull-right">Atlanta Training Room</span>
-                                                    </h4>
-                                                    <h4 class="head-style-1 margin-top-20">
-                                                        <span class="head-text-blue">
-                                                            <strong>TIME</strong>
-                                                        </span>
-                                                        <span class="pull-right">8:30pm - 10:30pm</span>
-                                                    </h4>
+                                                <div class="form-group">
+                                                    <label class="form-label">Location</label>
+                                                    <select class="select2">
+                                                        <option>Atlanta Training Room</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
                                                 </div>
-                                                <div class="col-md-6 margin-top-40">
-                                                    <h4 class="head-style-1">
-                                                        <span class="head-text-blue">
-                                                            <strong>DATE</strong>
-                                                        </span>
-                                                        <span class="pull-right">May 20th, 2016</span>
-                                                    </h4>
-                                                    <h4 class="head-style-1 margin-top-20">
-                                                        <span class="head-text-blue">
-                                                            <strong>COST</strong>
-                                                        </span>
-                                                        <span class="pull-right">$345</span>
-                                                    </h4>
+                                                <div class="form-group">
+                                                    <label class="form-label">Date and Time</label>
+                                                    <select class="select2">
+                                                        <option>May 20, 2016 &nbsp;|&nbsp; 8:30pm - 10:30pm</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,19 +128,23 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
-                                <h3 class="text-uppercase">Boardroom Basics</h3>
+                                <h4>Boardroom Basics</h4>
                             </div>
                             <div class="widget-content bg-white">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="pull-right margin-top-20 margin-right-20">
-                                            <a href="#register" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Registrant</a>
+                                            <a href="#register" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Registrant</a>
                                         </div>
                                         <div class="tab-pane fade active in" id="default-tab-1">
                                             <div class="c_content">
-                                                <table class="table dataTable table-bordered" style="border-spacing:0px; width:100%">
+                                                <table class="table dataTable">
                                                     <thead>
                                                         <tr>
                                                             <th>NAME</th>
@@ -161,7 +164,14 @@
                                                             <td class="text-center"><span class="label label-success">Registered</span></td>
                                                             <td>1234-1234</td>
                                                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                            <td class="text-center" style="width:12%;">
+                                                                <a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                </a>
+                                                                <a class="delete btn btn-sm btn-asbestos btn-raised">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>Billy Joe Smith</td>
@@ -170,7 +180,14 @@
                                                             <td class="text-center"><span class="label label-success">Registered</span></td>
                                                             <td>1234-1234</td>
                                                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                            <td class="text-center" style="width:12%;">
+                                                                <a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                </a>
+                                                                <a class="delete btn btn-sm btn-asbestos btn-raised">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>Billy Joe Smith</td>
@@ -179,7 +196,14 @@
                                                             <td class="text-center"><span class="label label-success">Registered</span></td>
                                                             <td>1234-1234</td>
                                                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                                            <td class="text-center"><a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a> <br><br> <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                            <td class="text-center" style="width:12%;">
+                                                                <a href="#register" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                </a>
+                                                                <a class="delete btn btn-sm btn-asbestos btn-raised">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                   </table>
@@ -235,9 +259,9 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="textarea-expandable">Notes</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>

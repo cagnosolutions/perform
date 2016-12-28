@@ -7,40 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="">
     <title>PERFORM | Employee Development</title>
+
     {{ template "head.tmpl" . }}
+
 </head>
 <body id="carrot-scheme">
     <section id="container">
+
         {{ template "topnav.tmpl" . }}
         {{ template "sidenav.tmpl" . }}
+
         <section id="main-content">
             <section class="wrapper">
+
                 {{ template "gridmenue.tmpl" . }}
+
                 <div class="top-page-header">
                     <div class="page-title">
                         <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/learning_activities" type="button" class="btn btn-wet-asphalt btn-flat btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
+                            <a href="/learning_activities" type="button" class="btn btn-wet-asphalt btn-raised"><i class="fa fa-plus"></i>&nbsp;Course</a>
                         </div>
-                        <h2>Learning Activities</h2>
+                        <h3>Learning Activities</h3>
                         <small>Courses to help cultivate employee talent.</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li class=""><a href="/employee_overview">Employee Development</a></li>
-                                <li class="active"><a href="/learning_activities_overview">Learning Activities</a></li>
+                                <li class=""><a href="/learning_activities_overview">Learning Activities</a></li>
+                                <li class="active"><a href="/learning_activities">Leardership Vision Setting</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="widget">
                             <div class="widget-header bg-wet-asphalt">
                                 <div class="pull-right">
-                                    <a href="/employee_profile" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                    <a href="/employee_profile" type="button" class="btn btn-primary btn-raised">Save</a>
                                 </div>
-                                <h3 class="text-uppercase">Leadership Vision Setting</h3>
+                                <h4>Leadership Vision Setting</h4>
                             </div>
                             <div class="widget-content bg-white">
                                 <div class="row">
@@ -89,60 +96,47 @@
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="tab1">
                                                         <div class="c_content">
-                                                            <form class="" action="index.html" method="post">
-                                                                <div class="form-group">
-                                                                    <div class="col-md-12">
-                                                                        <label class="col-md-offset-1 col-md-3 control-label">Type:</label>
-                                                                        <div class="col-md-5">
-                                                                            <select class="form-control">
-                                                                                <option>Instructor Led - In Person</option>
-                                                                                <option>Alaska</option>
-                                                                                <option>Arizona</option>
-                                                                                <option>Arkansas</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
+                                                            <form class="" action="" method="post">
+                                                                <div class="form-group col-md-5">
+                                                                    <label class="control-label">Type:</label>
+                                                                    <select class="form-control">
+                                                                        <option>Instructor Led - In Person</option>
+                                                                        <option>Alaska</option>
+                                                                        <option>Arizona</option>
+                                                                        <option>Arkansas</option>
+                                                                    </select>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-12 margin-top-20">
-                                                                        <label class="col-md-offset-1 col-md-3 control-label">Provider:</label>
-                                                                        <div class="col-md-2">
+                                                                <div class="form-group col-md-3">
+                                                                    <label class="control-label">Class Size:</label>
+                                                                    <select class="form-control">
+                                                                        <option>5</option>
+                                                                        <option>10</option>
+                                                                        <option>20</option>
+                                                                        <option>25</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-3 margin-top-20">
+                                                                    <label class="switch-input primary">
+                                                                        <input type="checkbox" name="switch-checkbox" checked>
+                                                                        <i data-on="YES" data-off="NO"></i> Catalog:
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-group col-md-7">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label">Provider:</label>
                                                                             <div class="switch">
-                                                                                <input id="form-toggle-2" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
-                                                                                <label for="form-toggle-2" data-on="Internal" data-off="External"></label>
+                                                                                <input id="form-toggle-3" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                                                <label for="form-toggle-3" data-on="Internal" data-off="External"></label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-8 margin-top-20">
                                                                             <select class="form-control">
                                                                                 <option>Cultivisor</option>
                                                                                 <option>10</option>
                                                                                 <option>20</option>
                                                                                 <option>25</option>
                                                                             </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-12 margin-top-10">
-                                                                        <label class="col-md-offset-1 col-md-3 control-label">Class Size:</label>
-                                                                        <div class="col-md-2">
-                                                                            <select class="form-control">
-                                                                                <option>5</option>
-                                                                                <option>10</option>
-                                                                                <option>20</option>
-                                                                                <option>25</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-12 margin-top-20">
-                                                                        <label class="col-md-offset-1 col-md-3 control-label">Catalog:</label>
-                                                                        <div class="col-md-4">
-                                                                            <div class="switch">
-                                                                                <input id="form-toggle-3" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
-                                                                                <label for="form-toggle-3" data-on="On" data-off="Off"></label>
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -174,6 +168,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="widget">
@@ -184,7 +179,7 @@
                                             <li role="presentation"><a href="#nav-pills-2" role="tab" data-toggle="tab">Related Skills</a></li>
                                         </ul>
                                     </div>
-                                <h3 class="text-uppercase">EMPLOYEE DETAILED INFORMATION</h3>
+                                <h4>Employee Detailed Information</h4>
                             </div>
                             <div class="widget-content bg-white">
                                 <div class="row">
@@ -201,10 +196,10 @@
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="default-tab-1">
                                                         <div class="pull-right">
-                                                            <button href="#session" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Session</button>
+                                                            <button href="#session" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Session</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>INSTRUCTOR</th>
@@ -227,8 +222,19 @@
                                                                         <td>7:00am</td>
                                                                         <td>12:45pm</td>
                                                                         <td>24</td>
-                                                                        <td class="text-center"><span class="label label-success"><i class="fa fa-check"></i></span></td>
-                                                                        <td class="text-center"><a href="#session" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a></td>
+                                                                        <td class="text-center" style="width:1%;">
+                                                                            <span class="label label-success">
+                                                                                <i class="fa fa-check"></i>
+                                                                            </span>
+                                                                        </td>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#session" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
                                                                     </tr>
                                                                 </tbody>
                                                               </table>
@@ -236,10 +242,10 @@
 		                                            </div>
 													<div class="tab-pane fade" id="default-tab-2">
                                                         <div class="pull-right">
-                                                            <button href="#outcome" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Learning Outcome</button>
+                                                            <button href="#outcome" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Learning Outcome</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
     		                                                        <tr>
     		                                                            <th>TASK</th>
@@ -253,7 +259,14 @@
     		                                                            <td>Learning Outcome Task</td>
                                                                         <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
                                                                         <td>Learning Outcome Category</td>
-                                                                        <td class="text-center"><a href="#knowledge" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#outcome" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
     		                                                        </tr>
     		                                                    </tbody>
                                                               </table>
@@ -261,10 +274,10 @@
 													</div>
 													<div class="tab-pane fade" id="default-tab-3">
                                                         <div class="pull-right">
-                                                            <button href="#assignment" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Prework Assignment</button>
+                                                            <button href="#assignment" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Prework Assignment</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
     		                                                        <tr>
     		                                                            <th>NAME</th>
@@ -276,7 +289,14 @@
     		                                                        <tr>
     		                                                            <td>Employee Behavior</td>
     		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#assignment" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
     		                                                        </tr>
     		                                                    </tbody>
                                                               </table>
@@ -284,10 +304,10 @@
 													</div>
                                                     <div class="tab-pane fade" id="default-tab-4">
                                                         <div class="pull-right">
-                                                            <button href="#exercises" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Course Exercises</button>
+                                                            <button href="#exercises" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Course Exercises</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
     		                                                        <tr>
     		                                                            <th>NAME</th>
@@ -299,7 +319,14 @@
     		                                                        <tr>
     		                                                            <td>Employee Behavior</td>
     		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#exercises" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
     		                                                        </tr>
     		                                                    </tbody>
                                                               </table>
@@ -307,10 +334,10 @@
 													</div>
                                                     <div class="tab-pane fade" id="default-tab-5">
                                                         <div class="pull-right">
-                                                            <button href="#materials" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Activity Materials</button>
+                                                            <button href="#materials" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Activity Materials</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
     		                                                        <tr>
     		                                                            <th>NAME</th>
@@ -322,7 +349,14 @@
     		                                                        <tr>
     		                                                            <td>Employee Behavior</td>
     		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                                                                        <td class="text-center"><a href="#behavior" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#materials" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
     		                                                        </tr>
     		                                                    </tbody>
                                                               </table>
@@ -337,10 +371,10 @@
 		                                        <div class="tab-content">
 		                                            <div class="tab-pane fade active in" id="tab-1">
                                                         <div class="pull-right">
-                                                            <button href="#skill" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Skill</button>
+                                                            <button href="#skill" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Skill</button>
                                                         </div>
                                                         <div class="c_content">
-                                                            <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                                            <table class="table dataTables">
                                                                 <thead>
     		                                                        <tr>
     		                                                            <th>SKILL</th>
@@ -352,7 +386,14 @@
     		                                                        <tr>
     		                                                            <td>Employee Contact</td>
     		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                                                                        <td class="text-center"><a href="#contact" data-toggle="tab" class="edit btn btn-sm btn-peter-river btn-raised rippler rippler-inverse toggle-right-sidebar"><i class="fa fa-pencil-square-o"></i></a>  <a class="delete btn btn-sm btn-asbestos btn-raised rippler rippler-inverse" href="javascript:;"><i class="fa fa-trash"></i></a>
+                                                                        <td class="text-center" style="width:12%;">
+                                                                            <a href="#skill" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-asbestos btn-raised rippler rippler-inverse">
+                                                                                <i class="fa fa-trash"></i>
+                                                                            </a>
+                                                                        </td>
     		                                                        </tr>
     		                                                    </tbody>
                                                               </table>
@@ -367,6 +408,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
         </section>
         <aside>
@@ -381,7 +423,7 @@
                             <div class="right-sidebar-panel-content animated fadeInRight">
                                 <ul class="right-sidebar-list ">
                                     <div class="c_content">
-                                        <form class="" action="index.html" method="post">
+                                        <form class="" action="" method="post">
                                             <div class="form-group">
                                                 <label for="exampleInput">Instructor's Name</label>
                                                 <input type="text" class="form-control">
@@ -391,91 +433,39 @@
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">Start Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
+                                                <label class="control-label">Start Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">End Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Start Time</label>
+                                                <div class="input-group input-append">
+                                                    <input type="text" class="form-control time-picker">
+                                                    <span class="input-group-addon add-on"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="clearfix"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">End Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label>Start Time</label>
-                                                <div class="form-group">
-                                                    <div class="col-md-5">
-                                                        <select class="form-control">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                            <option>6</option>
-                                                            <option>7</option>
-                                                            <option>8</option>
-                                                            <option>9</option>
-                                                            <option>10</option>
-                                                            <option>11</option>
-                                                            <option>12</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <h4>:</h4>
-                                                    </div>
-                                                    <div class="col-md-5">
-                                                        <select class="form-control">
-                                                            <option>00</option>
-                                                            <option>15</option>
-                                                            <option>30</option>
-                                                            <option>45</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 margin-top-10">
                                                 <label>End Time</label>
-                                                <div class="form-group">
-                                                    <div class="col-md-5">
-                                                        <select class="form-control">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                            <option>6</option>
-                                                            <option>7</option>
-                                                            <option>8</option>
-                                                            <option>9</option>
-                                                            <option>10</option>
-                                                            <option>11</option>
-                                                            <option>12</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <h4>:</h4>
-                                                    </div>
-                                                    <div class="col-md-5">
-                                                        <select class="form-control">
-                                                            <option>00</option>
-                                                            <option>15</option>
-                                                            <option>30</option>
-                                                            <option>45</option>
-                                                        </select>
-                                                    </div>
+                                                <div class="input-group input-append">
+                                                    <input type="text" class="form-control time-picker">
+                                                    <span class="input-group-addon add-on"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="clearfix"></span>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 margin-top-20">
-                                                <div class="form-group">
-                                                    <label>Active</label>
-                                                    <div class="switch">
-                                                        <input id="form-toggle-1" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
-                                                        <label for="form-toggle-1" data-on="YES" data-off="NO"></label>
-                                                    </div>
+                                            <div class="form-group">
+                                                <label>Active</label>
+                                                <div class="switch">
+                                                    <input id="form-toggle-1" class="form-toggle form-flip-toggle lg" type="checkbox" checked>
+                                                    <label for="form-toggle-1" data-on="YES" data-off="NO"></label>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -495,14 +485,14 @@
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea-expandable">Outcome</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <label>Outcome</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInput">Category</label>
                                                 <input type="text" class="form-control">
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -536,16 +526,15 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea-expandable">Field Expand</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <label>Field Expand</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">Field Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
-                                                </div>
+                                                <label class="control-label">Field Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -579,16 +568,15 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea-expandable">Field Expand</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <label>Field Expand</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">Field Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
-                                                </div>
+                                                <label class="control-label">Field Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -622,16 +610,15 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea-expandable">Field Expand</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <label>Field Expand</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">Field Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
-                                                </div>
+                                                <label class="control-label">Field Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -665,16 +652,15 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea-expandable">Field Expand</label>
-                                                <textarea class="form-control textarea-expandable"></textarea>
+                                                <label>Field Expand</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="daterange-3">Field Date</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control datepicker daterange text-center" value="08/17/1990">
-                                                </div>
+                                                <label class="control-label">Field Date</label>
+                                                <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                <span class="help-inline">dd/mm/yyyy</span>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt margin-top-20">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -687,6 +673,8 @@
             </div>
         </aside>
     </section>
+
     {{ template "scripts.tmpl" . }}
+
 </body>
 </html>

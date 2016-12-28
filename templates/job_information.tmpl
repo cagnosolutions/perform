@@ -8,7 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="">
         <title>PERFORM | Company Information</title>
+
         {{ template "head.tmpl" . }}
+
     </head>
 
     <body id="carrot-scheme">
@@ -51,6 +53,12 @@
                                         <div class="col-md-3">
                                             <form class="form-horizontal" action="" method="">
                                                 <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Name:</label>
+                                                        <div class="col-md-9">
+                                                            <input type="" value="Account Manager" class="form-control" placeholder="" />
+                                                        </div>
+                                                    </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">Series:</label>
                                                         <div class="col-md-9">
@@ -130,25 +138,30 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="tab-content">
-                                                <div class="tab-pane fade active in" id="nav-1">
+                                                <div id="T" class="tab-pane fade active in" id="nav-1">
+                                                    <div class="pull-right">
+                                                        <button href="#tasks" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar">
+                                                            <i class="fa fa-plus"></i>
+                                                            &nbsp;Task
+                                                        </button>
+                                                    </div>
                                                     <table class="table dataTable">
                                                         <thead>
                                                             <tr>
                                                                 <th>TASKS</th>
-                                                                <th>DESCRIPTION</th>
+                                                                <th>JOB FUNCTION</th>
+                                                                <th>WEEKLY TASK %</th>
                                                                 <th>NOTES</th>
                                                                 <th class="text-center" style="width:20%;">Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td>Random Job Task Title</td>
-                                                                <td>Random job task description</td>
-                                                                <td>Random notes for this job task!</td>
+                                                            <tr id="click">
+                                                                <td>Wite job offer letter</td>
+                                                                <td>Buisness Leadership</td>
+                                                                <td>5%</td>
+                                                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</td>
                                                                 <td class="text-center" style="width:20%;">
-                                                                    <a href="#myModal1" data-toggle="modal" class="btn btn-sm btn-primary btn-raised">
-                                                                        <i class="fa fa-align-justify"></i> Properties
-                                                                    </a>
                                                                     <a href="#tasks" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
                                                                         <i class="fa fa-pencil-square-o"></i>
                                                                     </a>
@@ -160,6 +173,172 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                                <div id="SKB"class=" hide tab-pane fade active in" id="nav-1">
+                                                    <ul class="nav nav-tabs nav-pills">
+                                                        <li class="active"><a href="#default-tab-1" data-toggle="tab">Skills</a></li>
+                                                        <li class=""><a href="#default-tab-2" data-toggle="tab">Knowledge</a></li>
+                                                        <li class=""><a href="#default-tab-3" data-toggle="tab">Behavior</a></li>
+                                                        <li class=""><a href="#default-tab-4" data-toggle="tab">Measurements</a></li>
+                                                        <li class=""><a href="#default-tab-5" data-toggle="tab">Procedures and Job Aids</a></li>
+                                                    </ul>
+    		                                        <div class="tab-content">
+    		                                            <div class="tab-pane fade active in" id="default-tab-1">
+                                                            <div class="pull-right">
+                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
+                                                                <button href="#skill" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Skill</button>
+                                                            </div>
+                                                            <div class="c_content">
+                                                                <table class="table dataTable">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>NAME</th>
+                                                                            <th>DETAILS</th>
+                                                                            <th class="text-center">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Employee Skills</td>
+                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                            <td class="text-center" style="width:12%;">
+                                                                                <a href="#skill" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                                    <i class="fa fa-trash"></i>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                            </div>
+    		                                            </div>
+    													<div class="tab-pane fade" id="default-tab-2">
+                                                            <div class="pull-right">
+                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
+                                                                <button href="#knowledge" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Knowledge</button>
+                                                            </div>
+                                                            <div class="c_content">
+                                                                <table class="table dataTable">
+                                                                    <thead>
+        		                                                        <tr>
+        		                                                            <th>NAME</th>
+        		                                                            <th>DETAILS</th>
+                                                                            <th class="text-center">Action</th>
+        		                                                        </tr>
+        		                                                    </thead>
+        		                                                    <tbody>
+        		                                                        <tr>
+        		                                                            <td>Employee Knowledge</td>
+        		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                            <td class="text-center" style="width:12%;">
+                                                                                <a href="#knowledge" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                                    <i class="fa fa-trash"></i>
+                                                                                </a>
+                                                                            </td>
+        		                                                        </tr>
+        		                                                    </tbody>
+                                                                  </table>
+                                                            </div>
+    													</div>
+    													<div class="tab-pane fade" id="default-tab-3">
+                                                            <div class="pull-right">
+                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
+                                                                <button href="#behavior" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Behavior</button>
+                                                            </div>
+                                                            <div class="c_content">
+                                                                <table class="table dataTable">
+                                                                    <thead>
+        		                                                        <tr>
+        		                                                            <th>NAME</th>
+        		                                                            <th>DETAILS</th>
+                                                                            <th class="text-center">Action</th>
+        		                                                        </tr>
+        		                                                    </thead>
+        		                                                    <tbody>
+        		                                                        <tr>
+        		                                                            <td>Employee Behavior</td>
+        		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                            <td class="text-center" style="width:12%;">
+                                                                                <a href="#behavior" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                                    <i class="fa fa-trash"></i>
+                                                                                </a>
+                                                                            </td>
+        		                                                        </tr>
+        		                                                    </tbody>
+                                                                  </table>
+                                                            </div>
+    													</div>
+                                                        <div class="tab-pane fade" id="default-tab-4">
+                                                            <div class="pull-right">
+                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
+                                                                <button href="#measurements" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Measurement</button>
+                                                            </div>
+                                                            <div class="c_content">
+                                                                <table class="table dataTable">
+                                                                    <thead>
+        		                                                        <tr>
+        		                                                            <th>NAME</th>
+        		                                                            <th>DETAILS</th>
+                                                                            <th class="text-center">Action</th>
+        		                                                        </tr>
+        		                                                    </thead>
+        		                                                    <tbody>
+        		                                                        <tr>
+        		                                                            <td>Employee Measurement</td>
+        		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                            <td class="text-center" style="width:12%;">
+                                                                                <a href="#behavior" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                                    <i class="fa fa-trash"></i>
+                                                                                </a>
+                                                                            </td>
+        		                                                        </tr>
+        		                                                    </tbody>
+                                                                  </table>
+                                                            </div>
+    													</div>
+                                                        <div class="tab-pane fade" id="default-tab-5">
+                                                            <div class="pull-right">
+                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
+                                                                <button href="#procedures" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Procedure</button>
+                                                            </div>
+                                                            <div class="c_content">
+                                                                <table class="table dataTable">
+                                                                    <thead>
+        		                                                        <tr>
+        		                                                            <th>NAME</th>
+        		                                                            <th>DETAILS</th>
+                                                                            <th class="text-center">Action</th>
+        		                                                        </tr>
+        		                                                    </thead>
+        		                                                    <tbody>
+        		                                                        <tr>
+        		                                                            <td>Employee Procedure</td>
+        		                                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                                            <td class="text-center" style="width:12%;">
+                                                                                <a href="#behavior" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                                    <i class="fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                                    <i class="fa fa-trash"></i>
+                                                                                </a>
+                                                                            </td>
+        		                                                        </tr>
+        		                                                    </tbody>
+                                                                  </table>
+                                                            </div>
+    													</div>
+    		                                        </div>
+    											</div>
     											<div class="tab-pane fade" id="nav-2">
     												<ul class="nav nav-tabs nav-pills">
     		                                            <li class="active"><a href="#tab-1" data-toggle="tab">Departments</a></li>
@@ -366,12 +545,22 @@
                                         <div class="c_content">
                                             <form>
                                                 <div class="form-group">
-                                                    <label for="exampleInput">Task</label>
-                                                    <input type="text" class="form-control">
+                                                    <label for="input_autocomplate">Task</label>
+                                                    <input type="text" class="form-control" list="list">
+                                                    <datalist id="list">
+                                                        <option value="-"></option>
+                                                    </datalist>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Description</label>
-                                                    <textarea class="form-control autosize-animated"></textarea>
+                                                    <label for="input_autocomplate">Job Function</label>
+                                                    <input type="text" class="form-control" list="list">
+                                                    <datalist id="list">
+                                                        <option value="-"></option>
+                                                    </datalist>
+                                                </div>
+                                                <div>
+                                                    <label>Weekly Task (<span id="slider1-value">0</span>)%</label>
+                                                    <div id="slider1"></div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Notes</label>
@@ -552,6 +741,17 @@
 
         {{ template "scripts.tmpl" . }}
 
+        <script type="text/javascript">
+        $('tr#click').click(function() {
+            $('#SKB').removeClass('hide');
+            $('#T').addClass('hide');
+        });
+        $('a#close').click(function() {
+            $('#SKB').addClass('hide');
+            $('#T').removeClass('hide');
+        });
+        </script>
+
     </body>
 </html>
 <!-- ===== MODAL START ===== -->
@@ -560,7 +760,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-                <h3 class="text-center">Account Manager</h3>
+                <h3 class="text-center">Plan A Sales Visit</h3>
                 <h4 class="modal-title"><strong>Task</strong> Properties</h4>
             </div>
             <div class="modal-body">
@@ -569,13 +769,27 @@
                         <li class="active"><a href="#task-tab-1" data-toggle="tab">Skills</a></li>
                         <li class=""><a href="#task-tab-2" data-toggle="tab">Knowledge</a></li>
                         <li class=""><a href="#task-tab-3" data-toggle="tab">Behavior</a></li>
+                        <li class=""><a href="#task-tab-4" data-toggle="tab">Measurements</a></li>
+                        <li class=""><a href="#task-tab-5" data-toggle="tab">Procedures and Job Aids</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane fade active in" id="task-tab-1">
                             <div class="c_content">
                                 <div class="form-group">
-                                    <label>Details</label>
-                                    <textarea class="form-control" rows="8">Task Skills</textarea>
+                                    <table class="table dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>SKILL</th>
+                                                <th>RATING</th>
+                                            </tr>
+                                              </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Phone Call Monthly</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
                                 </div>
                             </div>
                         </div>
@@ -588,6 +802,22 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="task-tab-3">
+                            <div class="c_content">
+                                <div class="form-group">
+                                    <label>Details</label>
+                                    <textarea class="form-control" rows="8">Task Behavior</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="task-tab-4">
+                            <div class="c_content">
+                                <div class="form-group">
+                                    <label>Details</label>
+                                    <textarea class="form-control" rows="8">Task Behavior</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="task-tab-5">
                             <div class="c_content">
                                 <div class="form-group">
                                     <label>Details</label>

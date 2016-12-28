@@ -120,14 +120,16 @@
                                                 <thead>
                                                     <tr>
                                                         <th>NAME</th>
-                                                        <th>DETAILS</th>
+                                                        <th>UTILIZATION</th>
+                                                        <th>NOTES</th>
                                                         <th class="text-center" style="width:12%;">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr id="click">
-                                                        <td>Customer Product</td>
-                                                        <td>A listing of the individual products purchased by a single company</td>
+                                                        <td>Quarterly Sales</td>
+                                                        <td>We will use the closed business report as in initial indicator of revenue growth, but it is not until product is shipped.</td>
+                                                        <td>Collected via Saleforce.com</td>
                                                         <td class="text-center" style="width:12%;">
                                                             <a href="#measurement" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
                                                                 <i class="fa fa-pencil-square-o"></i>
@@ -138,8 +140,9 @@
                                                         </td>
                                                     </tr>
                                                     <tr id="click">
-                                                        <td>Customer Product</td>
-                                                        <td>A listing of the individual products purchased by a single company</td>
+                                                        <td>Pipeline Revenue</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</td>
                                                         <td class="text-center" style="width:12%;">
                                                             <a href="#measurement" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
                                                                 <i class="fa fa-pencil-square-o"></i>
@@ -159,75 +162,33 @@
                                     <div class="col-md-12">
                                         <div class="c_content">
                                             <div class="pull-right">
+                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
                                                 <button href="#task" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar"><i class="fa fa-plus"></i>&nbsp;Task</button>
                                             </div>
-                                            <ul class="nav nav-tabs bg-silver nav-pills">
-                                                <li class="active"><a href="#task-tab-1" data-toggle="tab">Info</a></li>
-                                                <li class=""><a href="#task-tab-2" data-toggle="tab">Tasks</a></li>
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade active in" id="task-tab-1">
-                                                    <div class="c_content">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Measurement:</label>
-                                                                    <select class="select2">
-                                                                        <option>Customer Product</option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="text-center margin-top-20">
-                                                                <a id="close" type="button" class="btn btn-asbestos btn-flat btn-raised"><i class="fa fa-times"></i> Cancel</a>
-                                                                <a href="/employee_profile" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>Utilization:</label>
-                                                                    <textarea class="form-control autosize-animated">Establish a minimum of four branches in the mid-atlantic states, excluding Maryland</textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>Notes:</label>
-                                                                    <textarea rows="1"class="form-control autosize-animated">Establish a minimum of four branches in the mid-atlantic states, excluding Maryland</textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="task-tab-2">
-                                                    <div class="c_content">
-                                                        <table class="table dataTable">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>JOB TASK</th>
-                                                                    <th>JOB INFO NAME</th>
-                                                                    <th class="text-center" style="width:25%;">Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Coach Employees for Job tasks performance improvements</td>
-                                                                    <td>Corporate Trainer</td>
-                                                                    <td class="text-center" style="width:12%;">
-                                                                        <a href="#task" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
-                                                                            <i class="fa fa-pencil-square-o"></i>
-                                                                        </a>
-                                                                        <a class="btn btn-sm btn-asbestos btn-raised delete">
-                                                                            <i class="fa fa-trash"></i>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                <div class="c_content">
+                                                    <table class="table dataTable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>JOB TASK</th>
+                                                                <th>JOB INFO NAME</th>
+                                                                <th class="text-center" style="width:25%;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Coach Employees for Job tasks performance improvements</td>
+                                                                <td>Corporate Trainer</td>
+                                                                <td class="text-center" style="width:12%;">
+                                                                    <a href="#task" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                        <i class="fa fa-pencil-square-o"></i>
+                                                                    </a>
+                                                                    <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                        <i class="fa fa-trash"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,7 +220,11 @@
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="textarea">Details</label>
+                                                <label for="textarea">Utilization</label>
+                                                <textarea class="form-control autosize-animated"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea">Notes</label>
                                                 <textarea class="form-control autosize-animated"></textarea>
                                             </div>
                                             <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
@@ -299,6 +264,7 @@
         <!--===== Right sidebar nofications end ========-->
     </section>
     {{ template "scripts.tmpl" . }}
+
     <script type="text/javascript">
     $('tr#click').click(function() {
         $('#info').removeClass('hide');
@@ -309,5 +275,6 @@
         $('#table').removeClass('hide');
     });
     </script>
+    
 </body>
 </html>

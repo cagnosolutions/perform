@@ -155,7 +155,7 @@ $(document).ready(function(){
             $('.datepicker').daterangepicker({
                 singleDatePicker: true,
                 showDropdowns: true
-            }, 
+            },
             function(start, end, label) {
                 var years = moment().diff(start, 'years');
                 alert("You are " + years + " years old.");
@@ -167,7 +167,7 @@ $(document).ready(function(){
             });
         }
 
-        
+
     }
 
     if($('#daterange-4').length > 0) {
@@ -233,7 +233,7 @@ $(document).ready(function(){
         });
 
     }
-    
+
 
     //FOR TYPEHEAD
     if ($.isFunction($.fn.typeahead)) {
@@ -591,7 +591,7 @@ $(document).ready(function(){
         }
 
 
-        //FORM RATING 
+        //FORM RATING
         $("#input-21f").rating({
             starCaptions: function(val) {
                 if (val < 3) {
@@ -609,7 +609,7 @@ $(document).ready(function(){
             },
             hoverOnClear: false
         });
-        
+
         $('#rating-input').rating({
               min: 0,
               max: 5,
@@ -617,42 +617,42 @@ $(document).ready(function(){
               size: 'lg',
               showClear: false
            });
-           
+
         $('#btn-rating-input').on('click', function() {
             $('#rating-input').rating('refresh', {
-                showClear:true, 
+                showClear:true,
                 disabled:true
             });
         });
-        
-        
+
+
         $('.rating .btn-danger').on('click', function() {
             $("#kartik").rating('destroy');
         });
-        
+
         $('.rating .btn-success').on('click', function() {
             $("#kartik").rating('create');
         });
-        
+
         $('#rating-input').on('rating.change', function() {
             alert($('#rating-input').val());
         });
-        
-        
+
+
         $('.rb-rating').rating({'showCaption':true, 'stars':'3', 'min':'0', 'max':'3', 'step':'1', 'size':'xs', 'starCaptions': {0:'status:nix', 1:'status:wackelt', 2:'status:geht', 3:'status:laeuft'}});
-        
+
 
         //FORM SLIDER
         // Regular slider
             $('#slider1').slider({
               min: 0,
-              max: 500,
+              max: 100,
               slide: function(event, ui)
               {
                 $('#slider1-value').text(ui.value);
               }
             });
-            
+
             // Range slider
             $('#slider2').slider({
               min: 0,
@@ -665,7 +665,7 @@ $(document).ready(function(){
                 $('#slider2-value2').text(ui.values[1]);
               }
             });
-            
+
             // Step slider
             $('#slider3').slider({
               min: 0,
@@ -695,7 +695,7 @@ $(document).ready(function(){
                 $('#slider1-value-rounded').text(ui.value);
               }
             });
-            
+
             // Rounded Range slider
             $('#slider2-rounded').slider({
               min: 0,
@@ -708,7 +708,7 @@ $(document).ready(function(){
                 $('#slider2-value2-rounded').text(ui.values[1]);
               }
             });
-            
+
             // Rounded Step slider
             $('#slider3-rounded').slider({
               min: 0,
@@ -720,4 +720,3 @@ $(document).ready(function(){
               }
             });
 });
-
