@@ -51,20 +51,20 @@
                             </div>
                             <div class="widget-content bg-white">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <form class="" action="" method="post">
-                                            <fieldset>
-                                                <div class="form-group">
-													<label class="control-label">Buisiness Result:</label>
-													<input type="" value="Establish Mid-Atlantic States Region" class="form-control"/>
-											    </div>
-                                                <div class="form-group">
-                                                    <label class="control-label">Details:</label>
-                                                    <textarea rows="4" class="form-control autosize-animated">Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</textarea>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                    </div>
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Buisiness Result:</label>
+                                                <input type="" value="Establish Mid-Atlantic States Region" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Details:</label>
+                                                <textarea rows="4" class="form-control autosize-animated">Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</textarea>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                 <div id="table" class="row">
                                     <div class="col-md-12">
                                         <div class="pull-right">
-                                            <a href="#measurement" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-flat btn-raised toggle-right-sidebar">
+                                            <a href="#measurement" data-toggle="tab" type="button" class="btn btn-wet-asphalt btn-raised toggle-right-sidebar">
                                                 <i class="fa fa-plus"></i>
                                                 &nbsp;Performance Measurement
                                             </a>
@@ -126,28 +126,28 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr id="click">
+                                                    <tr id="click" data-toggle="tooltip" data-animation="animated fadeIn" title="View Details">
                                                         <td>Quarterly Sales</td>
                                                         <td>We will use the closed business report as in initial indicator of revenue growth, but it is not until product is shipped.</td>
                                                         <td>Collected via Saleforce.com</td>
                                                         <td class="text-center" style="width:12%;">
-                                                            <a href="#measurement" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                            <a href="#measurement" data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
                                                                 <i class="fa fa-pencil-square-o"></i>
                                                             </a>
-                                                            <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
                                                                 <i class="fa fa-trash"></i>
                                                             </a>
                                                         </td>
                                                     </tr>
-                                                    <tr id="click">
+                                                    <tr id="click" data-toggle="tooltip" data-animation="animated fadeIn" title="View Details">
                                                         <td>Pipeline Revenue</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</td>
                                                         <td class="text-center" style="width:12%;">
-                                                            <a href="#measurement" data-toggle="tab" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                            <a href="#measurement" data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
                                                                 <i class="fa fa-pencil-square-o"></i>
                                                             </a>
-                                                            <a class="btn btn-sm btn-asbestos btn-raised delete">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
                                                                 <i class="fa fa-trash"></i>
                                                             </a>
                                                         </td>
@@ -227,7 +227,7 @@
                                                 <label for="textarea">Notes</label>
                                                 <textarea class="form-control autosize-animated"></textarea>
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt" style="bottom:10px; position:fixed;">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -249,7 +249,7 @@
                                                 <label>Job Information Name</label>
                                                 <input type="text" class="form-control">
                                             </div>
-                                            <button type="submit" class="btn btn-wet-asphalt btn-flat margin-top-20">Submit</button>
+                                            <button type="submit" class="btn btn-wet-asphalt" style="bottom:10px; position:fixed;">Submit</button>
                                         </form>
                                     </div>
                                 </ul>
@@ -275,6 +275,6 @@
         $('#table').removeClass('hide');
     });
     </script>
-    
+
 </body>
 </html>

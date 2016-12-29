@@ -7,51 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="">
     <title>PERFORM | Employee Performance</title>
+
     {{ template "head.tmpl" . }}
+
 </head>
 <body id="carrot-scheme">
     <section id="container">
+
         {{ template "topnav.tmpl" . }}
         {{ template "sidenav.tmpl" . }}
+
         <section id="main-content">
             <section class="wrapper">
+
                 {{ template "gridmenue.tmpl" . }}
+
                 <div class="top-page-header">
                     <div class="page-title">
-                        <h2>Multi-Measurement Performance Comparison Worksheet</h2>
+                        <h3>Multi-Measurement Performance Comparison Worksheet</h3>
                         <small>Compare Employee Performance Measurements</small>
                     </div>
                     <div class="page-breadcrumb">
                         <nav class="c_breadcrumbs">
                             <ul>
-                                <li><a href="#">Employee Performance</a></li>
                                 <li class="active"><a href="/multi_measurement_performance">One-To-Many Measurements</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6">
                         <div class="widget">
                             <div class="widget-content bg-white">
                                 <div class="c_panel">
                                     <div class="c_title">
-                                        <div class="col-md-6">
-                                            <h2>Performance Measurement</h2>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label class="form-label">Performance Measurement</label>
+                                                <select class="select2">
+                                                    <option>Quarterly Salesr</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                                <option>Quarterly Revenue</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                        <div class="col-md-5">
+                                            <label class="switch-input primary">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> All
+                                            </label>
+                                            <label class="switch-input info">
+                                                <input type="radio" name="switch-radio2" checked>
+                                                <i data-on="ON" data-off="OFF"></i> Peer Group
+                                            </label>
+                                            <label class="switch-input success">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> Non-peer
+                                            </label>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="c_content scroller hidetables" style="height:280px;">
-                                        <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                    <div class="c_content scroller hidetables" style="height:300px;">
+                                        <table class="table dataTable">
                                             <thead>
                                                 <tr>
                                                     <th>PERSON</th>
@@ -61,45 +78,95 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
                                     </div>
-                                    <h4 class="head-style-1 margin-top-30 pull-right">
-                                        <span class="head-text-blue">
-                                            <strong>TOTAL</strong>
-                                        </span>
-                                        <span></span>
-                                    </h4>
                                 </div>
+                                <h4 class="head-style-1">
+                                    <span class="head-text-blue">
+                                        <strong>TOTAL</strong>
+                                    </span>
+                                    <span>173,138</span>
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -108,22 +175,33 @@
                             <div class="widget-content bg-white">
                                 <div class="c_panel">
                                     <div class="c_title">
-                                        <div class="col-md-6">
-                                            <h2>Performance Measurement</h2>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label class="form-label">Performance Measurement</label>
+                                                <select class="select2">
+                                                    <option>Quarterly Salesr</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                                <option>Quarterly Revenue</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                        <div class="col-md-5">
+                                            <label class="switch-input primary">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> All
+                                            </label>
+                                            <label class="switch-input info">
+                                                <input type="radio" name="switch-radio2" checked>
+                                                <i data-on="ON" data-off="OFF"></i> Peer Group
+                                            </label>
+                                            <label class="switch-input success">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> Non-peer
+                                            </label>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="c_content scroller hidetables" style="height:280px;">
-                                        <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                    <div class="c_content scroller hidetables" style="height:300px;">
+                                        <table class="table dataTable">
                                             <thead>
                                                 <tr>
                                                     <th>PERSON</th>
@@ -133,71 +211,133 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
                                     </div>
-                                    <h4 class="head-style-1 margin-top-30 pull-right">
-                                        <span class="head-text-blue">
-                                            <strong>TOTAL</strong>
-                                        </span>
-                                        <span></span>
-                                    </h4>
                                 </div>
+                                <h4 class="head-style-1">
+                                    <span class="head-text-blue">
+                                        <strong>TOTAL</strong>
+                                    </span>
+                                    <span>173,138</span>
+                                </h4>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6">
                         <div class="widget">
                             <div class="widget-content bg-white">
                                 <div class="c_panel">
                                     <div class="c_title">
-                                        <div class="col-md-6">
-                                            <h2>Performance Measurement</h2>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label class="form-label">Performance Measurement</label>
+                                                <select class="select2">
+                                                    <option>Quarterly Salesr</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                                <option>Quarterly Revenue</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                        <div class="col-md-5">
+                                            <label class="switch-input primary">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> All
+                                            </label>
+                                            <label class="switch-input info">
+                                                <input type="radio" name="switch-radio2" checked>
+                                                <i data-on="ON" data-off="OFF"></i> Peer Group
+                                            </label>
+                                            <label class="switch-input success">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> Non-peer
+                                            </label>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="c_content scroller hidetables" style="height:280px;">
-                                        <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                    <div class="c_content scroller hidetables" style="height:300px;">
+                                        <table class="table dataTable">
                                             <thead>
                                                 <tr>
                                                     <th>PERSON</th>
@@ -207,45 +347,95 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
                                     </div>
-                                    <h4 class="head-style-1 margin-top-30 pull-right">
-                                        <span class="head-text-blue">
-                                            <strong>TOTAL</strong>
-                                        </span>
-                                        <span></span>
-                                    </h4>
                                 </div>
+                                <h4 class="head-style-1">
+                                    <span class="head-text-blue">
+                                        <strong>TOTAL</strong>
+                                    </span>
+                                    <span>173,138</span>
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -254,22 +444,33 @@
                             <div class="widget-content bg-white">
                                 <div class="c_panel">
                                     <div class="c_title">
-                                        <div class="col-md-6">
-                                            <h2>Performance Measurement</h2>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label class="form-label">Performance Measurement</label>
+                                                <select class="select2">
+                                                    <option>Quarterly Salesr</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                                <option>Quarterly Revenue</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                        <div class="col-md-5">
+                                            <label class="switch-input primary">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> All
+                                            </label>
+                                            <label class="switch-input info">
+                                                <input type="radio" name="switch-radio2" checked>
+                                                <i data-on="ON" data-off="OFF"></i> Peer Group
+                                            </label>
+                                            <label class="switch-input success">
+                                                <input type="radio" name="switch-radio2">
+                                                <i data-on="ON" data-off="OFF"></i> Non-peer
+                                            </label>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="c_content scroller hidetables" style="height:280px;">
-                                        <table class="table dataTables table-striped table-bordered" style="border-spacing:0px; width:100%">
+                                    <div class="c_content scroller hidetables" style="height:300px;">
+                                        <table class="table dataTable">
                                             <thead>
                                                 <tr>
                                                     <th>PERSON</th>
@@ -279,49 +480,100 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sally Smith</td>
+                                                    <td>12-06-2015</td>
+                                                    <td>$139,332</td>
                                                 </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
                                     </div>
-                                    <h4 class="head-style-1 margin-top-30 pull-right">
-                                        <span class="head-text-blue">
-                                            <strong>TOTAL</strong>
-                                        </span>
-                                        <span></span>
-                                    </h4>
                                 </div>
+                                <h4 class="head-style-1">
+                                    <span class="head-text-blue">
+                                        <strong>TOTAL</strong>
+                                    </span>
+                                    <span>173,138</span>
+                                </h4>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
         </section>
     </section>
