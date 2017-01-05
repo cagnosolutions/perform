@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/custom.css" media="screen" title="no title">
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Company Information</title>
+
+    {{ template "head.tmpl" . }}
+
+</head>
+<body id="carrot-scheme">
+    <section id="container">
+
+        {{ template "topnav.tmpl" . }}
+        {{ template "sidenav.tmpl" . }}
+
+        <section id="main-content">
+            <section class="wrapper">
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <div class="top-page-header">
+                    <div class="page-title">
+                        <h3>Company General Settings</h3>
+                        <small>General Company Settings</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li><a href="/company_settings">Company Settings</a></li>
+                                <li class="active"><a href="/company_settings_general">General Settings</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div id="editgen" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickgen btn btn-primary btn-flat btn-raised">Edit</a>
+                                </div>
+                                <h4>General Settings</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <div class="col-md-offset-1 col-md-4">
+                                                <label>Company Name:</label>
+                                                <h2>Cultivisor</h2>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Details:</label>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addgen" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="cancelgen btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>General Settings</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Company Name:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Details:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="editbranch" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickbranch btn btn-primary btn-flat btn-raised">Add</a>
+                                </div>
+                                <h4>Branch Offices</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <table class="table dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>OFFICE NAME</th>
+                                                        <th>ADDRESS</th>
+                                                        <th>CITY</th>
+                                                        <th>STATE</th>
+                                                        <th>PHONE</th>
+                                                        <th>NOTES</th>
+                                                        <th class="text-center" style="width:12%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Atlanta</td>
+                                                        <td>1234 Awesome Street Drive</td>
+                                                        <td>Sweetville</td>
+                                                        <td>Georgia</td>
+                                                        <td>555-555-5555</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickbranch btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Atlanta</td>
+                                                        <td>1234 Awesome Street Drive</td>
+                                                        <td>Sweetville</td>
+                                                        <td>Georgia</td>
+                                                        <td>555-555-5555</td>
+                                                        <td>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickbranch btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addbranch" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="cancelbranch btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>Branch Offices</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Office Name:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Street:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="control-label">City:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="control-label">State:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="control-label">Zip:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Phone:</label>
+                                            <input type="text" placeholder="" data-mask="(999) 999-9999" class="form-control">
+                                            <span class="help-inline">(999) 999-9999</span>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="control-label">Branch Code:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="control-label">Show Location As:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Notes:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="editdep" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickdep btn btn-primary btn-flat btn-raised">Edit</a>
+                                </div>
+                                <h4>Departments</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <table class="table dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>DEPARTMENT</th>
+                                                        <th>NOTES</th>
+                                                        <th class="text-center" style="width:12%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Executive Board</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickdep btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="adddep" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="canceldep btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>Departments</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Department:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Notes:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="editskill" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickskill btn btn-primary btn-flat btn-raised">Edit</a>
+                                </div>
+                                <h4>Skills</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <table class="table dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SKILL</th>
+                                                        <th>NOTES</th>
+                                                        <th class="text-center" style="width:12%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Data Entry</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickskill btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Coaching</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickskill btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addskill" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="cancelskill btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>Skills</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Skill:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Notes:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="editknow" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickknow btn btn-primary btn-flat btn-raised">Edit</a>
+                                </div>
+                                <h4>Knowledge</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <table class="table dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>KNOWLEDGE</th>
+                                                        <th>NOTES</th>
+                                                        <th class="text-center" style="width:12%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Basic Business Finances</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickknow btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Decision Making Roles</td>
+                                                        <td>Rewards and punishment triggers - logistics result</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickknow btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addknow" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="cancelknow btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>Knowledge</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Knowledge:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Notes:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="editbehave" class="row">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="clickbehave btn btn-primary btn-flat btn-raised">Edit</a>
+                                </div>
+                                <h4>Behavior</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_content">
+                                            <table class="table dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>BEHAVIOR</th>
+                                                        <th>NOTES</th>
+                                                        <th class="text-center" style="width:12%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Functional Thinker</td>
+                                                        <td>Key for middle management employees</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickbehave btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Individual Contributor</td>
+                                                        <td>Sles and consulting professionals</td>
+                                                        <td class="text-center" style="width:12%;">
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Edit" class="clickbehave btn btn-sm btn-peter-river btn-raised toggle-right-sidebar">
+                                                                <i class="fa fa-pencil-square-o"></i>
+                                                            </a>
+                                                            <a data-toggle="tooltip" data-animation="animated fadeInDown" title="Delete" class="btn btn-sm btn-asbestos btn-raised delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addbehave" class="row hide">
+                    <div class="col-md-12">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <a type="button" class="cancelbehave btn btn-default btn-flat btn-raised">Cancel</a>
+                                    <a id="save" type="button" class="btn btn-primary btn-flat btn-raised">Save</a>
+                                </div>
+                                <h4>Behavior</h4>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <form class="" action="" method="post">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Behavior:</label>
+                                                <input type="" class="form-control"/>
+									        </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">Notes:</label>
+                                                <textarea rows="4" class="form-control autosize-animated"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+    {{ template "scripts.tmpl" . }}
+
+    <script type="text/javascript">
+    $('.clickgen').click(function() {
+        $('#addgen').removeClass('hide');
+        $('#editgen').addClass('hide');
+    });
+    $('.cancelgen').click(function() {
+        $('#addgen').addClass('hide');
+        $('#editgen').removeClass('hide');
+    });
+    $('.clickbranch').click(function() {
+        $('#addbranch').removeClass('hide');
+        $('#editbranch').addClass('hide');
+    });
+    $('.cancelbranch').click(function() {
+        $('#addbranch').addClass('hide');
+        $('#editbranch').removeClass('hide');
+    });
+    $('.clickdep').click(function() {
+        $('#adddep').removeClass('hide');
+        $('#editdep').addClass('hide');
+    });
+    $('.canceldep').click(function() {
+        $('#adddep').addClass('hide');
+        $('#editdep').removeClass('hide');
+    });
+    $('.clickskill').click(function() {
+        $('#addskill').removeClass('hide');
+        $('#editskill').addClass('hide');
+    });
+    $('.cancelskill').click(function() {
+        $('#addskill').addClass('hide');
+        $('#editskill').removeClass('hide');
+    });
+    $('.clickknow').click(function() {
+        $('#addknow').removeClass('hide');
+        $('#editknow').addClass('hide');
+    });
+    $('.cancelknow').click(function() {
+        $('#addknow').addClass('hide');
+        $('#editknow').removeClass('hide');
+    });
+    $('.clickbehave').click(function() {
+        $('#addbehave').removeClass('hide');
+        $('#editbehave').addClass('hide');
+    });
+    $('.cancelbehave').click(function() {
+        $('#addbehave').addClass('hide');
+        $('#editbehave').removeClass('hide');
+    });
+    </script>
+
+</body>
+</html>

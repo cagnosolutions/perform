@@ -19,11 +19,32 @@ func init() {
 func main() {
 	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results)
 	mux.AddRoutes(one_to_one_measurement, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions)
-	mux.AddRoutes(multi_measurement_performance, peer_to_peer, career_planning, job_canidates, organization_structure, accountability_reviews, job_canidates_overview)
+	mux.AddRoutes(multi_measurement_performance, peer_to_peer, career_planning, job_canidates, organization_structure, accountability_reviews, job_canidates_overview, company_settings, company_settings_general, company_settings_branches)
+	mux.AddRoutes(performance_reviews)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
 	log.Fatal(http.ListenAndServe(":9999", mux))
 }
+
+var performance_reviews = web.Route{"GET", "/performance_reviews", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "performance_reviews.tmpl", web.Model{})
+	return
+}}
+
+var company_settings_general = web.Route{"GET", "/company_settings_general", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "company_settings_general.tmpl", web.Model{})
+	return
+}}
+
+var company_settings_branches = web.Route{"GET", "/company_settings_branches", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "company_settings_branches.tmpl", web.Model{})
+	return
+}}
+
+var company_settings = web.Route{"GET", "/company_settings", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "company_settings.tmpl", web.Model{})
+	return
+}}
 
 var job_canidates_overview = web.Route{"GET", "/job_canidates_overview", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "job_canidates_overview.tmpl", web.Model{})

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <title>PERFORM | Employee Reviews</title>
+
+    {{ template "head.tmpl" . }}
+
+</head>
+<body id="carrot-scheme">
+    <section id="container">
+
+        {{ template "topnav.tmpl" . }}
+        {{ template "sidenav.tmpl" . }}
+
+        <section id="main-content">
+            <section class="wrapper">
+
+                {{ template "gridmenue.tmpl" . }}
+
+                <div class="top-page-header">
+                    <div class="page-title">
+                        <h3>Performance Reviews</h3>
+                        <small>Performance Reviews</small>
+                    </div>
+                    <div class="page-breadcrumb">
+                        <nav class="c_breadcrumbs">
+                            <ul>
+                                <li class="active"><a href="/performance_reviews">Performance Reviews</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="widget">
+                            <div class="widget-header bg-wet-asphalt">
+                                <div class="pull-right">
+                                    <h5>Reviews for this employee: 3</h5>
+                                </div>
+                                <h4>Performance Review</h4>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">
+                                            <form action="" class="">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="form-label">Task: </label>
+                                                        <select class="select2">
+                                                            <option>Prioritize a ptential customer</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label">Reviewed By: </label>
+                                                        <select class="select2">
+                                                            <option>Joe Gibbs</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Discussed Review Date:</label>
+                                                        <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                        <span class="help-inline">dd/mm/yyyy</span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Scheduled Review Date:</label>
+                                                        <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                        <span class="help-inline">dd/mm/yyyy</span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Actual Review Date</label>
+                                                        <input type="text" placeholder="" data-mask="99/99/9999" class="form-control">
+                                                        <span class="help-inline">dd/mm/yyyy</span>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="col-md-offset-6">
+                                                <label class="switch-input primary">
+                                                    <input type="radio" name="switch-radio2">
+                                                    <i data-on="YES" data-off="NO"></i> Developing Practice
+                                                </label>
+                                                <label class="switch-input info">
+                                                    <input type="radio" name="switch-radio2" checked>
+                                                    <i data-on="YES" data-off="NO"></i> Best Practice
+                                                </label>
+                                                <label class="switch-input primary margin-top-20">
+                                                    <input type="checkbox" name="switch-checkbox" checked>
+                                                    <i data-on="YES" data-off="NO"></i> To Be Addressed?
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Performance Observation:</label>
+                                                <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Review Notes:</label>
+                                                <textarea class="form-control" placeholder="" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <div class="widget-content bg-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c_panel">
+                                            <div class="c_title">
+                                                <h4>Employee</h4>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="c_content">
+                                                <div class="form-group">
+                                                    <label class="form-label">Employee Name</label>
+                                                    <select class="select2">
+                                                        <option>Robert Jones</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+    {{ template "scripts.tmpl" . }}
+
+</body>
+</html>
