@@ -1,149 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="">
-    <title>PERFORM | Employee Information</title>
+<html lang="en-us">
 
-    {{ template "head.tmpl" . }}
+	<body class="minified smart-style-1">
 
-</head>
-<body id="carrot-scheme">
-    <section id="container">
+		{{ template "head.tmpl" }}
 
-        {{ template "topnav.tmpl" . }}
-        {{ template "sidenav.tmpl" . }}
+		{{ template "sidenav.tmpl" . }}
 
-        <section id="main-content">
-            <section class="wrapper">
+		<!-- MAIN PANEL -->
 
-                {{ template "gridmenue.tmpl" . }}
+        <div id="main" role="main">
 
-                <div class="top-page-header">
-                    <div class="page-title">
-                        <div class="pull-right margin-top-20 margin-right-20">
-                            <a href="/employee_information" type="button" class="btn btn-wet-asphalt btn-raised"><i class="fa fa-plus"></i>&nbsp;Employee</a>
-                        </div>
-                        <h3>Employee Overview</h3>
-                        <small>A List of Company Employees</small>
-                    </div>
-                    <div class="page-breadcrumb">
-                        <nav class="c_breadcrumbs">
-                            <ul>
-                                <li class="active"><a href="/employee_overview">Employee Informaiton</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+			<!-- MAIN CONTENT -->
+			<div id="content" style="height:979px;">
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-edit fa-users"></i>
+								Employee Information
+							<span>>
+								Employee Overview
+							</span>
+						</h1>
+					</div>
+				</div>
 
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="widget">
-                            <div class="widget-header bg-wet-asphalt">
-                                <h4>Cultivisor Employees</h4>
-                            </div>
-                            <div class="widget-content bg-white">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="tab-pane fade active in" id="default-tab-1">
-                                            <div class="c_content">
-                                                <table class="table dataTable table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>NAME</th>
-                                                            <th>DEPARTMENT NAME</th>
-                                                            <th>JOB INFO NAME</th>
-                                                            <th>BRANCH NAME</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                        <tr id="click">
-                                                            <td>Robert Jones</td>
-                                                            <td>Sales</td>
-                                                            <td>Global Sales Executive</td>
-                                                            <td>Baltimore HQ</td>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                  </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </section>
-        </section>
-    </section>
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12">
 
-    {{ template "scripts.tmpl" . }}
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget well" id="wid-id-0a" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 
-    <script type="text/javascript">
-    $('tr#click').click(function() {
-        window.location.href = '/employee_information'
-    });
-    </script>
-</body>
+							<!-- widget content -->
+							<div class="widget-body">
+								<h1>Employees</h1>
+								<p>
+									A list of company employees
+								</p>
+                                <table class="dataTable click table table-hover" width="100%">
+
+							        <thead>
+										<tr>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter Name" />
+											</th>
+                                            <th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter Department Name" />
+											</th>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter Job Name" />
+											</th>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter Branch Name" />
+											</th>
+										</tr>
+							            <tr>
+							                <th data-class="expand">Name</th>
+							                <th>Department Name</th>
+							                <th data-hide="phone">Job Name</th>
+							                <th data-hide="phone">Branch Name</th>
+							            </tr>
+							        </thead>
+
+                                    <tbody>
+                                        <tr id="click">
+                                            <td>Robert Jones</td>
+                                            <td>Sales</td>
+                                            <td>Global Sales Executive</td>
+                                            <td>Baltimore HQ</td>
+                                        </tr>
+                                        <tr id="click">
+											<td>Jennifer</td>
+											<td>Laonima</td>
+											<td>Et Rutrum Non Associates</td>
+											<td>Fogo</td>
+										</tr>
+										<tr id="click">
+											<td>Clark</td>
+											<td>Nam Ac Inc.</td>
+											<td>Machelen</td>
+											<td>Aoumin</td>
+										</tr>
+										<tr id="click">
+											<td>Brendan</td>
+											<td>Enim Commodo Limited</td>
+											<td>Norman</td>
+											<td>Louinm</td>
+										</tr>
+										<tr id="click">
+											<td>Warren</td>
+											<td>Odio Etiam Institute</td>
+											<td>Sautin</td>
+											<td>Juslian</td>
+										</tr>
+                                        <tr id="click">
+                                            <td>Robert Jones</td>
+                                            <td>Sales</td>
+                                            <td>Global Sales Executive</td>
+                                            <td>Baltimore HQ</td>
+                                        </tr>
+                                        <tr id="click">
+											<td>Jennifer</td>
+											<td>Laonima</td>
+											<td>Et Rutrum Non Associates</td>
+											<td>Fogo</td>
+										</tr>
+										<tr id="click">
+											<td>Clark</td>
+											<td>Nam Ac Inc.</td>
+											<td>Machelen</td>
+											<td>Aoumin</td>
+										</tr>
+										<tr id="click">
+											<td>Brendan</td>
+											<td>Enim Commodo Limited</td>
+											<td>Norman</td>
+											<td>Louinm</td>
+										</tr>
+										<tr id="click">
+											<td>Warren</td>
+											<td>Odio Etiam Institute</td>
+											<td>Sautin</td>
+											<td>Juslian</td>
+										</tr>
+                                        <tr id="click">
+                                            <td>Robert Jones</td>
+                                            <td>Sales</td>
+                                            <td>Global Sales Executive</td>
+                                            <td>Baltimore HQ</td>
+                                        </tr>
+                                        <tr id="click">
+											<td>Jennifer</td>
+											<td>Laonima</td>
+											<td>Et Rutrum Non Associates</td>
+											<td>Fogo</td>
+										</tr>
+										<tr id="click">
+											<td>Clark</td>
+											<td>Nam Ac Inc.</td>
+											<td>Machelen</td>
+											<td>Aoumin</td>
+										</tr>
+										<tr id="click">
+											<td>Brendan</td>
+											<td>Enim Commodo Limited</td>
+											<td>Norman</td>
+											<td>Louinm</td>
+										</tr>
+										<tr id="click">
+											<td>Warren</td>
+											<td>Odio Etiam Institute</td>
+											<td>Sautin</td>
+											<td>Juslian</td>
+										</tr>
+                                    </tbody>
+
+								</table>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget -->
+
+					</article>
+					<!-- WIDGET END -->
+
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+		{{ template "footer.tmpl" . }}
+
+		{{ template "scripts.tmpl" . }}
+
+        <script type="text/javascript">
+
+        $('tr#click').click(function() {
+            window.location.href = '/employee_information'
+        });
+
+		</script>
+
+	</body>
+
 </html>

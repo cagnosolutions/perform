@@ -1,104 +1,193 @@
-<script src="../static/js/global-plugins.js"></script>
-    <!-- <script src="../static/js/jquery.js"></script>
-    <script src="../static/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="../static/vendors/jquery.cookie/jquery.cookie.js"></script>
-    <script src="../static/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="../static/vendors/jquery-easing/jquery.easing.1.3.js"></script>
-    <script src="../static/vendors/bootstrap/js/bootstrap.js"></script>
-    <script src="../static/vendors/jquery/dcjqaccordion.2.7.js"></script>
-    <script src="../static/vendors/jquery/scrollTo.min.js"></script>
-    <script src="../static/vendors/jquery/slimscroll.js"></script>
-    <script src="../static/vendors/jquery/nicescroll.js"></script>
-    <script src="../static/vendors/progressbar/bootstrap-progressbar.min.js"></script>
-    <script src="../static/vendors/counter/waypoints.min.js" type="text/javascript" ></script>
-    <script src="../static/vendors/counter/jquery.counterup.min.js" type="text/javascript" ></script>
-    <script src="../static/vendors/jquery-icheck/icheck.min.js"></script>
-    <script src="../static/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="../static/vendors/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
-    <script src="../static/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-    <script src="../static/vendors/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
-    <script src="../static/vendors/summernote/summernote.min.js"></script>
-    <script src="../static/vendors/jquery.autosize/jquery.autosize.js"></script>
-    <script src="../static/vendors/jquery.multi-select/js/jquery.multi-select.js"></script>
-    <script src="../static/vendors/jquery.multi-select/js/jquery.quicksearch.js"></script>
-    <script src="../static/vendors/typeahead/js/typeahead.bundle.js"></script>
-    <script src="../static/vendors/typeahead/js/handlebars.min.js"></script>
-    <script src="../static/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
-    <script src="../static/vendors/select2/select2.min.js"></script>
-    <script src="../static/vendors/bootstrap-star-rating/js/star-rating.min.js"></script>
-    <script src="../static/vendors/bootstrap-fileupload/js/bootstrap-fileupload.js"></script>
-    <script src="../static/vendors/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-    <script src="../static/vendors/jquery.validate/jquery.validate.min.js"></script>
-    <script src="../static/vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-    <script src="../static/vendors/dropzone/dropzone.min.js"></script>
-    <script src="../static/vendors/plupload/js/plupload.full.min.js"></script>
-    <script src="../static/vendors/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js"></script>
-    <script src="../static/vendors/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
-    <script src="../static/vendors/x-editable/inputs-ext/address/address.js"></script>
-    <script src="../static/vendors/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js"></script>
-    <script src="../static/vendors/owl-carousel/owl.carousel.js"></script>
-    <script src="../static/vendors/magnific-popup/js/jquery.magnific-popup.js"></script>
-    <script src="../static/vendors/masonry/masonry.pkgd.min.js"></script>
-    <script src="../static/vendors/moment.min.js"></script>
-    <script src="../static/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="../static/vendors/raphael-min.js" charset="utf-8" ></script>
-    <script src="../static/vendors/sweetalert/sweetalert.min.js"></script>
-    <script src="../static/vendors/word-rotator/jquery.wordrotator.min.js"></script>
-    <script src="../static/vendors/wow-animations/js/wow.min.js"></script>
-    <script src="../static/vendors/rwd-table/js/rwd-table.min.js?v=5.0.3"></script>
-    <script src="../static/vendors/jqueryui.sortable.animation/jquery.ui.sortable-animation.js"></script>
-    <script src="../static/vendors/tooltipster/js/jquery.tooltipster.js" type="text/javascript" ></script>
-    <script src="../static/vendors/dropdowns-enhancement/js/dropdowns-enhancement.min.js" type="text/javascript"></script>
-    <script src="../static/vendors/jquery-notific8/jquery.notific8.js" type="text/javascript"></script>
-    <script src="../static/vendors/date.js"></script>
-    <script src="../static/vendors/pogo-slider/js/jquery.pogo-slider.min.js" type="text/javascript" ></script>
-    <script src="../static/vendors/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript" ></script>
-    <script src="../../../vendors/nestable/jquery.nestable.js" type="text/javascript" ></script>
-    <script src="../static/vendors/bstooltip/bstooltip.js"></script> -->
+<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="../static/js/plugin/pace/pace.min.js"></script>
 
-    <!--##################################################################################
-    #
-    # COMMON SCRIPT FOR THIS PAGE
-    #
-    ##################################################################################-->
+<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="../static/js/libs/jquery-2.1.1.min.js"><\/script>');
+    }
+</script>
 
-    <!--common script init for all pages-->
-    <script src="../static/js/theme.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script>
+    if (!window.jQuery.ui) {
+        document.write('<script src="../static/js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+    }
+</script>
 
-    <!-- For the page has tooltipslter only -->
-    <script src="../static/js/tooltipster.js" type="text/javascript" ></script>
+<!-- IMPORTANT: APP CONFIG -->
+<script src="../static/js/app.config.js"></script>
 
-    <!-- For this page only -->
-    <script src="../static/js/table_editable.js"></script>
-    <script src="../static/js/forms.js"></script>
-    <script src="../static/js/sweetalert.js"></script>
+<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+<script src="../static/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- BOOTSTRAP JS -->
+<script src="../static/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- CUSTOM NOTIFICATION -->
+<script src="../static/js/notification/SmartNotification.min.js"></script>
+
+<!-- JARVIS WIDGETS -->
+<script src="../static/js/smartwidgets/jarvis.widget.min.js"></script>
+
+<!-- EASY PIE CHARTS -->
+<script src="../static/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+<!-- SPARKLINES -->
+<script src="../static/js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+<!-- JQUERY VALIDATE -->
+<script src="../static/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+<!-- JQUERY MASKED INPUT -->
+<script src="../static/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+<!-- JQUERY SELECT2 INPUT -->
+<script src="../static/js/plugin/select2/select2.min.js"></script>
+
+<!-- JQUERY UI + Bootstrap Slider -->
+<script src="../static/js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+<!-- browser msie issue fix -->
+<script src="../static/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+<!-- FastClick: For mobile devices -->
+<script src="../static/js/plugin/fastclick/fastclick.min.js"></script>
+
+<!--[if IE 8]>
+
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+<![endif]-->
+
+<!-- Demo purpose only -->
+<script src="../static/js/demo.min.js"></script>
+
+<!-- MAIN APP JS FILE -->
+<script src="../static/js/app.min.js"></script>
+
+<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+<!-- Voice command : plugin -->
+<script src="../static/js/speech/voicecommand.min.js"></script>
+
+<!-- SmartChat UI : plugin -->
+<script src="../static/js/smart-chat-ui/smart.chat.ui.min.js"></script>
+<script src="../static/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+<!-- PAGE RELATED PLUGIN(S) -->
+
+<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+<script src="../static/js/plugin/flot/jquery.flot.cust.min.js"></script>
+<script src="../static/js/plugin/flot/jquery.flot.resize.min.js"></script>
+<script src="../static/js/plugin/flot/jquery.flot.time.min.js"></script>
+<script src="../static/js/plugin/flot/jquery.flot.tooltip.min.js"></script>
+
+<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+<script src="../static/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../static/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<!-- Full Calendar -->
+<script src="../static/js/plugin/moment/moment.min.js"></script>
+<script src="../static/js/plugin/fullcalendar/jquery.fullcalendar.min.js"></script>
+
+<script src="../static/js/plugin/datatables/jquery.dataTables.min.js"></script>
+<script src="../static/js/plugin/datatables/dataTables.colVis.min.js"></script>
+<script src="../static/js/plugin/datatables/dataTables.tableTools.min.js"></script>
+<script src="../static/js/plugin/datatables/dataTables.bootstrap.min.js"></script>
+<script src="../static/js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+
+<script type="text/javascript">
+
+// DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+$(document).ready(function() {
+
+    pageSetUp();
 
 
-    <script type="text/javascript">
 
+    /* CUSTOM dataTABLE  */
+            var responsiveHelper_datatable_fixed_column = undefined;
+            var responsiveHelper_datatable_col_reorder = undefined;
+            var responsiveHelper_datatable_tabletools = undefined;
 
-        $(document).ready(function(){
-            $('.dataTable').dataTable();
-            $('a.delete').click(function() {
-                swal({   title: "Are you sure?",   text: "You will not be able to recover this imaginary file!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, delete it!",   closeOnConfirm: false }, function(){   swal("Deleted!", "Your imaginary file has been deleted.", "success"); });
-            });
-            new WOW().init();
-            App.initPage();
-            App.initLeftSideBar();
-            App.initCounter();
-            App.initNiceScroll();
-            App.initPanels();
-            App.initProgressBar();
-            App.initSlimScroll();
-            App.initNotific8();
-            App.initTooltipster();
-            App.initStyleSwitcher();
-            App.initMenuSelected();
-            App.initRightSideBar();
-            App.initSummernote();
-            App.initAccordion();
-            App.initModal();
-            App.initPopover();
+            var breakpointDefinition = {
+                tablet : 1024,
+                phone : 480
+            };
 
+        var otable = $('.dataTable').DataTable({
+            //"bFilter": false,
+            //"bInfo": false,
+            //"bLengthChange": false
+            //"bAutoWidth": false,
+            //"bPaginate": false,
+            //"bStateSave": true // saves sort state using localStorage
+
+				// Tabletools options:
+				//   https://datatables.net/extensions/tabletools/button_options
+
+				"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-5'f><'col-sm-7 col-xs-6 hidden-xs'CT>r>"+
+						"t"+
+						"<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-sm-6 col-xs-12'p>>",
+                "oLanguage": {
+        			"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>'
+        		},
+        		"oTableTools": {
+        			 "aButtons": [
+        		     "copy",
+        		     "csv",
+        		     "xls",
+        		        {
+        		            "sExtends": "pdf",
+        		            "sTitle": "SmartAdmin_PDF",
+        		            "sPdfMessage": "SmartAdmin PDF Export",
+        		            "sPdfSize": "letter"
+        		        },
+        		     	{
+        	            	"sExtends": "print",
+        	            	"sMessage": "Generated by SmartAdmin <i>(press Esc to close)</i>"
+        	        	}
+        		     ],
+        		    "sSwfPath": "../static/js/plugin/datatables/swf/copy_csv_xls_pdf.swf"
+        		},
+        		"autoWidth" : true,
         });
-    </script>
+
+        // Apply the filter
+        $(".dataTable thead th input[type=text]").on( 'keyup change', function () {
+            var tempTable = $(this).parents('table').DataTable()
+            tempTable
+            .column( $(this).parent().index()+':visible' )
+            .search( this.value )
+            .draw();
+
+        } );
+
+    /* END CUSTOM dataTABLE */
+
+    // DELETE PROMPT
+        $("#delete").click(function(e) {
+        $.SmartMessageBox({
+            title : "Delete Alert!",
+            content : "Are you sure you want to delete this item?",
+            buttons : '[No][Yes]'
+        }, function(ButtonPressed) {
+            if (ButtonPressed === "Yes") {
+
+                $.smallBox({
+                    title : "Item Deleted",
+                    content : "<i class='fa fa-clock-o'></i> <i>This item has been removed</i>",
+                    color : "#659265",
+                    iconSmall : "fa fa-trash fa-2x fadeInRight animated",
+                    timeout : 4000
+                });
+            }
+        });
+        e.preventDefault();
+    })
+
+})
+
+</script>
