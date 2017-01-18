@@ -2,6 +2,17 @@ package main
 
 import "time"
 
+type User struct {
+	ID        string
+	FirstName string
+	LastName  string
+	Gender    string
+	Email     string
+	Password  string
+	Role      string
+	Active    bool
+}
+
 type Companies struct {
 	CompanyID             int
 	CompanyName           string

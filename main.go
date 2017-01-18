@@ -4,27 +4,72 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"strconv"
+	"time"
 
 	"github.com/cagnosolutions/web"
+	"github.com/therealscout/cdb"
 )
 
 var mux *web.Mux
 var tmpl *web.TmplCache
+var db *cdb.Cdb
 
 func init() {
+	db = cdb.NewCdb()
+	db.AddStore("user")
 	mux = web.NewMux()
 	tmpl = web.NewTmplCache()
 }
 
 func main() {
-	mux.AddRoutes(login_page, employee_information, employee_overview, employee_profile, job_information, job_information_overview, register_page, login, logout, observation_goals, business_results)
-	mux.AddRoutes(one_to_one_measurement, business_results_overview, job_information_overview, learning_activities, learning_activities_overview, index, course_registrations, course_sessions)
-	mux.AddRoutes(multi_measurement_performance, peer_to_peer, career_planning, job_canidates, organization_structure, accountability_reviews, job_canidates_overview, company_settings, company_settings_general, company_settings_branches)
-	mux.AddRoutes(performance_reviews)
-	// mux.AddSecureRoutes()
+	mux.AddRoutes(login, register, logout, login_page, register_page, job_information_overview)
+	mux.AddSecureRoutes(ADMIN, index, employee_information, employee_overview, business_results_overview, business_results)
 	fmt.Println("Dont forget to register all routes*******************************")
-	log.Fatal(http.ListenAndServe(":9999", mux))
+	log.Fatal(http.ListenAndServe(":9090", mux))
 }
+
+var register = web.Route{"POST", "/register", func(w http.ResponseWriter, r *http.Request) {
+	id := strconv.Itoa(int(time.Now().UnixNano()))
+	user := User{
+		ID:        id,
+		Email:     r.FormValue("email"),
+		Password:  r.FormValue("password"),
+		FirstName: r.FormValue("firstname"),
+		LastName:  r.FormValue("lastname"),
+		Role:      "ADMIN",
+		Active:    true,
+		Gender:    r.FormValue("gender"),
+	}
+	db.Add("user", id, user)
+	web.SetSuccessRedirect(w, r, "/login", "Registered Please Log In")
+}}
+
+var logout = web.Route{"GET", "/logout", func(w http.ResponseWriter, r *http.Request) {
+	web.Logout(w)
+	web.SetMsgRedirect(w, r, "/login", "Later Bro")
+	return
+}}
+
+var login = web.Route{"POST", "/login", func(w http.ResponseWriter, r *http.Request) {
+	email := r.FormValue("email")
+	password := r.FormValue("password")
+	if email == "admin@admin" && password == "admin" {
+		web.Login(w, r, "ADMIN")
+		web.SetMsgRedirect(w, r, "/", "Welcome In Memory Admin")
+		return
+	}
+	var users []User
+	db.GetAll("user", &users)
+	for _, user := range users {
+		if user.Email == email && user.Password == password && user.Active {
+			web.Login(w, r, user.Role)
+			web.SetMsgRedirect(w, r, "/", "WELCOME "+user.FirstName)
+			return
+		}
+	}
+	web.SetErrorRedirect(w, r, "/login", "Incorrect Email or Password")
+}}
 
 var performance_reviews = web.Route{"GET", "/performance_reviews", func(w http.ResponseWriter, r *http.Request) {
 	tmpl.Render(w, r, "performance_reviews.tmpl", web.Model{})
@@ -183,23 +228,5 @@ var observation_goals = web.Route{"GET", "/observation_goals", func(w http.Respo
 		"page":    "employeeperformance",
 		"subpage": "observationgoals",
 	})
-	return
-}}
-
-var login = web.Route{"POST", "/login", func(w http.ResponseWriter, r *http.Request) {
-	company := r.FormValue("company")
-	username := r.FormValue("username")
-	password := r.FormValue("password")
-	if company == "admin" && username == "admin" && password == "admin" {
-		web.Login(w, r, "ADMIN")
-		web.SetSuccessRedirect(w, r, "/", "Welcome Admin!")
-		return
-	}
-	web.SetErrorRedirect(w, r, "/login", "Incorrect Email or Password")
-}}
-
-var logout = web.Route{"GET", "/logout", func(w http.ResponseWriter, r *http.Request) {
-	web.Logout(w)
-	web.SetSuccessRedirect(w, r, "/loginpage", "Logged Out")
 	return
 }}

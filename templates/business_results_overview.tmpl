@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<body class="minified smart-style-1">
+
+		{{ template "head.tmpl" }}
+
+		{{ template "sidenav.tmpl" . }}
+
+		<!-- MAIN PANEL -->
+
+        <div id="main" role="main">
+
+			<!-- MAIN CONTENT -->
+			<div id="content" style="height:979px;">
+
+                {{ template "alert.tmpl" . }}
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-edit fa-building"></i>
+								Business Results
+						</h1>
+					</div>
+				</div>
+
+                <div class="row">
+
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12">
+
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget well" id="wid-id-0a" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+
+							<!-- widget content -->
+							<div class="widget-body">
+								<h1>Busiiness Results</h1>
+								<p>
+									A list of business results and company results
+								</p>
+                                <table class="dataTable click table table-hover" width="100%">
+
+							        <thead>
+										<tr>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+                                            <th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+										</tr>
+							            <tr>
+							                <th data-class="expand">Name</th>
+							                <th>Details</th>
+							            </tr>
+							        </thead>
+
+                                    <tbody>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Air Product</td>
+                                            <td>Secure space agreements with a minimum of six airlines per refion: USA, Europe, Northern Asian. Secure a minimum of 25 air transportation customers.</td>
+                                        </tr>
+                                        <tr id="click">
+                                            <td>Establish Brokerage Product</td>
+                                            <td>Certify a licensed broker in each reagion: USA, Europe, Northern Asia.</td>
+                                        </tr>
+                                    </tbody>
+
+								</table>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget -->
+
+					</article>
+					<!-- WIDGET END -->
+
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+		{{ template "footer.tmpl" . }}
+
+		{{ template "scripts.tmpl" . }}
+
+        <script type="text/javascript">
+
+        $('tr#click').click(function() {
+            window.location.href = '/business_results'
+        });
+
+		</script>
+
+	</body>
+
+</html>
