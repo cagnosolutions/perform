@@ -23,6 +23,8 @@ func init() {
 
 func main() {
 	mux = web.NewMux()
+	mux.AddSecureRoutes(ADMIN, job_information, index, employee_information, employee_overview)
+	mux.AddSecureRoutes(ADMIN, job_information_overview, job_canidates_overview, job_canidates, company_settings)
 	mux.AddRoutes(login_page, register_page, login, register)
 	// mux.AddSecureRoutes()
 	fmt.Println("Dont forget to register all routes*******************************")
