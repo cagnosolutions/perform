@@ -25,6 +25,7 @@ func init() {
 func main() {
 	mux.AddRoutes(login, register, logout, login_page, register_page)
 	mux.AddSecureRoutes(ADMIN, index, employee_information, employee_overview, business_results_overview, business_results, job_information, job_information_overview)
+	mux.AddSecureRoutes(ADMIN, course_registrations, job_canidates_overview, job_canidates, employee_profile)
 	fmt.Println("Caleb.... You're an idiot.")
 	log.Fatal(http.ListenAndServe(":9090", mux))
 }

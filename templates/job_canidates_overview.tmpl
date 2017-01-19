@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<body class="minified smart-style-1">
+
+		{{ template "head.tmpl" }}
+
+		{{ template "sidenav.tmpl" . }}
+
+		<!-- MAIN PANEL -->
+
+        <div id="main" role="main">
+
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb hidden-sm hidden-xs">
+					<li><a href="#">Employee Information</a></li><li><a href="#">Job Canidate Overview</a></li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+			</div>
+
+			<!-- MAIN CONTENT -->
+			<div id="content" style="height:979px;">
+
+                {{ template "alert.tmpl" . }}
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-edit fa-building"></i>
+								Job Cannidates
+						</h1>
+					</div>
+				</div>
+
+                <div class="row">
+
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12">
+
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget well" id="wid-id-0a" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+
+							<!-- widget content -->
+							<div class="widget-body">
+								<h1>Job Cannidates</h1>
+								<p>
+									A list of Potential Company Employees
+								</p>
+                                <table class="dataTable click table table-hover" width="100%">
+
+							        <thead>
+										<tr>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+                                            <th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+											<th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+                                            <th class="hasinput">
+												<input type="text" class="form-control" placeholder="Filter" />
+											</th>
+										</tr>
+							            <tr>
+							                <th data-class="expand">Name</th>
+											<th>Department Name</th>
+											<th>Job Info Name</th>
+							                <th data-hide="phone,tablet">Branch Name</th>
+							            </tr>
+							        </thead>
+
+                                    <tbody>
+										<tr id="click">
+											<td>Robert Jones</td>
+											<td>Sales</td>
+											<td>Global Sales Executive</td>
+											<td>Baltimore HQ</td>
+											</td>
+										</tr>
+										<tr id="click">
+											<td>Robert Jones</td>
+											<td>Sales</td>
+											<td>Global Sales Executive</td>
+											<td>Baltimore HQ</td>
+											</td>
+										</tr>
+										<tr id="click">
+											<td>Robert Jones</td>
+											<td>Sales</td>
+											<td>Global Sales Executive</td>
+											<td>Baltimore HQ</td>
+											</td>
+										</tr>
+										<tr id="click">
+											<td>Robert Jones</td>
+											<td>Sales</td>
+											<td>Global Sales Executive</td>
+											<td>Baltimore HQ</td>
+											</td>
+										</tr>
+										<tr id="click">
+											<td>Robert Jones</td>
+											<td>Sales</td>
+											<td>Global Sales Executive</td>
+											<td>Baltimore HQ</td>
+											</td>
+										</tr>
+                                    </tbody>
+
+								</table>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget -->
+
+					</article>
+					<!-- WIDGET END -->
+
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+		{{ template "footer.tmpl" . }}
+
+		{{ template "scripts.tmpl" . }}
+
+        <script type="text/javascript">
+
+        $('tr#click').click(function() {
+            window.location.href = '/job_canidates'
+        });
+
+		</script>
+
+	</body>
+
+</html>

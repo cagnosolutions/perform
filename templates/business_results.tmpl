@@ -247,7 +247,7 @@
 								<div class="widget-body">
 
 									<div id="table" class="col-sm-12">
-										<table class="dataTable click table table-hover" width="100%">
+										<table id="dataTable" class="dataTable click table table-hover table-bordered" width="100%">
 
 										   <thead>
 											   <tr>
@@ -260,10 +260,17 @@
 													<th class="hasinput">
 													   <input type="text" class="form-control" placeholder="Filter" />
 												   </th>
+												   <th>
+													   <div class="text-center">
+														   <button type="button" data-toggle="modal" data-target="#modalMeasurement" class="btn btn-sm btn-default" >
+															   Add
+														   </button>
+													   </div>
+												   </th>
 											   </tr>
 											   <tr>
 												   <th data-class="expand">Name</th>
-													<th>Utilitzation</th>
+													<th data-hide="phone,tablet">Utilitzation</th>
 												   <th data-hide="phone,tablet">Notes</th>
 													<th class="text-center">Action</th>
 											   </tr>
@@ -275,7 +282,7 @@
 													<td>We will use the closed business report as in initial indicator of revenue growth, but it is not until product is shipped.</td>
 													<td>Collected via Saleforce.com</td>
 													<td class="text-center" style="width:12%;">
-														<a data-toggle="modal" data-target="#modalSkills" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
+														<a data-toggle="modal" data-target="#modalMeasurement" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
 															<i class="fa fa-pencil-square-o"></i>
 														</a>
 														<a id="delete" rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm">
@@ -288,10 +295,10 @@
 													<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
 													<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</td>
 													<td class="text-center" style="width:12%;">
-														<a data-toggle="modal" data-target="#modalSkills" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
+														<a data-toggle="modal" data-target="#modalMeasurement" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
 															<i class="fa fa-pencil-square-o"></i>
 														</a>
-														<a id="delete" rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm">
+														<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
 															<i class="fa fa-trash"></i>
 														</a>
 													</td>
@@ -342,8 +349,21 @@
 	                                        </article>
 	                                    </form>
 	                                    <article class="col-sm-8">
-	                                        <table class="dataTable table" width="100%">
+	                                        <table class="dataTable table table-bordered" width="100%">
 	                                            <thead>
+													<th class="hasinput">
+													   <input type="text" class="form-control" placeholder="Filter" />
+												   </th>
+												   <th class="hasinput">
+													  <input type="text" class="form-control" placeholder="Filter" />
+												  </th>
+												  <th>
+													  <div class="text-center">
+														  <button type="button" data-toggle="modal" data-target="#modalTask" class="btn btn-sm btn-default" >
+															  Add
+														  </button>
+													  </div>
+												  </th>
 	                                                <tr>
 	                                                    <th>Job Task</th>
 	                                                    <th>Job Information Name</th>
@@ -354,13 +374,13 @@
 	                                                <tr>
 	                                                    <td>Coach Employees for Job tasks performance improvements</td>
 	                                                    <td>Corporate Trainer</td>
-	                                                    <td class="text-center" style="width:12%;">
+	                                                    <td class="text-center" style="width:18%;">
 	                                                        <a data-toggle="modal" data-target="#modalTask" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
 	                                                            <i class="fa fa-pencil-square-o"></i>
 	                                                        </a>
-	                                                        <a id="delete" rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm">
-	                                                            <i class="fa fa-trash"></i>
-	                                                        </a>
+															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
 	                                                    </td>
 	                                                </tr>
 	                                            </tbody>
@@ -386,6 +406,56 @@
 
 		</div>
 		<!-- END MAIN PANEL -->
+
+		<div class="modal fade" id="modalMeasurement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Add Performance Measurement</h4>
+					</div>
+					<div class="modal-body">
+						<form class="smart-form">
+
+							<fieldset>
+								<section>
+									<label class="label">Performance Measurement:</label>
+									<label class="input">
+										<input type="text" class="input-sm">
+									</label>
+								</section>
+
+								<section>
+									<label class="label">Utilization:</label>
+									<label class="textarea textarea-resizable">
+										<textarea rows="3" class="custom-scroll"></textarea>
+									</label>
+								</section>
+
+								<section>
+									<label class="label">Notes:</label>
+									<label class="textarea textarea-resizable">
+										<textarea rows="3" class="custom-scroll"></textarea>
+									</label>
+								</section>
+
+							</fieldset>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Cancel
+						</button>
+						<button type="button" class="btn btn-primary">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="modal fade" id="modalTask" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
