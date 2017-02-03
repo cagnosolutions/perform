@@ -25,14 +25,14 @@ func init() {
 func main() {
 	mux.AddRoutes(login, register, logout, login_page, register_page)
 	mux.AddSecureRoutes(ADMIN, index, employee_information, employee_overview, business_results_overview, business_results, job_information, job_information_overview)
-	mux.AddSecureRoutes(ADMIN, course_registrations, job_canidates_overview, job_canidates, employee_profile)
+	mux.AddSecureRoutes(ADMIN, course_registrations, job_canidates_overview, job_canidates, employee_profile, course_overview, course, course_sessions, career_planning, performance_reviews, accountability_reviews)
 	fmt.Println("Caleb.... You're an idiot.")
 	log.Fatal(http.ListenAndServe(":9090", mux))
 }
 
 var register = web.Route{"POST", "/register", func(w http.ResponseWriter, r *http.Request) {
 	id := strconv.Itoa(int(time.Now().UnixNano()))
-	user := User{
+	user := PersonnelData{
 		ID:        id,
 		Email:     r.FormValue("email"),
 		Password:  r.FormValue("password"),
@@ -60,7 +60,7 @@ var login = web.Route{"POST", "/login", func(w http.ResponseWriter, r *http.Requ
 		web.SetMsgRedirect(w, r, "/", "Welcome In Memory Admin")
 		return
 	}
-	var users []User
+	var users []PersonnelData
 	db.GetAll("user", &users)
 	for _, user := range users {
 		if user.Email == email && user.Password == password && user.Active {
@@ -150,16 +150,13 @@ var login_page = web.Route{"GET", "/login", func(w http.ResponseWriter, r *http.
 	return
 }}
 
-var learning_activities_overview = web.Route{"GET", "/learning_activities_overview", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "learning_activities_overview.tmpl", web.Model{
-		"page":    "employeedevelopement",
-		"subpage": "learningactivities",
-	})
+var course_overview = web.Route{"GET", "/course_overview", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "course_overview.tmpl", web.Model{})
 	return
 }}
 
-var learning_activities = web.Route{"GET", "/learning_activities", func(w http.ResponseWriter, r *http.Request) {
-	tmpl.Render(w, r, "learning_activities.tmpl", web.Model{
+var course = web.Route{"GET", "/course", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "course.tmpl", web.Model{
 		"page":    "employeedevelopement",
 		"subpage": "learningactivities",
 	})

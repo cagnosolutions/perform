@@ -2,17 +2,6 @@ package main
 
 import "time"
 
-type User struct {
-	ID        string
-	FirstName string
-	LastName  string
-	Gender    string
-	Email     string
-	Password  string
-	Role      string
-	Active    bool
-}
-
 type Companies struct {
 	CompanyID             int
 	CompanyName           string
@@ -627,6 +616,12 @@ type Schedules struct {
 }
 
 type PersonnelData struct {
+	ID                  string
+	Gender              string
+	Email               string
+	Password            string
+	Role                string
+	Active              bool
 	EmployeeID          int
 	FullName            string
 	FirstName           string

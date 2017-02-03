@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<body class="minified smart-style-1">
+
+		{{ template "head.tmpl" }}
+
+		{{ template "sidenav.tmpl" . }}
+
+		<!-- MAIN PANEL -->
+
+        <div id="main" role="main">
+
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="#">Employee Reviews</a></li><li><a href="#">Performance Reviews</a></li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-tachometer"></i>
+								Performance Reviews
+						</h1>
+					</div>
+				</div>
+
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-6">
+
+                        <div class="jarviswidget" id="wid-id-18" data-widget-colorbutton="false" data-widget-editbutton="false">
+                            <!-- widget options:
+                                usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                                data-widget-colorbutton="false"
+                                data-widget-editbutton="false"
+                                data-widget-togglebutton="false"
+                                data-widget-deletebutton="false"
+                                data-widget-fullscreenbutton="false"
+                                data-widget-custombutton="false"
+                                data-widget-collapsed="true"
+                                data-widget-sortable="false"
+
+                            -->
+                            <header>
+                                <h2>Performance Reviews</h2>
+
+                            </header>
+
+                            <!-- widget div-->
+                            <div>
+
+                                <!-- widget content -->
+                                <div class="widget-body no-padding">
+                                    <div class="widget-body-toolbar">
+
+                                        <div class="row">
+
+                                            <div class="col-xs-9 col-sm-5 col-md-5 col-lg-5">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                                    <input class="form-control" id="prepend" placeholder="Filter" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-7 col-md-7 col-lg-7 text-right">
+
+                                                <a href="/performance_reviews" class="btn btn-primary">
+                                                    <i class="fa fa-plus"></i> <span class="hidden-mobile">New Review</span>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="custom-scroll table-responsive" style="height:290px; overflow-y: scroll;">
+
+                                        <table class="table table-bordered table-hover click">
+                                            <tbody>
+                                                <th class="text-center">Reviewed By:</td>
+                                                <th class="text-center">Reviewed Date:</td>
+                                                <th class="text-center">Task:</td>
+                                                <th class="text-center">Status</td>
+                                            </tbody>
+                                            <tbody>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                                <tr id="click">
+                                                    <td class="text-center">Billy Joe Smith</td>
+                                                    <td class="text-center">05-22-1992</td>
+                                                    <td class="text-center">Prioritize a potential customer</td>
+                                                    <td class="text-center" class="text-center"><span class="label label-warning">DP</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                </div>
+                                <!-- end widget content -->
+
+                            </div>
+                            <!-- end widget div -->
+
+                        </div>
+                        <!-- end widget -->
+
+                    </article>
+
+					<!-- NEW COL START -->
+					<article class="col-sm-12 col-md-12 col-lg-6">
+
+                        <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+
+							-->
+							<header>
+								<span></span>
+								<h2>Employee Search</h2>
+							</header>
+
+							<!-- widget div-->
+							<div>
+
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+
+								</div>
+								<!-- end widget edit box -->
+
+								<!-- widget content -->
+                                <div class="widget-body no-padding">
+
+										<form class="smart-form">
+
+
+											<fieldset>
+												<div class="form-group">
+													<label>Employee</label>
+													<select style="width:100%" class="select2">
+														<option>&nbsp;&nbsp;&nbsp;Choose a Employee</option>
+														<optgroup label="Sales">
+															<option>Robert Jones</option>
+															<option>Billy Dawnson</option>
+														</optgroup>
+														<optgroup label="Marketing">
+															<option>Sally Smith</option>
+															<option>June Martin</option>
+														</optgroup>
+													</select>
+												</div>
+											</fieldset>
+
+										</form>
+
+									</div>
+								<!-- end widget content -->
+
+							</div>
+							<!-- end widget div -->
+
+						</div>
+						<!-- end widget -->
+
+					</article>
+
+				</div>
+
+                <div class="row">
+
+					<!-- NEW WIDGET START -->
+					<article class="col-lg-12 col-sm-12">
+
+						<div class="jarviswidget" id="wid-id-5" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+
+							-->
+							<header>
+								<h2>Performance Review</h2>
+							</header>
+
+							<!-- widget div-->
+							<div>
+
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+
+								</div>
+								<!-- end widget edit box -->
+
+								<!-- widget content -->
+								<div class="widget-body">
+
+                                    <form class="smart-form">
+                                        <div class="col-lg-4 col-sm-12">
+
+                                            <fieldset>
+                                                <section>
+                                                    <label class="label">Reviewed By:</label>
+                                                    <label class="select">
+                                                        <select>
+                                                            <option value="">Billy Joe Smith</option>
+                                                        </select> <i></i>
+                                                    </label>
+                                                </section>
+
+                                                <section>
+                                                    <label class="label">Task</label>
+                                                    <label class="select">
+                                                        <select>
+                                                            <option value="">Prioritize a potential customer</option>
+                                                        </select> <i></i>
+                                                    </label>
+                                                </section>
+
+                                                <section>
+                                                    <label>Discussed Review Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder= "-">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </section>
+
+                                                <section>
+                                                    <label>Scheduled Review Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder= "-">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </section>
+
+                                                <section>
+                                                    <label>Actual Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder= "-">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </section>
+
+                                            </fieldset>
+
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12">
+
+                                            <fieldset>
+
+                                                <section>
+    												<label class="label">Status</label>
+    												<div class="inline-group">
+    													<label class="radio">
+    														<input type="radio" name="radio-inline" checked="checked">
+    														<i></i>Developing Practice</label>
+    													<label class="radio">
+    														<input type="radio" name="radio-inline">
+    														<i></i>Best Practice</label>
+    												</div>
+    											</section>
+
+                    							<section>
+                    								<label class="label">Performance Observations:</label>
+                    								<label class="textarea textarea-resizable">
+                    									<textarea rows="3" class="custom-scroll"></textarea>
+                    								</label>
+                    							</section>
+
+                                                <section>
+                    								<label class="label">Notes:</label>
+                    								<label class="textarea textarea-resizable">
+                    									<textarea rows="3" class="custom-scroll"></textarea>
+                    								</label>
+                    							</section>
+
+                                                <footer>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        Save
+                                                    </button>
+                                                </footer>
+
+                    						</fieldset>
+
+                                        </div>
+
+                					</form>
+
+								</div>
+								<!-- end widget content -->
+
+							</div>
+							<!-- end widget div -->
+
+						</div>
+
+					</article>
+
+				</div>
+
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+		{{ template "footer.tmpl" . }}
+
+		{{ template "scripts.tmpl" . }}
+
+	</body>
+
+</html>
