@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+	<head>
+		{{ template "head.tmpl" }}
+	</head>
+
 	<body class="minified smart-style-1">
 
-		{{ template "head.tmpl" }}
+		{{ template "topnav.tmpl" }}
 
 		{{ template "sidenav.tmpl" . }}
 
@@ -21,7 +25,7 @@
 
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li><a href="#">Employee Development</a></li><li><a href="#">Courses Overview</a></li><li><a href="#">Course</a></li>
+					<li><a href="#">Employee Development</a></li><li><a href="#">Career Planning</a></li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -45,7 +49,7 @@
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
 						<h1 class="page-title txt-color-blueDark">
 							<i class="fa fa-road"></i>
-								Course
+								Career Planning
 						</h1>
 					</div>
 				</div>
@@ -53,191 +57,68 @@
                 <div class="row">
                     <article class="col-sm-12 col-md-12 col-lg-6">
 
-						<div class="jarviswidget" id="wid-id-5" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-							<!-- widget options:
-							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                        <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                         <!-- widget options:
+                         usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
-							data-widget-colorbutton="false"
-							data-widget-editbutton="false"
-							data-widget-togglebutton="false"
-							data-widget-deletebutton="false"
-							data-widget-fullscreenbutton="false"
-							data-widget-custombutton="false"
-							data-widget-collapsed="true"
-							data-widget-sortable="false"
+                         data-widget-colorbutton="false"
+                         data-widget-editbutton="false"
+                         data-widget-togglebutton="false"
+                         data-widget-deletebutton="false"
+                         data-widget-fullscreenbutton="false"
+                         data-widget-custombutton="false"
+                         data-widget-collapsed="true"
+                         data-widget-sortable="false"
 
-							-->
-							<header>
-								<h2>Course </h2>
-							</header>
+                         -->
+                         <header>
+                             <span></span>
+                             <h2>Desired Job</h2>
+                         </header>
 
-							<!-- widget div-->
-							<div>
+                         <!-- widget div-->
+                         <div>
 
-								<!-- widget edit box -->
-								<div class="jarviswidget-editbox">
-									<!-- This area used as dropdown edit box -->
+                             <!-- widget edit box -->
+                             <div class="jarviswidget-editbox">
+                                 <!-- This area used as dropdown edit box -->
 
-								</div>
-								<!-- end widget edit box -->
+                             </div>
+                             <!-- end widget edit box -->
 
-								<!-- widget content -->
-								<div class="widget-body">
+                             <!-- widget content -->
+                                <div class="widget-body no-padding">
 
-									<div class="">
-										<ul class="nav nav-tabs" id="demo-pill-nav">
-											<li class="active">
-												<a href="#s1" data-toggle="tab">Details</a>
-											</li>
-											<li>
-												<a href="#s2" data-toggle="tab">Notes</a>
-											</li>
-											<li>
-												<a href="#s3" data-toggle="tab">Options</a>
-											</li>
-										</ul>
-										<div class="tab-content">
-											<div class="tab-pane active" id="s1">
-												<div class="widget-body">
-
-													<form class="smart-form">
-
-														<article class="col-lg-6">
-
-															<fieldset>
-
-																<section>
-																	<label class="label">Name:</label>
-																	<label class="input"><i class="icon-append fa fa-user"></i>
-																		<input type="text" class="input-sm">
-																	</label>
-																</section>
-
-																<section>
-																	<label class="label">Reference:</label>
-																	<label class="input"><i class="icon-append fa fa-user"></i>
-																		<input type="text" class="input-sm">
-																	</label>
-																</section>
-
-																<section>
-																	<label class="label">Category:</label>
-																	<label class="select">
-																		<select>
-																			<option value="0">Choose Category</option>
-																			<option value="1">Alexandra</option>
-																			<option value="2">Alice</option>
-																			<option value="3">Anastasia</option>
-																			<option value="4">Avelina</option>
-																		</select> <i></i> </label>
-																	</section>
-
-																	<section>
-																		<label class="label">Description:</label>
-																		<label class="textarea textarea-resizable">
-																			<textarea rows="6" class="custom-scroll"></textarea>
-																		</label>
-																	</section>
-
-																</fieldset>
-
-														</article>
-
-														<article class="col-lg-6">
-
-															<fieldset>
-
-																<section>
-																	<label class="label">Type Of Class:</label>
-																	<label class="input">
-																		<input type="text" class="input-sm">
-																	</label>
-																</section>
-
-																<section>
-																	<label class="label">Class Size:</label>
-																	<label class="select">
-																		<select>
-																			<option value="0">Choose Category</option>
-																			<option value="1">Alexandra</option>
-																			<option value="2">Alice</option>
-																			<option value="3">Anastasia</option>
-																			<option value="4">Avelina</option>
-																		</select> <i></i> </label>
-																</section>
-
-																	<section>
-																		<label class="label">Catalog</label>
-																		<div class="inline-group">
-																			<label class="radio">
-																				<input type="radio" name="radio-inline" checked="checked">
-																				<i></i>Yes</label>
-																			<label class="radio">
-																				<input type="radio" name="radio-inline">
-																				<i></i>No</label>
-																		</div>
-																	</section>
-
-																	<section>
-																		<label class="label">Provider</label>
-																		<div class="inline-group">
-																			<label class="radio">
-																				<input type="radio" name="radio-inline" checked="checked">
-																				<i></i>Internal</label>
-																			<label class="radio">
-																				<input type="radio" name="radio-inline">
-																				<i></i>External</label>
-																		</div>
-																	</section>
-
-																	<section>
-																		<label class="select">
-																			<select>
-																				<option value="0">Cultivisor</option>
-																				<option value="1">Alexandra</option>
-																				<option value="2">Alice</option>
-																				<option value="3">Anastasia</option>
-																				<option value="4">Avelina</option>
-																			</select> <i></i> </label>
-																	</section>
-
-																</fieldset>
-
-														</article>
-
-													</form>
-
-												</div>
-											</div>
-											<div class="tab-pane" id="s2">
-												<div class="widget-body">
+                                     <form class="smart-form">
 
 
+                                         <fieldset>
+                                             <div class="form-group">
+                                                 <label>Job</label>
+                                                 <select style="width:100%" class="select2">
+                                                     <option>&nbsp;&nbsp;&nbsp;Choose a Job</option>
+                                                     <option>Account Manager</option>
+                                                     <option>Salesperson</option>
+                                                 </select>
+                                             </div>
+                                         </fieldset>
 
-												</div>
-											</div>
-											<div class="tab-pane" id="s3">
+                                     </form>
 
+                                 </div>
+                             <!-- end widget content -->
 
+                         </div>
+                         <!-- end widget div -->
 
-											</div>
-
-										</div>
-									</div>
-
-								</div>
-								<!-- end widget content -->
-
-							</div>
-							<!-- end widget div -->
-
-						</div>
+                     </div>
+                     <!-- end widget -->
 
 					</article>
 
 					<article class="col-sm-12 col-md-12 col-lg-6">
 
-						<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                        <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
 							<!-- widget options:
 							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
@@ -253,7 +134,7 @@
 							-->
 							<header>
 								<span></span>
-								<h2>Course Search</h2>
+								<h2>Employee Search</h2>
 							</header>
 
 							<!-- widget div-->
@@ -274,11 +155,17 @@
 
 											<fieldset>
 												<div class="form-group">
-													<label>Course</label>
+													<label>Employee</label>
 													<select style="width:100%" class="select2">
-														<option>&nbsp;&nbsp;&nbsp;Choose a Course</option>
-														<option>MGT 101</option>
-														<option>Sales 101</option>
+														<option>&nbsp;&nbsp;&nbsp;Choose a Employee</option>
+														<optgroup label="Sales">
+															<option>Robert Jones</option>
+															<option>Billy Dawnson</option>
+														</optgroup>
+														<optgroup label="Marketing">
+															<option>Sally Smith</option>
+															<option>June Martin</option>
+														</optgroup>
 													</select>
 												</div>
 											</fieldset>
@@ -324,11 +211,14 @@
 						<ul class="nav nav-tabs in">
 
 							<li class="active">
-								<a data-toggle="tab" href="#hr1"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Detailed Information</a>
+								<a data-toggle="tab" href="#hr1"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Current Attributes</a>
 							</li>
 
 							<li>
-								<a data-toggle="tab" href="#hr2"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Related Skills</a>
+								<a data-toggle="tab" href="#hr2"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Required Attributes</a>
+							</li>
+                            <li>
+								<a data-toggle="tab" href="#hr3"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Remaing Attributes</a>
 							</li>
 
 						</ul>
@@ -344,319 +234,342 @@
 
 									<ul class="nav nav-tabs">
 										<li class="active">
-											<a href="#sessions" data-toggle="tab">Sessions</a>
-										</li>
-										<li>
-											<a href="#learning" data-toggle="tab">Learning Outcomes</a>
-										</li>
-										<li>
-											<a href="#prework" data-toggle="tab">Prework Assignments</a>
-										</li>
-										<li>
-											<a href="#course" data-toggle="tab">Course Exercises</a>
-										</li>
-										<li>
-											<a href="#activityMaterials" data-toggle="tab">Activity Materials</a>
-										</li>
-									</ul>
-									<div class="tab-content padding-10">
-										<div class="tab-pane active" id="sessions">
-
-											<table class="table dataTable  table-bordered" style="width:100%;">
-                                                <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th></th>
-														<th>
-
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalSessions" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-                                                    <tr>
-                                                        <th>Instructor</th>
-                                                        <th>Location</th>
-														<th>Start Date</th>
-														<th>End Date</th>
-														<th>Start Time</th>
-														<th>End Time</th>
-														<th>Class Size</th>
-														<th class="text-center">Active</th>
-                                                        <th class="text-center">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-													<tr>
-														<td>Ken Johnson</td>
-														<td>CHQ Boardroom</td>
-														<td>September 5th, 2016</td>
-														<td>September 8th, 2016</td>
-														<td>7:00am</td>
-														<td>12:45pm</td>
-														<td>24</td>
-														<td class="text-center"><span class="label label-success"><i class="fa fa-check"></i></span></td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalSessions" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-													</tr>
-                                                </tbody>
-                                            </table>
-
-										</div>
-										<div class="tab-pane fade" id="learning">
-
-											<table class="table dataTable  table-bordered" style="width:100%;">
-                                                <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th>
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalLearning" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-    		                                        <tr>
-    		                                            <th>Task</th>
-    		                                            <th>Outcome</th>
-														<th>Category</th>
-                                                        <th class="text-center">Action</th>
-    		                                        </tr>
-    		                                    </thead>
-    		                                    <tbody>
-    		                                        <tr>
-														<td>Learning Outcome Task</td>
-    		                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-														<td>Learning Outcome Category</td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalLearning" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-    		                                        </tr>
-    		                                    </tbody>
-                                        	</table>
-
-										</div>
-										<div class="tab-pane fade" id="prework">
-
-											<table class="table dataTable  table-bordered" style="width:100%;">
-                                                <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th>
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalPrework" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-    		                                        <tr>
-    		                                            <th>Prework</th>
-    		                                            <th>Details</th>
-                                                        <th class="text-center">Action</th>
-    		                                        </tr>
-    		                                    </thead>
-    		                                    <tbody>
-    		                                        <tr>
-    		                                            <td>Employee Behavior</td>
-    		                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalPrework" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-    		                                        </tr>
-    		                                    </tbody>
-                                        	</table>
-
-										</div>
-										<div class="tab-pane fade" id="course">
-
-											<table class="table dataTable  table-bordered" style="width:100%;">
-                                                <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th>
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalCourse" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-    		                                        <tr>
-    		                                            <th>Course</th>
-    		                                            <th>Details</th>
-                                                        <th class="text-center">Action</th>
-    		                                        </tr>
-    		                                    </thead>
-    		                                    <tbody>
-    		                                        <tr>
-    		                                            <td>Employee Behavior</td>
-    		                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalCourse" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-    		                                        </tr>
-    		                                    </tbody>
-                                        	</table>
-
-										</div>
-										<div class="tab-pane fade" id="activityMaterials">
-
-											<table class="table dataTable  table-bordered" style="width:100%;">
-                                                <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th>
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalActivity" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-    		                                        <tr>
-    		                                            <th>Activity</th>
-    		                                            <th>Details</th>
-                                                        <th class="text-center">Action</th>
-    		                                        </tr>
-    		                                    </thead>
-    		                                    <tbody>
-    		                                        <tr>
-    		                                            <td>Employee Behavior</td>
-    		                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalActivity" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-    		                                        </tr>
-    		                                    </tbody>
-                                        	</table>
-
-										</div>
-									</div>
-
-								</div>
-								<div class="tab-pane" id="hr2">
-
-									<ul class="nav nav-tabs">
-										<li class="active">
 											<a href="#skills" data-toggle="tab">Skills</a>
+										</li>
+										<li>
+											<a href="#knowledge" data-toggle="tab">Knowledge</a>
+										</li>
+										<li>
+											<a href="#behavior" data-toggle="tab">Behavior</a>
+										</li>
+										<li>
+											<a href="#course" data-toggle="tab">Courses</a>
 										</li>
 									</ul>
 									<div class="tab-content padding-10">
 										<div class="tab-pane active" id="skills">
 
-											<table class="table dataTable  table-bordered" style="width:100%;">
+                                            <table class="table">
                                                 <thead>
-													<tr>
-														<th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-				                                        <th class="hasinput hidden-xs hidden-sm">
-															<input type="text" class="form-control" placeholder="Filter" />
-														</th>
-														<th>
-															<div class="text-center">
-																<button type="button" data-toggle="modal" data-target="#modalSkills" class="btn btn-sm btn-default" >
-																	Add
-																</button>
-															</div>
-														</th>
-													</tr>
-    		                                        <tr>
-    		                                            <th>Skill</th>
-    		                                            <th>Description</th>
-                                                        <th class="text-center">Action</th>
-    		                                        </tr>
-    		                                    </thead>
-    		                                    <tbody>
-    		                                        <tr>
-    		                                            <td>Employee Skill</td>
-    		                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</td>
-														<td class="text-center" style="width:12%;">
-                                                            <a data-toggle="modal" data-target="#modalSkills" rel="tooltip" data-placement="top" data-original-title="Edit" data-toggle="tab" class="btn btn-default btn-sm">
-																<i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-															<a rel="tooltip" data-placement="top" data-original-title="Delete" data-toggle="tab" class="btn btn-default btn-sm delete">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </td>
-    		                                        </tr>
-    		                                    </tbody>
-											</table>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
 										</div>
+										<div class="tab-pane fade" id="knowledge">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="behavior">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="course">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Date Completed</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>05-13-2016</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>05-13-2016</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>05-13-2016</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+
+									</div>
+
+								</div>
+                                <div class="tab-pane" id="hr2">
+
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#skills2" data-toggle="tab">Skills</a>
+										</li>
+										<li>
+											<a href="#knowledge2" data-toggle="tab">Knowledge</a>
+										</li>
+										<li>
+											<a href="#behavior2" data-toggle="tab">Behavior</a>
+										</li>
+										<li>
+											<a href="#course2" data-toggle="tab">Courses</a>
+										</li>
+									</ul>
+									<div class="tab-content padding-10">
+										<div class="tab-pane active" id="skills2">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="knowledge2">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="behavior2">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="course2">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+
+									</div>
+
+								</div>
+                                <div class="tab-pane" id="hr3">
+
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#skills3" data-toggle="tab">Skills</a>
+										</li>
+										<li>
+											<a href="#knowledge3" data-toggle="tab">Knowledge</a>
+										</li>
+										<li>
+											<a href="#behavior3" data-toggle="tab">Behavior</a>
+										</li>
+										<li>
+											<a href="#course3" data-toggle="tab">Courses</a>
+										</li>
+									</ul>
+									<div class="tab-content padding-10">
+										<div class="tab-pane active" id="skills3">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Skills</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="knowledge3">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Knowledge</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="behavior3">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Employee Behavior</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+										<div class="tab-pane fade" id="course3">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Course</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										</div>
+
 									</div>
 
 								</div>
@@ -721,13 +634,13 @@
 												</div>
 										</section>
 										<section>
-											<div class="form-group">
-												<label>End Time:</label>
-												<div class="input-group">
-													<input class="form-control timepicker" type="text" placeholder="Select time">
-													<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+												<div class="form-group">
+													<label>End Time:</label>
+													<div class="input-group">
+														<input class="form-control timepicker" type="text" placeholder="Select time">
+														<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+													</div>
 												</div>
-											</div>
 										</section>
 										<section>
 											<label class="label text-center">Class Size</label>

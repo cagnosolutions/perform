@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+	<head>
+		{{ template "head.tmpl" }}
+	</head>
+
 	<body class="minified smart-style-1 fixed-navigation">
 
-		{{ template "head.tmpl" }}
+		{{ template "topnav.tmpl" }}
 
 		{{ template "sidenav.tmpl" . }}
 
@@ -43,7 +47,6 @@
 			<div id="content">
 
 				{{ template "alert.tmpl" . }}
-
 
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">

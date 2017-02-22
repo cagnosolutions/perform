@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+	<head>
+		{{ template "head.tmpl" }}
+	</head>
+
 	<body class="minified smart-style-1">
 
-		{{ template "head.tmpl" }}
+		{{ template "topnav.tmpl" }}
 
 		{{ template "sidenav.tmpl" . }}
 
@@ -82,10 +86,10 @@
 											</th>
 										</tr>
 							            <tr>
-							                <th data-class="expand">Name</th>
-							                <th>Department Name</th>
-							                <th data-hide="phone">Job Name</th>
-							                <th data-hide="phone">Branch Name</th>
+											<th><i class="fa fa-fw fa-user txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+											<th><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Department Name</th>
+											<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+											<th><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Branch Name</th>
 							            </tr>
 							        </thead>
 

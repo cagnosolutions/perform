@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+	<head>
+		{{ template "head.tmpl" }}
+	</head>
+
 	<body class="minified smart-style-1">
 
-		{{ template "head.tmpl" }}
+		{{ template "topnav.tmpl" }}
 
 		{{ template "sidenav.tmpl" . }}
 
@@ -71,11 +75,11 @@
 								<ul class="nav nav-tabs in">
 
 									<li class="active">
-										<a data-toggle="tab" href="#h1"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Personnel Information</a>
+										<a data-toggle="tab" href="#h1"> <i class="fa fa-lg fa-user hidden-mobile hidden-tablet"></i> Personnel Information</a>
 									</li>
 
 									<li>
-										<a data-toggle="tab" href="#h2"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Contact Information</a>
+										<a data-toggle="tab" href="#h2"> <i class="fa fa-lg fa-phone hidden-mobile hidden-tablet"></i> Contact Information</a>
 									</li>
 
 								</ul>
@@ -91,7 +95,7 @@
 										<div class="tab-pane active" id="h1">
 
 											<div class="widget-body no-padding">
-												<form class="smart-form">
+												<form class="smart-form" action="" method="post">
 
 													<div class="col-sm-12 col-md-12 col-lg-12">
 
@@ -152,7 +156,6 @@
 																		</select> <i></i> </label>
 																</section>
 
-
 																<section>
 																	<label class="label">Manager:</label>
 																	<label class="select">
@@ -165,7 +168,6 @@
 																		</select> <i></i> </label>
 																</section>
 
-
 																<section>
 																	<label class="label">Schedule:</label>
 																	<label class="select">
@@ -177,7 +179,6 @@
 																			<option value="4">Avelina</option>
 																		</select> <i></i> </label>
 																</section>
-
 
 															</fieldset>
 
@@ -219,15 +220,17 @@
 
 															</fieldset>
 
-															<footer>
-																<button type="submit" class="btn btn-primary">
-																	Save
-																</button>
-															</footer>
 														</article>
 
 													</div>
-
+													<article class="col-lg-12">
+														<footer>
+															<button type="button" class="btn btn-primary">
+																<i class="fa fa-save"></i>
+																 Save
+															</button>
+														</footer>
+													</article>
 												</form>
 
 											</div>
@@ -372,14 +375,17 @@
 
 															</fieldset>
 
-															<footer>
-																<button type="submit" class="btn btn-primary">
-																	Save
-																</button>
-															</footer>
 														</article>
 
 													</div>
+													<article class="col-lg-12">
+														<footer>
+															<button type="button" class="btn btn-primary">
+																<i class="fa fa-save"></i>
+																 Save
+															</button>
+														</footer>
+													</article>
 
 												</form>
 
@@ -400,7 +406,8 @@
 
 					<article class="col-sm-12 col-md-12 col-lg-6">
 
-						<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
 							<!-- widget options:
 							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
@@ -415,8 +422,9 @@
 
 							-->
 							<header>
-								<span></span>
-								<h2>Employee Search</h2>
+								<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+								<h2>Employee Search </h2>
+
 							</header>
 
 							<!-- widget div-->
@@ -430,16 +438,16 @@
 								<!-- end widget edit box -->
 
 								<!-- widget content -->
-                                <div class="widget-body no-padding">
+								<div class="widget-body">
 
-										<form class="smart-form">
+									<form class="">
 
-
-											<fieldset>
+										<fieldset>
+											<section>
 												<div class="form-group">
-													<label>Employee</label>
-													<select style="width:100%" class="select2">
-														<option>&nbsp;&nbsp;&nbsp;Choose a Employee</option>
+													<label>Employee:</label>
+													<select class="select2">
+														<option>Choose a Employee</option>
 														<optgroup label="Sales">
 															<option>Robert Jones</option>
 															<option>Billy Dawnson</option>
@@ -450,11 +458,96 @@
 														</optgroup>
 													</select>
 												</div>
+											</section>
+										</fieldset>
+
+										<legend>Expanded Search:
+											<button id="arrowdown" type="button" class="btn btn-xs btn-primary pull-right"><i class="fa fa-chevron-down"></i></button>
+											<button id="arrowup" type="button" class="btn btn-xs btn-primary pull-right hide"><i class="fa fa-chevron-up"></i></button>
+										</legend>
+
+										<div id="show" class="hide">
+											<fieldset>
+												<section class="col-lg-6">
+													<div class="form-group">
+														<label>Skills:</label>
+														<select class="select2">
+															<option>Choose a Skill</option>
+															<optgroup label="Sales">
+																<option>Robert Jones</option>
+																<option>Billy Dawnson</option>
+															</optgroup>
+															<optgroup label="Marketing">
+																<option>Sally Smith</option>
+																<option>June Martin</option>
+															</optgroup>
+														</select>
+													</div>
+												</section>
+												<section class="col-lg-6">
+													<div class="form-group">
+														<label>Knowledge:</label>
+														<select class="select2">
+															<option>Choose Knowledge</option>
+															<optgroup label="Sales">
+																<option>Robert Jones</option>
+																<option>Billy Dawnson</option>
+															</optgroup>
+															<optgroup label="Marketing">
+																<option>Sally Smith</option>
+																<option>June Martin</option>
+															</optgroup>
+														</select>
+													</div>
+												</section>
+												<section class="col-lg-6">
+													<div class="form-group">
+														<label>Behavior:</label>
+														<select class="select2">
+															<option>Choose Behavior</option>
+															<optgroup label="Sales">
+																<option>Robert Jones</option>
+																<option>Billy Dawnson</option>
+															</optgroup>
+															<optgroup label="Marketing">
+																<option>Sally Smith</option>
+																<option>June Martin</option>
+															</optgroup>
+														</select>
+													</div>
+												</section>
+												<section class="col-lg-6">
+													<div class="form-group">
+														<label>Learning Experiences:</label>
+														<select class="select2">
+															<option>Choose Learning Experience</option>
+															<optgroup label="Sales">
+																<option>Robert Jones</option>
+																<option>Billy Dawnson</option>
+															</optgroup>
+															<optgroup label="Marketing">
+																<option>Sally Smith</option>
+																<option>June Martin</option>
+															</optgroup>
+														</select>
+													</div>
+												</section>
 											</fieldset>
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-12">
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSearch">
+															<i class="fa fa-list"></i>
+															Search
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 
-										</form>
+									</form>
 
-									</div>
+								</div>
 								<!-- end widget content -->
 
 							</div>
@@ -462,6 +555,11 @@
 
 						</div>
 						<!-- end widget -->
+
+					</article>
+
+					<article class="col-sm-12 col-md-12 col-lg-12">
+
 
 						<div class="jarviswidget" id="wid-id-5" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 							<!-- widget options:
@@ -537,11 +635,11 @@
 											<div class="tab-pane active" id="s1">
 												<div class="widget-body">
 
-													<table class="table dataTable table-bordered" width="100%">
+													<table id="dt_basic" class="table dataTable table-bordered" width="100%">
 														<thead>
 															<tr>
-																<th data-hide="phone"><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Office</th>
-																<th data-class="expand"><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Company</th>
+																<th data-hide="phone"><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Office</th>
+																<th data-class="expand"><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Company</th>
 																<th data-hide="phone"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 																<th><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 															</tr>
@@ -577,8 +675,8 @@
 													<table class="table dataTable table-bordered" width="100%">
 														<thead>
 															<tr>
-																<th data-class="expand"><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Department</th>
-																<th><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Branch</th>
+																<th data-class="expand"><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Department</th>
+																<th><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Branch</th>
 																<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 																<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 															</tr>
@@ -619,7 +717,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Job</th>
+															<th data-class="expand"><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Job</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 														</tr>
@@ -641,7 +739,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Manager</th>
+															<th data-class="expand"><i class="fa fa-fw fa-user txt-color-blue hidden-md hidden-sm hidden-xs"></i> Manager</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 														</tr>
@@ -663,7 +761,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-building text-muted hidden-md hidden-sm hidden-xs"></i> Branch</th>
+															<th data-class="expand"><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Branch</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 														</tr>
@@ -685,7 +783,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-clock-o text-muted hidden-md hidden-sm hidden-xs"></i> Schedule</th>
+															<th data-class="expand"><i class="fa fa-fw fa-clock-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Schedule</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
 														</tr>
@@ -707,7 +805,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Review</th>
+															<th data-class="expand"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Review</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
 														</tr>
 													</thead>
@@ -727,8 +825,8 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Interviewer</th>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Purpose</th>
+															<th data-class="expand"><i class="fa fa-fw fa-user txt-color-blue hidden-md hidden-sm hidden-xs"></i> Interviewer</th>
+															<th data-class="expand"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Purpose</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
 														</tr>
 													</thead>
@@ -749,7 +847,7 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Experience</th>
+															<th data-class="expand"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Experience</th>
 															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
 														</tr>
 													</thead>
@@ -769,11 +867,11 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-usd text-muted hidden-md hidden-sm hidden-xs"></i> Salary</th>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text text-muted hidden-md hidden-sm hidden-xs"></i> Pay Basis</th>
-															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd text-muted hidden-md hidden-sm hidden-xs"></i> Overtime Pay</th>
-															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd text-muted hidden-md hidden-sm hidden-xs"></i> Holiday Pay</th>
-															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd text-muted hidden-md hidden-sm hidden-xs"></i> Effective Date</th>
+															<th data-class="expand"><i class="fa fa-fw fa-usd txt-color-blue hidden-md hidden-sm hidden-xs"></i> Salary</th>
+															<th><i class="fa fa-fw fa-file-text txt-color-blue hidden-md hidden-sm hidden-xs"></i> Pay Basis</th>
+															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd txt-color-blue hidden-md hidden-sm hidden-xs"></i> Overtime Pay</th>
+															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd txt-color-blue hidden-md hidden-sm hidden-xs"></i> Holiday Pay</th>
+															<th data-hide="phone,tablet"><i class="fa fa-fw fa-usd txt-color-blue hidden-md hidden-sm hidden-xs"></i> Effective Date</th>
 														</tr>
 													</thead>
 													<tbody>
@@ -795,8 +893,8 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand" width="15%"><i class="fa fa-fw fa-calendar text-muted hidden-md hidden-sm hidden-xs"></i> Day Off</th>
-															<th data-hide="phone,tablet"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Reason</th>
+															<th data-class="expand" width="15%"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Day Off</th>
+															<th data-hide="phone,tablet"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Reason</th>
 														</tr>
 													</thead>
 													<tbody>
@@ -815,9 +913,9 @@
 												<table class="table dataTable table-bordered" width="100%">
 													<thead>
 														<tr>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Factor</th>
-															<th data-class="expand"><i class="fa fa-fw fa-file-text-o text-muted hidden-md hidden-sm hidden-xs"></i> Notes</th>
-															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar text-muted hidden-md hidden-sm hidden-xs"></i> Date</th>
+															<th data-class="expand"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Factor</th>
+															<th data-class="expand"><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Notes</th>
+															<th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
 
 														</tr>
 													</thead>
@@ -874,11 +972,11 @@
 						<ul class="nav nav-tabs in">
 
 							<li class="active">
-								<a data-toggle="tab" href="#hr1"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Skills</a>
+								<a data-toggle="tab" href="#hr1"> <i class="fa fa-lg fa-star hidden-mobile hidden-tablet"></i> Attributes</a>
 							</li>
 
 							<li>
-								<a data-toggle="tab" href="#hr2"> <i class="fa fa-lg fa-arrow-circle-o-down hidden-mobile hidden-tablet"></i> Additional Information</a>
+								<a data-toggle="tab" href="#hr2"> <i class="fa fa-lg fa-plus hidden-mobile hidden-tablet"></i> Additional Information</a>
 							</li>
 
 						</ul>
@@ -924,8 +1022,8 @@
 														</th>
 													</tr>
                                                     <tr>
-                                                        <th>Name</th>
-                                                        <th>Details</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+														<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Details</th>
                                                         <th class="text-center">Action</th>
                                                     </tr>
                                                 </thead>
@@ -966,8 +1064,8 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
-    		                                            <th>Details</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+ 													   	<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Details</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1007,9 +1105,9 @@
 															</div>
 														</th>
 													</tr>
-    		                                        <tr>
-    		                                            <th>NAME</th>
-    		                                            <th>DETAILS</th>
+													<tr>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+ 													   	<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Details</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1073,8 +1171,8 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
-    		                                            <th>Phone</th>
+														<th><i class="fa fa-fw fa-user txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+														<th><i class="fa fa-fw fa-phone txt-color-blue hidden-md hidden-sm hidden-xs"></i> Phone</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1115,8 +1213,8 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
-    		                                            <th>Date</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+														<th><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1163,10 +1261,10 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
-														<th>Company</th>
-    		                                            <th>Start Date</th>
-                                                        <th>End Date</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+														<th><i class="fa fa-fw fa-building txt-color-blue hidden-md hidden-sm hidden-xs"></i> Company</th>
+														<th><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Start Date</th>
+														<th><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> End Date</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1209,8 +1307,8 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
-    		                                            <th>Reference</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+														<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Reference</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1248,7 +1346,7 @@
 														</th>
 													</tr>
     		                                        <tr>
-    		                                            <th>Name</th>
+														<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
                                                         <th class="text-center">Action</th>
     		                                        </tr>
     		                                    </thead>
@@ -1638,6 +1736,56 @@
 			</div>
 		</div>
 
+		<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Search Results</h4>
+					</div>
+					<div class="modal-body">
+
+						<table class="click table table-hover">
+							<tbody>
+								<tr>
+									<th data-class="expand">Employees</th>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+								<tr id="click">
+									<td>Bobby Smith</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 			<!-- END MAIN CONTENT -->
@@ -1649,6 +1797,22 @@
 
 		{{ template "scripts.tmpl" . }}
 
+		<script type="text/javascript">
+	    $('#arrowdown').click(function() {
+	        $('#show').removeClass('hide');
+			$('#arrowup').removeClass('hide');
+	        $('#arrowdown').addClass('hide');
+	    });
+	    $('#arrowup').click(function() {
+	        $('#show').addClass('hide');
+			$('#arrowup').addClass('hide');
+	        $('#arrowdown').removeClass('hide');
+	    });
+		$('tr#click').click(function() {
+            window.location.href = '/employee_information'
+        });
+
+	    </script>
 
 	</body>
 

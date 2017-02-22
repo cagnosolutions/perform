@@ -1,43 +1,106 @@
 package main
 
-import "time"
+type Schedule struct {
+	Id         string
+	Schedule   string
+	DeleteFlag bool
+}
 
-type Companies struct {
-	CompanyID             int
-	CompanyName           string
-	DUNSNumber            int
-	RegisteredDate        time.Time
+type Phone struct {
+	Number string
+	Ext    string
+	Type   string
+}
+
+type Address struct {
+	StreetLine1 string
+	StreetLine2 string
+	City        string
+	State       string
+	Zip         string
+}
+
+type PersonnelData struct {
+	Id              string
+	Email           string
+	Password        string
+	Role            string
+	Active          bool
+	DateAdded       int64
+	AdminFlag       bool
+	MGRFlag         bool
+	InterviewerFlag bool
+	InstructorFlag  bool
+	EmployeeID      int
+	Salutation      string
+	FirstName       string
+	MiddleName      string
+	LastName        string
+	Suffix          string
+	Birthdate       string
+	WorkPhones      []Phone
+	Gender          string
+	HomeAddress     Address
+	HomePhone       Phone
+	EmployeeNotes   string
+	CompanyID       string
+	HireDate        int64
+	BranchID        string
+	BranchDate      int64
+	MGREmplID       string
+	MGRDate         int64
+	DepartmentId    string
+	DepartmentDate  int64
+	JobDepartmentId string
+	JobDate         int64
+	ScheduleId      string
+	ScheduleDate    int64
+	Status          string
+	StatusDate      int64
+
+	Soc                 string
+	DeleteFlag          bool
+	WorkInternetAddress string
+	HomeInternetAddress string
+	Source              string
+}
+
+type Company struct {
+	Id                    string
+	Name                  string
+	RegisteredDate        int64
 	RegistrationFee       int
 	RegistrationPaid      bool
-	RegistrationPaidDate  time.Time
+	RegistrationPaidDate  int64
 	CustomerExperienceRep string
 	SalesRep              string
+	DUNSNumber            int
 }
 
-type Branches struct {
-	BranchID int
-	Street   int
-	City     string
-	State    string
-	Country  string
-	Zip      int
+type Branch struct {
+	Id      string
+	Street  int
+	City    string
+	State   string
+	Country string
+	Zip     int
 }
 
-type CompanyBranches struct {
-	CompanyIDRef int
-	BranchIDRef  int
+type CompanyBranch struct {
+	CompanyId string
+	BranchId  string
 }
 
-type Regions struct {
-	RegionID     int
-	Region       string
-	Geography    string
-	RegionNotes  string
-	CompanyIDRef int
+type Region struct {
+	Id          string
+	Region      string
+	Geography   string
+	RegionNotes string
+	CompanyId   string
 }
 
 type RegionBranches struct {
-	RegionIDRef int
+	RegionId    int
 	BranchIDRef int
 }
 
@@ -128,7 +191,7 @@ type EmployeeCompensation struct {
 type EmployeeAchievements struct {
 	EmployeeIDRef int
 	Achievement   string
-	Date          time.Time
+	Date          int64
 	Where         string
 	Notes         string
 }
@@ -137,11 +200,11 @@ type Subscribers struct {
 	SubscriberName          string
 	SubscriberPassword      string
 	SubscriberCompanyIDRef  int
-	SubscriberDate          time.Time
+	SubscriberDate          int64
 	SubscriberType          string
 	SubscriberFee           int
 	SubscriberPaid          bool
-	SubscriberPaidDate      time.Time
+	SubscriberPaidDate      int64
 	SubscriberExperienceRep string
 }
 
@@ -167,15 +230,15 @@ type EnvironmentChanges struct {
 	CompanyIDRef        int
 	EmployeeIDRef       int
 	EnvironmentChange   string
-	EffectiveDate       time.Time
-	ExpireDate          time.Time
+	EffectiveDate       int64
+	ExpireDate          int64
 	Notes               string
 }
 
 type DepartmentManagers struct {
 	DepartmentIDRef  int
 	MGREmployeeIDRef int
-	EffectiveDate    time.Time
+	EffectiveDate    int64
 	DeleteFlag       bool
 }
 
@@ -186,9 +249,9 @@ type EmployeePerfObservations struct {
 	ToBeAddressedFlag   bool
 	PracticeRating      int
 	PerfObservation     string
-	PerfObservationDate time.Time
+	PerfObservationDate int64
 	Notes               string
-	ScheduledReviewDate time.Time
+	ScheduledReviewDate int64
 }
 
 type TaskSkills struct {
@@ -268,8 +331,8 @@ type CompenstationSchedule struct {
 type TenureTypes struct {
 	TenureID    int
 	TenureType  string
-	TenureStart time.Time
-	TenureEnd   time.Time
+	TenureStart int64
+	TenureEnd   int64
 }
 
 type VacationDaysRules struct {
@@ -309,7 +372,7 @@ type PerformanceMeasurements struct {
 	CompanyIDRef               int
 	PerformanceMeasurementType string
 	EmployeeIDRef              int
-	MeasurementDate            time.Time
+	MeasurementDate            int64
 	Measurement                string
 	MeasurementNotes           string
 }
@@ -343,7 +406,7 @@ type CourseBehaviors struct {
 type EmployeeManagers struct {
 	EmployeeIDRef int
 	ManagerIDRef  int
-	EffectiveDate time.Time
+	EffectiveDate int64
 	DeleteFlag    bool
 }
 
@@ -408,7 +471,7 @@ type Sessions struct {
 	SessionID        int
 	CourseIDRef      int
 	InstructorIDRef  int
-	Date             time.Time
+	Date             int64
 	Time             int
 	LocationIDRef    int
 	Cost             int
@@ -453,10 +516,10 @@ type Activities struct {
 type EmployeeAccountabilityReviews struct {
 	AcctReviewID              int
 	EmployeeIDRef             int
-	AcctReviewDate            time.Time
+	AcctReviewDate            int64
 	Notes                     string
-	SchedReviewDate           time.Time
-	ActReviewDate             time.Time
+	SchedReviewDate           int64
+	ActReviewDate             int64
 	ReviewedByEmplIDRef       int
 	AcctFactor1               string
 	AcctFactor1ScoreEmployee  string
@@ -561,7 +624,7 @@ type EmployeeInterviews struct {
 	IntervieweeEmplIDRef int
 	InterviewerEmplIDRef int
 	LocationIDRef        int
-	Date                 time.Time
+	Date                 int64
 	InterveiewPurpose    string
 	DeleteFlag           bool
 }
@@ -586,8 +649,8 @@ type EmployeePriorJobs struct {
 	EmployeeIDRef int
 	PriorCompany  string
 	PriorJob      string
-	StartDate     time.Time
-	EndDate       time.Time
+	StartDate     int64
+	EndDate       int64
 	Notes         string
 }
 
@@ -605,184 +668,8 @@ type EmployeeContacts struct {
 type EmployeeDaysOut struct {
 	EmployeeIDRef int
 	DayOutPurpose string
-	DayOutDate    time.Time
+	DayOutDate    int64
 	DeleteFlag    bool
-}
-
-type Schedules struct {
-	ScheduleID int
-	Schedule   string
-	DeleteFlag bool
-}
-
-type PersonnelData struct {
-	ID                  string
-	Gender              string
-	Email               string
-	Password            string
-	Role                string
-	Active              bool
-	EmployeeID          int
-	FullName            string
-	FirstName           string
-	LastName            string
-	CompanyIDRef        int
-	CompanyDate         int
-	BranchIDRef         int
-	BranchDate          time.Time
-	HireDate            time.Time
-	MGREmplIDRef        int
-	MGRDate             time.Time
-	DepartmentIDRef     int
-	DepartmentDate      time.Time
-	JobDepartmentIDRef  int
-	JobDate             time.Time
-	ScheduleIDRef       int
-	ScheduleDate        time.Time
-	Status              string
-	StatusDate          time.Time
-	MGRFlag             bool
-	AdminFlag           bool
-	InterviewerFlag     bool
-	InstructorFlag      bool
-	MiddleName          string
-	Salutation          string
-	Suffix              string
-	EmployeeNumber      int
-	Soc                 string
-	WorkPhone1          int
-	WorkPhone1Ext       int
-	WorkPhone1Type      string
-	WorkPhone2          int
-	WorkPhone2Ext       int
-	WorkPhone2Type      string
-	WorkPhone3          int
-	WorkPhone3Ext       int
-	WorkPhone3Type      string
-	WorkInternetAddress string
-	HomeAddressLine1    string
-	HomeAddressLine2    string
-	HomeCity            string
-	HomeState           string
-	HomeZip             int
-	HomePhone1          int
-	HomePhone1Type      string
-	HomeInternetAddress string
-	DeleteFlag          bool
-	Birthdate           time.Time
-	Source              string
-	DateAdded           time.Time
-	EmployeeNotes       string
-	EmployeeNotes2      string
-}
-type PersonnelData1 struct {
-	EmployeeID          int
-	FullName            string
-	FirstName           string
-	LastName            string
-	CompanyIDRef        int
-	CompanyDate         int
-	BranchIDRef         int
-	BranchDate          time.Time
-	HireDate            time.Time
-	MGREmplIDRef        int
-	MGRDate             time.Time
-	DepartmentIDRef     int
-	DepartmentDate      time.Time
-	JobDepartmentIDRef  int
-	JobDate             time.Time
-	ScheduleIDRef       int
-	ScheduleDate        time.Time
-	Status              string
-	StatusDate          time.Time
-	MGRFlag             bool
-	AdminFlag           bool
-	InterviewerFlag     bool
-	InstructorFlag      bool
-	MiddleName          string
-	Salutation          string
-	Suffix              string
-	EmployeeNumber      int
-	Soc                 string
-	WorkPhone1          int
-	WorkPhone1Ext       int
-	WorkPhone1Type      string
-	WorkPhone2          int
-	WorkPhone2Ext       int
-	WorkPhone2Type      string
-	WorkPhone3          int
-	WorkPhone3Ext       int
-	WorkPhone3Type      string
-	WorkInternetAddress string
-	HomeAddressLine1    string
-	HomeAddressLine2    string
-	HomeCity            string
-	HomeState           string
-	HomeZip             int
-	HomePhone1          int
-	HomePhone1Type      string
-	HomeInternetAddress string
-	DeleteFlag          bool
-	Birthdate           time.Time
-	Source              string
-	DateAdded           time.Time
-	EmployeeNotes       string
-	EmployeeNotes2      string
-}
-
-type PersonnelData2 struct {
-	EmployeeID          int
-	FullName            string
-	FirstName           string
-	LastName            string
-	CompanyIDRef        int
-	CompanyDate         int
-	BranchIDRef         int
-	BranchDate          time.Time
-	HireDate            time.Time
-	MGREmplIDRef        int
-	MGRDate             time.Time
-	DepartmentIDRef     int
-	DepartmentDate      time.Time
-	JobDepartmentIDRef  int
-	JobDate             time.Time
-	ScheduleIDRef       int
-	ScheduleDate        time.Time
-	Status              string
-	StatusDate          time.Time
-	MGRFlag             bool
-	AdminFlag           bool
-	InterviewerFlag     bool
-	InstructorFlag      bool
-	MiddleName          string
-	Salutation          string
-	Suffix              string
-	EmployeeNumber      int
-	Soc                 string
-	WorkPhone1          int
-	WorkPhone1Ext       int
-	WorkPhone1Type      string
-	WorkPhone2          int
-	WorkPhone2Ext       int
-	WorkPhone2Type      string
-	WorkPhone3          int
-	WorkPhone3Ext       int
-	WorkPhone3Type      string
-	WorkInternetAddress string
-	HomeAddressLine1    string
-	HomeAddressLine2    string
-	HomeCity            string
-	HomeState           string
-	HomeZip             int
-	HomePhone1          int
-	HomePhone1Type      string
-	HomeInternetAddress string
-	DeleteFlag          bool
-	Birthdate           time.Time
-	Source              string
-	DateAdded           time.Time
-	EmployeeNotes       string
-	EmployeeNotes2      string
 }
 
 type EmployeeBehaviors struct {
@@ -793,25 +680,25 @@ type EmployeeBehaviors struct {
 type EmployeeSchedules struct {
 	EmployeeIDRef int
 	ScheduleIDRef int
-	EffectiveDate time.Time
+	EffectiveDate int64
 	DeleteFlag    bool
 }
 
 type EmployeeJobs struct {
 	EmployeeIDRef      int
 	JobDepartmentIDRef int
-	EffectiveDate      time.Time
+	EffectiveDate      int64
 	DeleteFlag         bool
 }
 
 type EmployeeDepartments struct {
 	EmployeeIDRef   int
 	DepartmentIDRef int
-	EffectiveDate   time.Time
+	EffectiveDate   int64
 	DeleteFlag      bool
 }
 
-type EmployeeSkilss struct {
+type EmployeeSkills struct {
 	EmployeeIDRef int
 	SkillIDRef    int
 }
@@ -823,24 +710,24 @@ type EmployeeKnowledge struct {
 type EmployeeCompanies struct {
 	EmployeeIDRef int
 	CompanyIDRef  int
-	EffectiveDate time.Time
+	EffectiveDate int64
 	DeleteFlag    bool
 }
 
 type EmployeeBranches struct {
 	EmployeeIDRef int
 	BranchIDRef   int
-	EffectiveDate time.Time
+	EffectiveDate int64
 	DeleteFlag    bool
 }
 
 type EmployeeGoalActions struct {
 	GoalActionID    int
 	IssueGoalIDRef  int
-	EstStartDate    time.Time
-	ActStartDate    time.Time
-	EstCompleteDate time.Time
-	ActCompleteDate time.Time
+	EstStartDate    int64
+	ActStartDate    int64
+	EstCompleteDate int64
+	ActCompleteDate int64
 	GoalAction      string
 	Notes           string
 	EmployeeIDRef   int

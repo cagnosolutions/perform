@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+	<head>
+		{{ template "head.tmpl" }}
+	</head>
+
 	<body class="minified smart-style-1">
 
-		{{ template "head.tmpl" }}
+		{{ template "topnav.tmpl" }}
 
 		{{ template "sidenav.tmpl" . }}
 
@@ -51,8 +55,8 @@
 											</th>
 										</tr>
 							            <tr>
-							                <th data-class="expand">Name</th>
-							                <th>Details</th>
+											<th><i class="fa fa-fw fa-file txt-color-blue hidden-md hidden-sm hidden-xs"></i> Name</th>
+											<th><i class="fa fa-fw fa-file-text-o txt-color-blue hidden-md hidden-sm hidden-xs"></i> Details</th>
 							            </tr>
 							        </thead>
 
